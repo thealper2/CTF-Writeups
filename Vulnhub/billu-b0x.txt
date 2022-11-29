@@ -1,0 +1,3 @@
+BİLLU B0X MAKİNE ÇÖZÜMÜ
+1 - netdiscover -i eth0 ile IP adresi 192.168.
+2 - 

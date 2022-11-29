@@ -1,0 +1,4 @@
+MİNOTAUR MAKİNE ÇÖZÜMÜ
+1 - netdiscover -i eth0 ile IP adresi 192.168.56.223 bulundu.
+2 - nmap -sT -A -p- 192.168.56.223
+3 - 

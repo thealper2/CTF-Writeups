@@ -1,0 +1,7 @@
+SUMO-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.53 bulundu.
+2 - nmap -sT -A 192.168.2.53
+3 - dirb http://192.168.2.53
+4 - nikto -h http://192.168.2.53
+5 - msfconsole, search apache_mod_cgi, apache_mod_cgi_bash_exec
+6 - https://github.com/dirtycow/dirtycow.github.io

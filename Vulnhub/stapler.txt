@@ -1,0 +1,4 @@
+STAPLER MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.86 bulundu.
+2 - nmap -sT -A 192.168.2.86
+3 - 

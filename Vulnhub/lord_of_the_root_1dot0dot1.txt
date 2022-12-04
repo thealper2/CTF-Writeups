@@ -1,0 +1,4 @@
+LORD OF THE ROOT 1.0.1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.105 bulundu.
+2 - nmap -sT -A -p- 192.168.2.105
+3 - 

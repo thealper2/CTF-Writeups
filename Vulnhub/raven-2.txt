@@ -1,0 +1,9 @@
+RAVEN: 2 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.105 bulundu.
+2 - nmap -A 192.168.2.105
+3 - gobuster dir -u http://192.168.2.105 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - wpscan --url http://192.168.2.105 -e u, Users: michael, steven
+5 - nano /etc/hosts, 192.168.2.105 raven.local
+6 - http://raven.local/vendor, PHPMailerAutoload
+7 - searchsploit 'php mailer', searchsploit -m 40974
+8 - 

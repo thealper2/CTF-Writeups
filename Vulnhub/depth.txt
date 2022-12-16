@@ -1,0 +1,5 @@
+DEPTH MAKİNE ÇÖZÜMÜ
+1 - arp-scan --localnet ile IP adresi 192.168.2.87 bulundu.
+2 - nmap -A 192.168.2.87
+3 - gobuster dir -u http://192.168.2.87:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - 

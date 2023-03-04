@@ -9,7 +9,6 @@ PUMPKIN GARDEN MAKİNE ÇÖZÜMÜ
 8 - su goblin
 9 - cat > sudoedit <<_EOF
 #!/bin/sh
-echo ALEX-ALEX
 su
 /bin/su
 /usr/bin/su

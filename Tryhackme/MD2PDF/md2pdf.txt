@@ -1,0 +1,3 @@
+1 - nmap -A 10.10.187.139
+2 - gobuster dir -u http://10.10.187.139 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - <iframe src="http://127.0.0.1:5000/admin"></iframe>

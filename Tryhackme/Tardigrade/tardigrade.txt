@@ -1,0 +1,10 @@
+1 - nmap -A 10.10.182.172
+2 - ssh giorgio@10.10.182.172
+3 - lsb_release -a
+4 - ls -la /home/giorgio
+5 - cat .bashrc
+6 - crontab -e
+7 - sudo -l
+8 - sudo su
+9 - cat /etc/passwd
+10 - cat /nonexistent/.youfoundme

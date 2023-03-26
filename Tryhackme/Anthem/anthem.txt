@@ -1,0 +1,8 @@
+1 - nmap -A 10.10.192.236
+2 - view-source:http://10.10.192.236/robots.txt
+3 - view-source:http://10.10.192.236/archive/we-are-hiring/ (FLAG1)
+4 - view-source:http://10.10.192.236/ (FLAG2)
+5 - view-source:http://10.10.192.236/authors/jane-doe/ (FLAG3)
+6 - view-source:http://10.10.192.236/archive/a-cheers-to-our-it-department
+7 - RDP
+

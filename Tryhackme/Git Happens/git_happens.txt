@@ -1,0 +1,6 @@
+1 - nmap -A 10.10.8.102
+2 - gobuster dir -u http://10.10.8.102 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - git-dumper http://10.10.8.102/.git "Git Happens/" 
+4 - git log
+5 - git show ID
+6 - http://10.10.8.102/

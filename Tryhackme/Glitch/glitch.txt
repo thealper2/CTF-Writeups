@@ -1,0 +1,8 @@
+1 - nmap -A 10.10.101.5
+2 - view-source:http://10.10.101.5
+3 - curl http://10.10.101.5/api/access
+4 - echo "HASH" | base64 -d
+5 - gobuster dir -u http://10.10.101.5/api -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+6 - curl -X POST http://10.10.101.5/api/items
+7 - wfuzz -X POST -w /usr/share/seclists/Fuzzing/1-4_all_letters_a-z.txt --hh=45 http://10.10.101.5/api/items\?FUZZ\=id
+8 - 

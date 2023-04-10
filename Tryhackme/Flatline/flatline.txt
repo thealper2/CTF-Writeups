@@ -1,0 +1,4 @@
+1 - nmap -A 10.10.104.41
+2 - searchsploit "FreeSWITCH"
+3 - searchsploit -m 47799
+4 - 

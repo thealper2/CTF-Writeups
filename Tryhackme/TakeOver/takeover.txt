@@ -1,0 +1,7 @@
+1 - echo "10.10.181.193 futurevera.thm" | tee -a /etc/hosts
+2 - nmap -A 10.10.181.193
+3 - gobuster vhost -u http://futurevera.thm -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt --append-domain
+4 - echo "10.10.181.193 portal.futurevera.thm blog.futurevera.thm support.futurevera.thm" | tee -a /etc/hosts
+5 - https://support.futurevera.thm -> view certificate
+6 - echo "10.10.181.193 secrethelpdesk934752.support.futurevera.thm" | tee -a /etc/hosts
+7 - http address 

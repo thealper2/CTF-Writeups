@@ -1,0 +1,42 @@
+1 - nmap -A 10.10.45.73
+2 - view-source:http://10.10.45.73/mansionmain/
+3 - view-source:http://10.10.45.73/diningRoom/
+4 - echo hash | base64 -d
+5 - view-source:http://10.10.45.73/teaRoom/
+6 - http://10.10.45.73/artRoom/MansionMap.html
+7 - http://10.10.45.73/diningRoom/emblem.php -> emblem flag
+8 - http://10.10.45.73/teaRoom/master_of_unlock.html -> lockpick flag
+9 - http://10.10.45.73/barRoom/ -> Readme.md -> BASE32 DECODE -> msuic sheet flag -> after -> gold emblem flag
+10 - view-source:http://10.10.45.73/diningRoom2F/ -> CAESAR DECODE
+11 - http://10.10.45.73/diningRoom/sapphire.html -> blue jewel flag
+12 - http://10.10.45.73/tigerStatusRoom/ -> crest1
+13 - view-source:http://10.10.45.73/galleryRoom/note.txt -> crest2
+14 - view-source:http://10.10.45.73/diningRoom/emblem_slot.php -> ROT13 DECODE -> shield flag
+15 - http://10.10.45.73/armorRoom/ -> crest3
+16 - http://10.10.45.73/attic/ -> crest4
+17 - CREST1 -> BASE64 DECODE -> BASE32 DECODE
+18 - CREST2 -> BASE32 DECODE -> BASE58 DECODE
+19 - CREST3 -> BASE64 DECODE -> BINARY -> HEX
+20 - CREST4 -> BASE58 DECODE -> HEX
+21 - echo "crest1+crest2+crest3+crest4" | base64 -d
+22 - ftp 10.10.45.73
+23 - cat important.txt
+24 - http://10.10.45.73/hidden_closet/
+25 - steghide extract -sf 001-key.jpg
+26 - exiftool 002-key.jpg
+27 - binwalk -e 003-key.jpg --run-as=root
+28 - echo "key1+key2+key3" | base64 -d
+29 - gpg helmet_key.txt.gpg
+30 - http://10.10.45.73/studyRoom/
+31 - tar xvf doom.tar.gz
+32 - cat eagle_model.txt
+33 - http://10.10.45.73/hidden_closet/ -> mo disk 1 -> ROT13 DECODE
+34 - ssh umbrella_guest@10.10.45.73
+34 - cat .jailcell/chris.txt
+35 - mo disk 2 -> vigenere decode 
+36 - su weasker
+37 - cat weasker_note.txt
+38 - sudo -l
+39 - sudo su
+40 - cat /root/root.txt
+

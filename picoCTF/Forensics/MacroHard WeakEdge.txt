@@ -1,0 +1,4 @@
+1 - binwalk -e 'Forensics is fun.pptm'
+2 - unzip 0.zip
+3 - cat ./ppt/slideMasters/hidden
+4 - Bosluklari sil -> echo "hash" | base64 -d

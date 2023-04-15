@@ -1,0 +1,1 @@
+1 - echo "hash" | tr 'A-Za-z' 'N-ZA-Mn-za-m'

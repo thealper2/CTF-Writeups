@@ -1,0 +1,2 @@
+1 - exiftool cat.jpg
+2 - echo "LICENSE" | base64 -d

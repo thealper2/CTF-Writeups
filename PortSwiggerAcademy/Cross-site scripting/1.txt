@@ -1,0 +1,4 @@
+LAB: Reflected XSS into HTML context with nothing encoded
+
+1 - Arama yerine aşağıdaki payloadı yazın.
+<script>alert(1)</script>

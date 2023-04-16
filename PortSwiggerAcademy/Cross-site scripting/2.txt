@@ -1,0 +1,9 @@
+LAB: Stored XSS into HTML context with nothing encoded
+
+1 - Herhangi bir gönderi sayfasına gidin.
+
+2 - Yorum olarak aşağıdaki payloadı gönderin.
+<script>alert(1)</script>
+
+
+3 - Aynı gönderi sayfasına tekrar gidin.

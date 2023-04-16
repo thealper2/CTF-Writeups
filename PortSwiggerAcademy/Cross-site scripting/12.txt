@@ -1,0 +1,3 @@
+DOM: Reflected DOM XSS
+
+\"-alert(1)}//

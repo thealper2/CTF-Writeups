@@ -1,0 +1,5 @@
+LAB: Stored XSS into anchor href attribute with double quotes HTML-encoded
+
+1 - Herhangi bir gönderinin altına yorum atın.
+
+2 - Aynı gönderinin altına yine yorum atın fakat Website: javascript:alert(1)

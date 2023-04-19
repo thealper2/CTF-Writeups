@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.180.143
+2 - ftp 10.10.180.143
+3 - cat .creds 
+4 - python3 pick.py
+
+import pickle
+
+with open("download.dat" ,"rb") as file:
+	data = file.read()
+	print(pickle.loads(data))
+
+5 - 

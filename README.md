@@ -6,7 +6,6 @@
 
 ## Vulnhub
 
-
 | ID | Makine Adı | Çözüm Linki | Çözülme Durumu | Makine Linki |
 | -- | ---------- | ----------- | -------------- | ------------ |
 | 1. | Analougepond | [Link](https://github.com/thealper2/CTF-Cozumleri/blob/main/Vulnhub/analougepond.txt) | ✅ | [Makine Linki](https://www.vulnhub.com/entry/analougepond-1,185/)
@@ -100,4 +99,123 @@
 ---
 
 ## TryHackMe
-1.
+
+✅ -> Tamamlandı ❌ -> Tamamlanmadı
+
+| ID | Makine Adı | Çözüm Linki | Çözülme Durumu | Makine Linki |
+| -- | ---------- | ----------- | -------------- | ------------ |
+| 1. | 0day | [Link]() | ✅ | [Makine Linki]() |
+| 2. | Agent Sudo | [Link]() | ✅ | [Makine Linki]() |
+| 3. | Agent T | [Link]() | ✅ | [Makine Linki]() |
+| 4. | All in One | [Link]() | ✅ | [Makine Linki]() |
+| 5. | Annie | [Link]() | ✅ | [Makine Linki]() |
+| 6. | Anonforce | [Link]() | ✅ | [Makine Linki]() |
+| 7. | Anonymous | [Link]() | ✅ | [Makine Linki]() |
+| 8. | Anthem | [Link]() | ✅ | [Makine Linki]() |
+| 9. | Aratus | [Link]() | ✅ | [Makine Linki]() |
+| 10. | Archangel | [Link]() | ✅ | [Makine Linki]() |
+| 11. | Attacktive Directory | [Link]() | ✅ | [Makine Linki]() |
+| 12. | Biohazar | [Link]() | ✅ | [Makine Linki]() |
+| 13. | Blog | [Link]() | ✅ | [Makine Linki]() |
+| 14. | Bluprint | [Link]() | ✅ | [Makine Linki]() |
+| 15. | Bookstore | [Link]() | ✅ | [Makine Linki]() |
+| 16. | Bounty Hacker | [Link]() | ✅ | [Makine Linki]() |
+| 17. | Break Out The Cage 1 | [Link]() | ✅ | [Makine Linki]() |
+| 18. | Brooklyn Nine Nine | [Link]() | ✅ | [Makine Linki]() |
+| 19. | BruteIt | [Link]() | ✅ | [Makine Linki]() |
+| 20. | Bugged | [Link]() | ✅ | [Makine Linki]() |
+| 21. | CMSpit | [Link]() | ✅ | [Makine Linki]() |
+| 22. | CMesS | [Link]() | ✅ | [Makine Linki]() |
+| 23. | Cat Pictures | [Link]() | ✅ | [Makine Linki]() |
+| 24. | Chocolate Factory | [Link]() | ✅ | [Makine Linki]() |
+| 25. | Colddbox Easy | [Link]() | ✅ | [Makine Linki]() |
+| 26. | Committed | [Link]() | ✅ | [Makine Linki]() |
+| 27. | Confidential | [Link]() | ✅ | [Makine Linki]() |
+| 28. | ConvertMyVideo | [Link]() | ✅ | [Makine Linki]() |
+| 29. | Corridor | [Link]() | ✅ | [Makine Linki]() |
+| 30. | Couch | [Link]() | ✅ | [Makine Linki]() |
+| . | CyberCrafted | [Link]() | ✅ | [Makine Linki]() |
+| . | CyberHeroes | [Link]() | ✅ | [Makine Linki]() |
+| . | Cyborg | [Link]() | ✅ | [Makine Linki]() |
+| . | DAV | [Link]() | ✅ | [Makine Linki]() |
+| . | Develpy | [Link]() | ✅ | [Makine Linki]() |
+| . | Dogcat | [Link]() | ✅ | [Makine Linki]() |
+| . | Easy Peasy | [Link]() | ✅ | [Makine Linki]() |
+| . | Eavesdropper | [Link]() | ✅ | [Makine Linki]() |
+| . | Empline | [Link]() | ✅ | [Makine Linki]() |
+| . | Epoch | [Link]() | ✅ | [Makine Linki]() |
+| . | Flatline | [Link]() | ✅ | [Makine Linki]() |
+| . | Gallery | [Link]() | ✅ | [Makine Linki]() |
+| . | GamingServer | [Link]() | ✅ | [Makine Linki]() |
+| . | Gatekeeper | [Link]() | ✅ | [Makine Linki]() |
+| . | Git Happens | [Link]() | ✅ | [Makine Linki]() |
+| . | Git and Crumpets | [Link]() | ✅ | [Makine Linki]() |
+| . | Glitch | [Link]() | ✅ | [Makine Linki]() |
+| . | GoldenEye | [Link]() | ✅ | [Makine Linki]() |
+| . | Gotta Catchem All | [Link]() | ✅ | [Makine Linki]() |
+| . | HA Joker CTF | [Link]() | ✅ | [Makine Linki]() |
+| . | Hacker vs Hacker | [Link]() | ✅ | [Makine Linki]() |
+| . | HashHell | [Link]() | ✅ | [Makine Linki]() |
+| . | IDE | [Link]() | ✅ | [Makine Linki]() |
+| . | Ignitie | [Link]() | ✅ | [Makine Linki]() |
+| . | Inferno | [Link]() | ✅ | [Makine Linki]() |
+| . | JPGChat | [Link]() | ✅ | [Makine Linki]() |
+| . | Jack-of-all-Trades | [Link]() | ✅ | [Makine Linki]() |
+| . | Jacob The Boss | [Link]() | ✅ | [Makine Linki]() |
+| . | Jason | [Link]() | ✅ | [Makine Linki]() |
+| . | Lian_yu | [Link]() | ✅ | [Makine Linki]() |
+| . | Library | [Link]() | ✅ | [Makine Linki]() |
+| . | Lockdown | [Link]() | ✅ | [Makine Linki]() |
+| . | Lookback | [Link]() | ✅ | [Makine Linki]() |
+| . | Looking Glass | [Link]() | ✅ | [Makine Linki]() |
+| . |  MD2PDF| [Link]() | ✅ | [Makine Linki]() |
+| . | Madeyes Castle | [Link]() | ✅ | [Makine Linki]() |
+| . | Madness | [Link]() | ✅ | [Makine Linki]() |
+| . | Magician | [Link]() | ✅ | [Makine Linki]() |
+| . | Mindgames | [Link]() | ✅ | [Makine Linki]() |
+| . | Minotaurs Labyrinth | [Link]() | ✅ | [Makine Linki]() |
+| . | Mnemonic | [Link]() | ✅ | [Makine Linki]() |
+| . | Mr Robot CTF | [Link]() | ✅ | [Makine Linki]() |
+| . | Mustacchio | [Link]() | ✅ | [Makine Linki]() |
+| . | Nax | [Link]() | ✅ | [Makine Linki]() |
+| . | Neighbour | [Link]() | ✅ | [Makine Linki]() |
+| . | Oh My WebServer | [Link]() | ✅ | [Makine Linki]() |
+| . | Ollie | [Link]() | ✅ | [Makine Linki]() |
+| . | Olympus | [Link]() | ✅ | [Makine Linki]() |
+| . | Overpass 3 | [Link]() | ✅ | [Makine Linki]() |
+| . | Overpass | [Link]() | ✅ | [Makine Linki]() |
+| . | Peak Hill | [Link]() | ✅ | [Makine Linki]() |
+| . | Plotted-TMS | [Link]() | ✅ | [Makine Linki]() |
+| . | Poster | [Link]() | ✅ | [Makine Linki]() |
+| . | Relevant | [Link]() | ✅ | [Makine Linki]() |
+| . | Revenge | [Link]() | ✅ | [Makine Linki]() |
+| . | RootMe | [Link]() | ✅ | [Makine Linki]() |
+| . | Smag Grotto | [Link]() | ✅ | [Makine Linki]() |
+| . | Source | [Link]() | ✅ | [Makine Linki]() |
+| . | Startup | [Link]() | ✅ | [Makine Linki]() |
+| . | Sustah | [Link]() | ✅ | [Makine Linki]() |
+| . | TakeOver | [Link]() | ✅ | [Makine Linki]() |
+| . | Tardigrade | [Link]() | ✅ | [Makine Linki]() |
+| . | Team | [Link]() | ✅ | [Makine Linki]() |
+| . | The Great Escape | [Link]() | ✅ | [Makine Linki]() |
+| . | The Server From Hell | [Link]() | ✅ | [Makine Linki]() |
+| . | Tokyo Ghoul | [Link]() | ✅ | [Makine Linki]() |
+| . | Tony the Tiger | [Link]() | ✅ | [Makine Linki]() |
+| . | UltraTech | [Link]() | ✅ | [Makine Linki]() |
+| . | VulnNet | [Link]() | ✅ | [Makine Linki]() |
+| . | Vulnnet Internal | [Link]() | ✅ | [Makine Linki]() |
+| . | Vulnnet Roasted | [Link]() | ✅ | [Makine Linki]() |
+| . | Watcher | [Link]() | ✅ | [Makine Linki]() |
+| . | Wekor | [Link]() | ✅ | [Makine Linki]() |
+| . | Willow | [Link]() | ✅ | [Makine Linki]() |
+| . | Wonderland | [Link]() | ✅ | [Makine Linki]() |
+| . | Year of the Rabbit | [Link]() | ✅ | [Makine Linki]() |
+| . | Zeno | [Link]() | ✅ | [Makine Linki]() |
+| . | b3dr0ck | [Link]() | ✅ | [Makine Linki]() |
+| . | battery | [Link]() | ✅ | [Makine Linki]() |
+| . | biteme | [Link]() | ✅ | [Makine Linki]() |
+| . | chillhack | [Link]() | ✅ | [Makine Linki]() |
+| . | h4cked | [Link]() | ✅ | [Makine Linki]() |
+| . | wgelCTF | [Link]() | ✅ | [Makine Linki]() |
+
+---

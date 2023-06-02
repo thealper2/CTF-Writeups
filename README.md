@@ -104,118 +104,119 @@
 
 | ID | Makine Adı | Çözüm Linki | Çözülme Durumu | Makine Linki |
 | -- | ---------- | ----------- | -------------- | ------------ |
-| 1. | 0day | [Link]() | ✅ | [Makine Linki]() |
-| 2. | Agent Sudo | [Link]() | ✅ | [Makine Linki]() |
-| 3. | Agent T | [Link]() | ✅ | [Makine Linki]() |
-| 4. | All in One | [Link]() | ✅ | [Makine Linki]() |
-| 5. | Annie | [Link]() | ✅ | [Makine Linki]() |
-| 6. | Anonforce | [Link]() | ✅ | [Makine Linki]() |
-| 7. | Anonymous | [Link]() | ✅ | [Makine Linki]() |
-| 8. | Anthem | [Link]() | ✅ | [Makine Linki]() |
-| 9. | Aratus | [Link]() | ✅ | [Makine Linki]() |
-| 10. | Archangel | [Link]() | ✅ | [Makine Linki]() |
-| 11. | Attacktive Directory | [Link]() | ✅ | [Makine Linki]() |
-| 12. | Biohazar | [Link]() | ✅ | [Makine Linki]() |
-| 13. | Blog | [Link]() | ✅ | [Makine Linki]() |
-| 14. | Bluprint | [Link]() | ✅ | [Makine Linki]() |
-| 15. | Bookstore | [Link]() | ✅ | [Makine Linki]() |
-| 16. | Bounty Hacker | [Link]() | ✅ | [Makine Linki]() |
-| 17. | Break Out The Cage 1 | [Link]() | ✅ | [Makine Linki]() |
-| 18. | Brooklyn Nine Nine | [Link]() | ✅ | [Makine Linki]() |
-| 19. | BruteIt | [Link]() | ✅ | [Makine Linki]() |
-| 20. | Bugged | [Link]() | ✅ | [Makine Linki]() |
-| 21. | CMSpit | [Link]() | ✅ | [Makine Linki]() |
-| 22. | CMesS | [Link]() | ✅ | [Makine Linki]() |
-| 23. | Cat Pictures | [Link]() | ✅ | [Makine Linki]() |
-| 24. | Chocolate Factory | [Link]() | ✅ | [Makine Linki]() |
-| 25. | Colddbox Easy | [Link]() | ✅ | [Makine Linki]() |
-| 26. | Committed | [Link]() | ✅ | [Makine Linki]() |
-| 27. | Confidential | [Link]() | ✅ | [Makine Linki]() |
-| 28. | ConvertMyVideo | [Link]() | ✅ | [Makine Linki]() |
-| 29. | Corridor | [Link]() | ✅ | [Makine Linki]() |
-| 30. | Couch | [Link]() | ✅ | [Makine Linki]() |
-| . | CyberCrafted | [Link]() | ✅ | [Makine Linki]() |
-| . | CyberHeroes | [Link]() | ✅ | [Makine Linki]() |
-| . | Cyborg | [Link]() | ✅ | [Makine Linki]() |
-| . | DAV | [Link]() | ✅ | [Makine Linki]() |
-| . | Develpy | [Link]() | ✅ | [Makine Linki]() |
-| . | Dogcat | [Link]() | ✅ | [Makine Linki]() |
-| . | Easy Peasy | [Link]() | ✅ | [Makine Linki]() |
-| . | Eavesdropper | [Link]() | ✅ | [Makine Linki]() |
-| . | Empline | [Link]() | ✅ | [Makine Linki]() |
-| . | Epoch | [Link]() | ✅ | [Makine Linki]() |
-| . | Flatline | [Link]() | ✅ | [Makine Linki]() |
-| . | Gallery | [Link]() | ✅ | [Makine Linki]() |
-| . | GamingServer | [Link]() | ✅ | [Makine Linki]() |
-| . | Gatekeeper | [Link]() | ✅ | [Makine Linki]() |
-| . | Git Happens | [Link]() | ✅ | [Makine Linki]() |
-| . | Git and Crumpets | [Link]() | ✅ | [Makine Linki]() |
-| . | Glitch | [Link]() | ✅ | [Makine Linki]() |
-| . | GoldenEye | [Link]() | ✅ | [Makine Linki]() |
-| . | Gotta Catchem All | [Link]() | ✅ | [Makine Linki]() |
-| . | HA Joker CTF | [Link]() | ✅ | [Makine Linki]() |
-| . | Hacker vs Hacker | [Link]() | ✅ | [Makine Linki]() |
-| . | HashHell | [Link]() | ✅ | [Makine Linki]() |
-| . | IDE | [Link]() | ✅ | [Makine Linki]() |
-| . | Ignitie | [Link]() | ✅ | [Makine Linki]() |
-| . | Inferno | [Link]() | ✅ | [Makine Linki]() |
-| . | JPGChat | [Link]() | ✅ | [Makine Linki]() |
-| . | Jack-of-all-Trades | [Link]() | ✅ | [Makine Linki]() |
-| . | Jacob The Boss | [Link]() | ✅ | [Makine Linki]() |
-| . | Jason | [Link]() | ✅ | [Makine Linki]() |
-| . | Lian_yu | [Link]() | ✅ | [Makine Linki]() |
-| . | Library | [Link]() | ✅ | [Makine Linki]() |
-| . | Lockdown | [Link]() | ✅ | [Makine Linki]() |
-| . | Lookback | [Link]() | ✅ | [Makine Linki]() |
-| . | Looking Glass | [Link]() | ✅ | [Makine Linki]() |
-| . |  MD2PDF| [Link]() | ✅ | [Makine Linki]() |
-| . | Madeyes Castle | [Link]() | ✅ | [Makine Linki]() |
-| . | Madness | [Link]() | ✅ | [Makine Linki]() |
-| . | Magician | [Link]() | ✅ | [Makine Linki]() |
-| . | Mindgames | [Link]() | ✅ | [Makine Linki]() |
-| . | Minotaurs Labyrinth | [Link]() | ✅ | [Makine Linki]() |
-| . | Mnemonic | [Link]() | ✅ | [Makine Linki]() |
-| . | Mr Robot CTF | [Link]() | ✅ | [Makine Linki]() |
-| . | Mustacchio | [Link]() | ✅ | [Makine Linki]() |
-| . | Nax | [Link]() | ✅ | [Makine Linki]() |
-| . | Neighbour | [Link]() | ✅ | [Makine Linki]() |
-| . | Oh My WebServer | [Link]() | ✅ | [Makine Linki]() |
-| . | Ollie | [Link]() | ✅ | [Makine Linki]() |
-| . | Olympus | [Link]() | ✅ | [Makine Linki]() |
-| . | Overpass 3 | [Link]() | ✅ | [Makine Linki]() |
-| . | Overpass | [Link]() | ✅ | [Makine Linki]() |
-| . | Peak Hill | [Link]() | ✅ | [Makine Linki]() |
-| . | Plotted-TMS | [Link]() | ✅ | [Makine Linki]() |
-| . | Poster | [Link]() | ✅ | [Makine Linki]() |
-| . | Relevant | [Link]() | ✅ | [Makine Linki]() |
-| . | Revenge | [Link]() | ✅ | [Makine Linki]() |
-| . | RootMe | [Link]() | ✅ | [Makine Linki]() |
-| . | Smag Grotto | [Link]() | ✅ | [Makine Linki]() |
-| . | Source | [Link]() | ✅ | [Makine Linki]() |
-| . | Startup | [Link]() | ✅ | [Makine Linki]() |
-| . | Sustah | [Link]() | ✅ | [Makine Linki]() |
-| . | TakeOver | [Link]() | ✅ | [Makine Linki]() |
-| . | Tardigrade | [Link]() | ✅ | [Makine Linki]() |
-| . | Team | [Link]() | ✅ | [Makine Linki]() |
-| . | The Great Escape | [Link]() | ✅ | [Makine Linki]() |
-| . | The Server From Hell | [Link]() | ✅ | [Makine Linki]() |
-| . | Tokyo Ghoul | [Link]() | ✅ | [Makine Linki]() |
-| . | Tony the Tiger | [Link]() | ✅ | [Makine Linki]() |
-| . | UltraTech | [Link]() | ✅ | [Makine Linki]() |
-| . | VulnNet | [Link]() | ✅ | [Makine Linki]() |
-| . | Vulnnet Internal | [Link]() | ✅ | [Makine Linki]() |
-| . | Vulnnet Roasted | [Link]() | ✅ | [Makine Linki]() |
-| . | Watcher | [Link]() | ✅ | [Makine Linki]() |
-| . | Wekor | [Link]() | ✅ | [Makine Linki]() |
-| . | Willow | [Link]() | ✅ | [Makine Linki]() |
-| . | Wonderland | [Link]() | ✅ | [Makine Linki]() |
-| . | Year of the Rabbit | [Link]() | ✅ | [Makine Linki]() |
-| . | Zeno | [Link]() | ✅ | [Makine Linki]() |
-| . | b3dr0ck | [Link]() | ✅ | [Makine Linki]() |
-| . | battery | [Link]() | ✅ | [Makine Linki]() |
-| . | biteme | [Link]() | ✅ | [Makine Linki]() |
-| . | chillhack | [Link]() | ✅ | [Makine Linki]() |
-| . | h4cked | [Link]() | ✅ | [Makine Linki]() |
-| . | wgelCTF | [Link]() | ✅ | [Makine Linki]() |
+| 1. | 0day | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/0day) | ✅ | [Makine Linki](https://tryhackme.com/room/0day) |
+| 2. | Agent Sudo | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Agent%20Sudo) | ✅ | [Makine Linki](https://tryhackme.com/room/agentsudoctf) |
+| 3. | Agent T | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Agent%20T) | ✅ | [Makine Linki](https://tryhackme.com/room/agentt) |
+| 4. | All in One | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/All%20in%20One) | ✅ | [Makine Linki](https://tryhackme.com/room/allinonemj) |
+| 5. | Annie | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Annie) | ✅ | [Makine Linki](https://tryhackme.com/room/annie) |
+| 6. | Anonforce | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Anonforce) | ✅ | [Makine Linki](https://tryhackme.com/room/bsidesgtanonforce) |
+| 7. | Anonymous | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Anonymous) | ✅ | [Makine Linki](https://tryhackme.com/room/anonymous) |
+| 8. | Anthem | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Anthem) | ✅ | [Makine Linki](https://tryhackme.com/room/anthem) |
+| 9. | Aratus | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Aratus) | ✅ | [Makine Linki](https://tryhackme.com/room/aratus) |
+| 10. | Archangel | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Archangel) | ✅ | [Makine Linki](https://tryhackme.com/room/archangel) |
+| 11. | Attacktive Directory | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Attacktive%20Directory) | ✅ | [Makine Linki](https://tryhackme.com/room/attacktivedirectory) |
+| 12. | Biohazar | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Biohazard) | ✅ | [Makine Linki](https://tryhackme.com/room/biohazard) |
+| 13. | Blog | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Blog) | ✅ | [Makine Linki](https://tryhackme.com/room/blog) |
+| 14. | Bluprint | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Blueprint) | ✅ | [Makine Linki](https://tryhackme.com/room/blueprint) |
+| 15. | Bookstore | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Bookstore) | ✅ | [Makine Linki](https://tryhackme.com/room/bookstoreoc) |
+| 16. | Bounty Hacker | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Bounty%20Hacker) | ✅ | [Makine Linki](https://tryhackme.com/room/cowboyhacker) |
+| 17. | Break Out The Cage | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Break%20Out%20The%20Cage%201) | ✅ | [Makine Linki](https://tryhackme.com/room/breakoutthecage1) |
+| 18. | Brooklyn Nine Nine | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Brooklyn%20Nine%20Nine) | ✅ | [Makine Linki](https://tryhackme.com/room/brooklynninenine) |
+| 19. | Brute It | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/BruteIt) | ✅ | [Makine Linki](https://tryhackme.com/room/bruteit) |
+| 20. | Bugged | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Bugged) | ✅ | [Makine Linki](https://tryhackme.com/room/bugged) |
+| 21. | CMSpit | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/CMSpit) | ✅ | [Makine Linki](https://tryhackme.com/room/cmspit) |
+| 22. | CMesS | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/CMesS) | ✅ | [Makine Linki](https://tryhackme.com/room/cmess) |
+| 23. | Cat Pictures | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Cat%20Pictures) | ✅ | [Makine Linki](https://tryhackme.com/room/catpictures) |
+| 24. | Chocolate Factory | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Chocolate%20Factory) | ✅ | [Makine Linki](https://tryhackme.com/room/chocolatefactory) |
+| 25. | Colddbox Easy | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Colddbox%20Easy) | ✅ | [Makine Linki](https://tryhackme.com/room/colddboxeasy) |
+| 26. | Committed | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Commited) | ✅ | [Makine Linki](https://tryhackme.com/room/committed) |
+| 27. | Confidential | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Confidential) | ✅ | [Makine Linki](https://tryhackme.com/room/confidential) |
+| 28. | ConvertMyVideo | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/ConvertMyVideo) | ✅ | [Makine Linki](https://tryhackme.com/room/convertmyvideo) |
+| 29. | Corridor | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Corridor) | ✅ | [Makine Linki](https://tryhackme.com/room/corridor) |
+| 30. | Couch | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Couch) | ✅ | [Makine Linki](https://tryhackme.com/room/couch) |
+| 31. | CyberCrafted | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/CyberCrafted) | ✅ | [Makine Linki](https://tryhackme.com/room/cybercrafted) |
+| 32. | CyberHeroes | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/CyberHeroes) | ✅ | [Makine Linki](https://tryhackme.com/room/cyberheroes) |
+| 33. | Cyborg | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Cyborg) | ✅ | [Makine Linki](https://tryhackme.com/room/cyborgt8) |
+| 34. | DAV | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/DAV) | ✅ | [Makine Linki](https://tryhackme.com/room/bsidesgtdav) |
+| 35. | Develpy | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Develpy) | ✅ | [Makine Linki](https://tryhackme.com/room/bsidesgtdevelpy) |
+| 36. | Dogcat | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Dogcat) | ✅ | [Makine Linki](https://tryhackme.com/room/dogcat) |
+| 37. | Easy Peasy | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Easy%20Peasy) | ✅ | [Makine Linki](https://tryhackme.com/room/easypeasyctf) |
+| 38. | Eavesdropper | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Eavesdropper) | ✅ | [Makine Linki](https://tryhackme.com/room/eavesdropper) |
+| 39. | Empline | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Empline) | ✅ | [Makine Linki](https://tryhackme.com/room/empline) |
+| 40. | Epoch | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Epoch) | ✅ | [Makine Linki](https://tryhackme.com/room/epoch) |
+| 41. | Flatline | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Flatline) | ✅ | [Makine Linki](https://tryhackme.com/room/flatline) |
+| 42. | Gallery | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Gallery) | ✅ | [Makine Linki](https://tryhackme.com/room/gallery666) |
+| 43. | GamingServer | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/GamingServer) | ✅ | [Makine Linki](https://tryhackme.com/room/gamingserver) |
+| 44. | Gatekeeper | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Gatekeeper) | ✅ | [Makine Linki](https://tryhackme.com/room/gatekeeper) |
+| 45. | Git Happens | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Git%20Happens) | ✅ | [Makine Linki](https://tryhackme.com/room/githappens) |
+| 46. | Git and Crumpets | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Git%20and%20Crumpets) | ✅ | [Makine Linki](https://tryhackme.com/room/gitandcrumpets) |
+| 47. | Glitch | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Glitch) | ✅ | [Makine Linki](https://tryhackme.com/room/glitch) |
+| 48. | GoldenEye | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/GoldenEye) | ✅ | [Makine Linki](https://tryhackme.com/room/goldeneye) |
+| 49. | Gotta Catchem All | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Gotta%20Catchem%20All) | ✅ | [Makine Linki](https://tryhackme.com/room/pokemon) |
+| 50. | HA Joker CTF | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/HA%20Joker%20CTF) | ✅ | [Makine Linki](https://tryhackme.com/room/jokerctf) |
+| 51. | Hacker vs Hacker | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Hacker%20vs%20Hacker) | ✅ | [Makine Linki](https://tryhackme.com/room/hackervshacker) |
+| 52. | HaskHell | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/HaskHell) | ✅ | [Makine Linki](https://tryhackme.com/room/haskhell) |
+| 53. | IDE | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/IDE) | ✅ | [Makine Linki](https://tryhackme.com/room/ide) |
+| 54. | Ignite | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Ignite) | ✅ | [Makine Linki](https://tryhackme.com/room/ignite) |
+| 55. | Inferno | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Inferno) | ✅ | [Makine Linki](https://tryhackme.com/room/inferno) |
+| 56. | JPGChat | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/JPGChat) | ✅ | [Makine Linki](https://tryhackme.com/room/jpgchat) |
+| 57. | Jack-of-all-Trades | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Jack-of-All-Trades) | ✅ | [Makine Linki](https://tryhackme.com/room/jackofalltrades) |
+| 58. | Jacob The Boss | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Jacob%20The%20Boss) | ✅ | [Makine Linki](https://tryhackme.com/room/jacobtheboss) |
+| 59. | Jason | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Jason) | ✅ | [Makine Linki](https://tryhackme.com/room/jason) |
+| 60. | Lian_yu | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Lian_yu) | ✅ | [Makine Linki](https://tryhackme.com/room/lianyu) |
+| 61. | Library | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Library) | ✅ | [Makine Linki](https://tryhackme.com/room/bsidesgtlibrary) |
+| 62. | Lockdown | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Lockdown) | ✅ | [Makine Linki](https://tryhackme.com/room/lockdown) |
+| 63. | Lookback | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Lookback) | ✅ | [Makine Linki](https://tryhackme.com/room/lookback) |
+| 64. | Looking Glass | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Looking%20Glass) | ✅ | [Makine Linki](https://tryhackme.com/room/lookingglass) |
+| 65. | MD2PDF| [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/MD2PDF) | ✅ | [Makine Linki](https://tryhackme.com/room/md2pdf) |
+| 66. | Madeyes Castle | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Madeyes%20Castle) | ✅ | [Makine Linki](https://tryhackme.com/room/madeyescastle) |
+| 67. | Madness | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Madness) | ✅ | [Makine Linki](https://tryhackme.com/room/madness) |
+| 68. | Magician | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Magician) | ✅ | [Makine Linki](https://tryhackme.com/room/magician) |
+| 69. | Mindgames | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Mindgames) | ✅ | [Makine Linki](https://tryhackme.com/room/mindgames) |
+| 70. | Minotaurs Labyrinth | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Minotaurs%20Labyrinth) | ✅ | [Makine Linki](https://tryhackme.com/room/labyrinth8llv) |
+| 71. | Mnemonic | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Mnemonic) | ✅ | [Makine Linki](https://tryhackme.com/room/mnemonic) |
+| 72. | Mr Robot CTF | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Mr%20Robot%20CTF) | ✅ | [Makine Linki](https://tryhackme.com/room/mrrobot) |
+| 73. | Mustacchio | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Mustacchio) | ✅ | [Makine Linki](https://tryhackme.com/room/mustacchio) |
+| 74. | Nax | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Nax) | ✅ | [Makine Linki](https://tryhackme.com/room/nax) |
+| 75. | Neighbour | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Neighbour) | ✅ | [Makine Linki](https://tryhackme.com/room/neighbour) |
+| 76. | Oh My WebServer | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Oh%20My%20WebServer) | ✅ | [Makine Linki](https://tryhackme.com/room/ohmyweb) |
+| 77. | Ollie | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Ollie) | ✅ | [Makine Linki](https://tryhackme.com/room/ollie) |
+| 78. | Olympus | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Olympus) | ✅ | [Makine Linki](https://tryhackme.com/room/olympusroom) |
+| 79. | Overpass 3 - Hosting | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Overpass%203) | ✅ | [Makine Linki](https://tryhackme.com/room/overpass3hosting) |
+| 80. | Overpass | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Overpass) | ✅ | [Makine Linki](https://tryhackme.com/room/overpass) |
+| 81. | Peak Hill | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Peak%20Hill) | ✅ | [Makine Linki](https://tryhackme.com/room/peakhill) |
+| 82. | Plotted-TMS | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Plotted-TMS) | ✅ | [Makine Linki](https://tryhackme.com/room/plottedtms) |
+| 83. | Poster | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Poster) | ✅ | [Makine Linki](https://tryhackme.com/room/poster) |
+| 84. | Relevant | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Relevant) | ✅ | [Makine Linki](https://tryhackme.com/room/relevant) |
+| 85. | Revenge | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Revenge) | ✅ | [Makine Linki](https://tryhackme.com/room/revenge) |
+| 86. | RootMe | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/RootMe) | ✅ | [Makine Linki](https://tryhackme.com/room/rrootme) |
+| 87. | Smag Grotto | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Smag%20Grotto) | ✅ | [Makine Linki](https://tryhackme.com/room/smaggrotto) |
+| 88. | Source | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Source) | ✅ | [Makine Linki](https://tryhackme.com/room/source) |
+| 89. | Startup | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Startup) | ✅ | [Makine Linki](https://tryhackme.com/room/startup) |
+| 90. | Sustah | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Sustah) | ✅ | [Makine Linki](https://tryhackme.com/room/sustah) |
+| 91. | TakeOver | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/TakeOver) | ✅ | [Makine Linki](https://tryhackme.com/room/takeover) |
+| 92. | Tardigrade | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Tardigrade) | ✅ | [Makine Linki](https://tryhackme.com/room/tardigrade) |
+| 93. | Team | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Team) | ✅ | [Makine Linki](https://tryhackme.com/room/teamcw) |
+| 94. | The Great Escape | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/The%20Great%20Escape) | ✅ | [Makine Linki](https://tryhackme.com/room/thegreatescape) |
+| 95. | The Server From Hell | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/The%20Server%20From%20Hell) | ✅ | [Makine Linki](https://tryhackme.com/room/theserverfromhell) |
+| 96. | Tokyo Ghoul | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Tokyo%20Ghoul) | ✅ | [Makine Linki](https://tryhackme.com/room/tokyoghoul666) |
+| 97. | Tony the Tiger | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Tony%20the%20Tiger) | ✅ | [Makine Linki](https://tryhackme.com/room/tonythetiger) |
+| 98. | UltraTech | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/UltraTech) | ✅ | [Makine Linki](https://tryhackme.com/room/ultratech1) |
+| 99. | VulnNet | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/VulnNet) | ✅ | [Makine Linki](https://tryhackme.com/room/vulnnet1) |
+| 100. | Vulnnet Internal | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Vulnnet%20Internal) | ✅ | [Makine Linki](https://tryhackme.com/room/vulnnetinternal) |
+| 101. | Vulnnet Roasted | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Vulnnet%20Roasted) | ✅ | [Makine Linki](https://tryhackme.com/room/vulnnetroasted) |
+| 102. | Watcher | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Watcher) | ✅ | [Makine Linki](https://tryhackme.com/room/watcher) |
+| 103. | Wekor | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Wekor) | ✅ | [Makine Linki](https://tryhackme.com/room/wekorra) |
+| 104. | Willow | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Willow) | ✅ | [Makine Linki](https://tryhackme.com/room/willow) |
+| 105. | Wonderland | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Wonderland) | ✅ | [Makine Linki](https://tryhackme.com/room/wonderland) |
+| 106. | Year of the Rabbit | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Year%20of%20the%20Rabbit) | ✅ | [Makine Linki](https://tryhackme.com/room/yearoftherabbit) |
+| 107. | Zeno | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Zeno) | ✅ | [Makine Linki](https://tryhackme.com/room/zeno) |
+| 108. | b3dr0ck | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/b3dr0ck) | ✅ | [Makine Linki](https://tryhackme.com/room/b3dr0ck) |
+| 109. | battery | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/battery) | ✅ | [Makine Linki](https://tryhackme.com/room/battery) |
+| 110. | biteme | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/biteme) | ✅ | [Makine Linki](https://tryhackme.com/room/biteme) |
+| 111. | Chill Hack | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/chillhack) | ✅ | [Makine Linki](https://tryhackme.com/room/chillhack) |
+| 112. | h4cked | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/h4cked) | ✅ | [Makine Linki](https://tryhackme.com/room/h4cked) |
+| 113. | Wgel CTF | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/wgelCTF) | ✅ | [Makine Linki](https://tryhackme.com/room/wgelctf) |
+| 114. | Vulnnet Node | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Vulnnet%20Node) |  | [Makine Linki](https://tryhackme.com/room/vulnnetnode) | 
 
 ---

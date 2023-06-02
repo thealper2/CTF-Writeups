@@ -217,6 +217,80 @@
 | 111. | Chill Hack | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/chillhack) | ✅ | [Makine Linki](https://tryhackme.com/room/chillhack) |
 | 112. | h4cked | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/h4cked) | ✅ | [Makine Linki](https://tryhackme.com/room/h4cked) |
 | 113. | Wgel CTF | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/wgelCTF) | ✅ | [Makine Linki](https://tryhackme.com/room/wgelctf) |
-| 114. | Vulnnet Node | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Vulnnet%20Node) |  | [Makine Linki](https://tryhackme.com/room/vulnnetnode) | 
+| 114. | Vulnnet Node | [Link](https://github.com/thealper2/CTF-Writeups/tree/main/Tryhackme/Vulnnet%20Node) | ✅ | [Makine Linki](https://tryhackme.com/room/vulnnetnode) | 
+
+---
+
+## picoCTF
+
+✅ -> Tamamlandı ❌ -> Tamamlanmadı
+
+| ID | Makine Kategorisi | Makine Adı | Çözüm Durumu | Çözüm Linki |
+| -- | ----------------- | ---------- | ------------ | ----------- |
+| 1. | Cryptography | The Numbers | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Cryptography/The%20Numbers.txt) |
+| 2. | Cryptography | mod26 | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Cryptography/mod26.txt) |
+| 3. | Forensics | MacroHard WeakEdge | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Forensics/MacroHard%20WeakEdge.txt) |
+| 4. | Forensics | glory | ✅ |  [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Forensics/glory.txt) |
+| 5. | Forensics | information | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Forensics/information.txt) |
+| 6. | Forensics | wireshark too doo | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Forensics/wireshark-too-doo.txt) |
+| 7. | Web Exploitation | Cookies | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/Cookies.txt) |
+| 8. | Web Exploitation | GET aHEAD | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/GET%20aHEAD.txt) |
+| 9. | Web Exploitation | Insp3ct0r | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/Insp3ct0r.txt) |
+| 10. | Web Exploitation | It is my Birthday | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/It%20is%20my%20Birthday.txt) |
+| 11. | Web Exploitation | Scavenger Hunt | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/Scavenger%20Hunt.txt) |
+| 12. | Web Exploitation | Some Assembly Required 1 | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/Some%20Assembly%20Required%201.txt) |
+| 13. | Web Exploitation | Who are you | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/Who%20are%20you.txt) |
+| 14. | Web Exploitation | dont-use-client-side | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/dont-use-client-side.txt) |
+| 15. | Web Exploitation | Login | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/login.txt) |
+| 16. | Web Exploitation | Logon | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/logon.txt) |
+| 17. | Web Exploitation | Where are the robots | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/picoCTF/Web%20Exploitation/where%20are%20the%20robots.txt) | 
+
+---
+
+## PortSwigger Academy 
+
+✅ -> Tamamlandı ❌ -> Tamamlanmadı
+
+| ID | Makine Kategorisi | Makine Adı | Çözüm Durumu | Çözüm Linki |
+| 1. | CORS | CORS vulnerability with basic origin reflection | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/CORS/1.txt) |
+| 2. | CORS | CORS vulnerability with trusted null origin | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/CORS/2.txt) |
+| 3. | CORS | CORS vulnerability with trusted insecure protocols | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/CORS/3.txt) |
+| 4. | Cross-site scripting | Reflected XSS into HTML context with nothing encoded | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/1.txt) |
+| 5. | Cross-site scripting | Stored XSS into HTML context with nothing encoded | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/2.txt) |
+| 6. | Cross-site scripting | DOM XSS in document.write sink using source location.search | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/3.txt) |
+| 7. | Cross-site scripting | DOM XSS in innerHTML sink using source location.search | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/4.txt) |
+| 8. | Cross-site scripting | DOM XSS in jQuery anchor href attribute sink using location.search source | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/5.txt) |
+| 9. | Cross-site scripting | DOM XSS in jQuery selector sink using a hashchange event | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/6.txt) |
+| 10. | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/7.txt) |
+| 11. | Cross-site scripting | Stored XSS into anchor href attribute with double quotes HTML-encoded | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/8.txt) |
+| 12. | Cross-site scripting | Reflected XSS into a JavaScript string with angle brackets HTML encoded | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/9.txt) |
+| 13. | Cross-site scripting | DOM XSS in document.write sink using source location.search inside a select element | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/10.txt) |
+| 14. | Cross-site scripting | DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/11.txt) |
+| 15. | Cross-site scripting | Reflected DOM XSS | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/12.txt) |
+| 16. | Cross-site scripting | Stored DOM XSS | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/13.txt) |
+| 17. | Cross-site scripting | Exploiting XSS to perform CSRF  | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/Cross-site%20scripting/16.txt) |
+| 18. | DOM-based Vulnerabilities | DOM XSS using web messages | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/1.txt) |
+| 19. | DOM-based Vulnerabilities | DOM XSS using web messages and a JavaScript URL | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/2.txt) |
+| 20. | DOM-based Vulnerabilities | DOM XSS using web messages and JSON.parse | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/3.txt) |
+| 21. | DOM-based Vulnerabilities | DOM-based open redirection | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/4.txt) |
+| 22. | DOM-based Vulnerabilities | DOM-based cookie manipulation | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/5.txt) |
+| 23. | DOM-based Vulnerabilities | Exploting DOM clobbering to enable XSS | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/6.txt) |
+| 24. | DOM-based Vulnerabilities | Clobbering DOM attributes to bypass HTML filters | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/7.txt) |
+| 25. | DOM-based Vulnerabilities | Clobbering DOM attributes to bypass HTML filters | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/DOM-based%20Vulnerabilities/8.txt) |
+| 26. | SQL Injection | SQL injection vulnerability in WHERE clause allowing retrieval of hidden data | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/1.txt) |
+| 27. | SQL Injection | SQL injection vulnerability allowing login bypass | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/2.txt) |
+| 28. | SQL Injection | SQL injection UNION attack, determining the number of columns returned by the query | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/3.txt) |
+| 29. | SQL Injection | SQL injection UNION attack, finding a column containing text | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/4.txt) |
+| 30. | SQL Injection | SQL injection UNION attack, retrieving data from other tables | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/5.txt) |
+| 31. | SQL Injection | SQL injection UNION attack, retrieving multiple values in a single column | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/6.txt) |
+| 32. | SQL Injection | SQL injection attack, querying the database type and version on Oracle | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/7.txt) |
+| 33. | SQL Injection | SQL injection attack, querying the database type and version on MySQL and Microsoft | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/8.txt) |
+| 34. | SQL Injection | SQL injection attack, listing the database contents on non-Oracle databases | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/9.txt) |
+| 35. | SQL Injection | SQL injection attack, listing the database contents on Oracle | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/10.txt) |
+| 36. | SQL Injection | Blind SQL injection with conditional responses | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/11.txt) |
+| 37. | SQL Injection | Blind SQL injection with conditional errors | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/12.txt) |
+| 38. | SQL Injection | Blind SQL injection with time delays | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/13.txt) |
+| 39. | SQL Injection | Blind SQL injection with time delays and information retrieval | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/14.txt) |
+| 40. | SQL Injection | SQL injection with filter bypass via XML encoding | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/SQL%20injection/16.txt) |
 
 ---

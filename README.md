@@ -249,9 +249,8 @@
 
 ## PortSwigger Academy 
 
-✅ -> Tamamlandı ❌ -> Tamamlanmadı
 
-| ID | Makine Kategorisi | Makine Adı | Çözüm Durumu | Çözüm Linki |
+| ID | Makine Kategorisi | Makine Adi | Cozum Durumu |  Link |
 | 1. | CORS | CORS vulnerability with basic origin reflection | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/CORS/1.txt) |
 | 2. | CORS | CORS vulnerability with trusted null origin | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/CORS/2.txt) |
 | 3. | CORS | CORS vulnerability with trusted insecure protocols | ✅ | [Link](https://github.com/thealper2/CTF-Writeups/blob/main/PortSwiggerAcademy/CORS/3.txt) |
